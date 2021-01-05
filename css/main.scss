@@ -11,17 +11,53 @@ body {
 .grain,
 canvas {
     display: flex;
-    background: #E9E9E9;
+    background: #121212;
     width: 98vw;
-    height: 85vh;
+    height: 75vh;
     justify-content: center;
     margin: 0 auto;
 }
 
 header {
     width: 99vw;
-    display: flexbox;
     #heading-nav {
-        margin: 52px 0 0 95px;
+        display: flex;
+        width: 100%;
+        /* margin: 52px 0 0 95px; */
+        justify-content: space-between;
+        align-items: center;
+        #navLogo {
+            width: 30%;
+            margin: 0.0625em 1.87em 0.93em 6em;
+        }
+        #navLinks {
+            display: flex;
+            width: 70%;
+            align-items: baseline;
+            justify-content: flex-end;
+            padding: 0 6em 0 0;
+            a {
+                padding: 0.625em 0.375em 0.6875em;
+                font-family: HelveticaNeue;
+                font-size: 1em;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #e9e9e9;
+                text-decoration: none;
+            }
+            #joinUs::after {
+                content: ' ↗';
+                font-size: 0.7em;
+                color: #f7fe6a;
+            }
+            #getInTouch {
+                color: #121212;
+                background-color: #f7fe6a;
+            }
+        }
     }
 }
