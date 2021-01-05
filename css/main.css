@@ -8,11 +8,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-p {
-  margin-top: 20px;
-  text-align: center;
+  background-color: #121212;
+  width: 99vw;
 }
 
 .grain,
@@ -27,5 +24,14 @@ canvas {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+}
+
+header {
+  width: 99vw;
+  display: flexbox;
+}
+
+header #heading-nav {
+  margin: 52px 0 0 95px;
 }
 /*# sourceMappingURL=main.css.map */

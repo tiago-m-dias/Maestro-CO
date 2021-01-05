@@ -4,11 +4,8 @@ body {
     font-family: monospace;
     align-items: center;
     justify-content: center;
-}
-
-p {
-    margin-top: 20px;
-    text-align: center;
+    background-color: #121212;
+    width: 99vw;
 }
 
 .grain,
@@ -19,4 +16,12 @@ canvas {
     height: 85vh;
     justify-content: center;
     margin: 0 auto;
+}
+
+header {
+    width: 99vw;
+    display: flexbox;
+    #heading-nav {
+        margin: 52px 0 0 95px;
+    }
 }
