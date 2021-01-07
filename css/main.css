@@ -83,8 +83,16 @@ header #headingNav #navLinks #getInTouch {
   margin-right: 0;
 }
 
-.grain,
-canvas {
+#mainContent {
+  padding: 3.25em 6em 0em 6em;
+}
+
+#mainContent #maestroContainer {
+  position: relative;
+}
+
+#mainContent #maestroContainer .grain,
+#mainContent #maestroContainer canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,18 +105,17 @@ canvas {
   margin: 0 auto;
 }
 
-#mainContent {
-  padding: 3.25em 6em 0em 6em;
-}
-
-#mainContent #showMust {
+#mainContent #maestroContainer #showMust {
+  position: absolute;
+  bottom: 20vh;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  width: 100%;
 }
 
-#mainContent #showMust div {
+#mainContent #maestroContainer #showMust div {
   font-size: 5.125em;
   font-weight: 300;
   text-align: left;
@@ -116,15 +123,21 @@ canvas {
   width: 70%;
 }
 
-#mainContent #showMust a {
+#mainContent #maestroContainer #showMust a {
   font-size: 1em;
   font-weight: 500;
   text-align: right;
   text-decoration: none;
   color: #e9e9e9;
+  float: right;
 }
 
-#mainContent #aboutWorkFooter {
+#mainContent #maestroContainer #showMust a::after {
+  content: ' ↓';
+  color: #f7fe6a;
+}
+
+#mainContent #About #aboutWorkFooter {
   font-size: 0.625em;
   font-weight: normal;
   font-stretch: normal;
@@ -139,11 +152,11 @@ canvas {
   padding-top: 12px;
 }
 
-#mainContent #aboutWorkFooter span:nth-of-type(2) {
+#mainContent #About #aboutWorkFooter span:nth-of-type(2) {
   float: right;
 }
 
-#mainContent .doYou {
+#mainContent #About .doYou {
   font-size: 3.125em;
   font-weight: 300;
   font-stretch: normal;
@@ -154,11 +167,11 @@ canvas {
   color: #595959;
 }
 
-#mainContent .doYou p {
+#mainContent #About .doYou p {
   color: #f7fe6a;
 }
 
-#mainContent #aboutMaestro {
+#mainContent #About #aboutMaestro {
   font-size: 1.5625em;
   font-weight: 300;
   font-stretch: normal;
@@ -167,5 +180,185 @@ canvas {
   letter-spacing: normal;
   text-align: left;
   color: #e9e9e9;
+}
+
+#mainContent #How h2 {
+  font-size: 1.25em;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f7fe6a;
+}
+
+#mainContent #How p {
+  font-size: 2.5em;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#mainContent #How #fullConcert div {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+#mainContent #How #fullConcert div h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #f7fe6a;
+}
+
+#mainContent #How #fullConcert div p {
+  font-size: 1.5625em;
+  color: #e9e9e9;
+}
+
+#mainContent #How #fullConcert div span {
+  font-weight: 500;
+}
+
+#mainContent #What #allTheActs #1stAct,
+#mainContent #What #allTheActs #2ndAct,
+#mainContent #What #allTheActs #3rdAct,
+#mainContent #What #allTheActs #4thAct {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+#mainContent #What #allTheActs #1stAct h4,
+#mainContent #What #allTheActs #2ndAct h4,
+#mainContent #What #allTheActs #3rdAct h4,
+#mainContent #What #allTheActs #4thAct h4 {
+  font-weight: 0.625em;
+  font-weight: bold;
+  color: #f7fe6a;
+  text-transform: uppercase;
+}
+
+#mainContent #What #allTheActs #1stAct span,
+#mainContent #What #allTheActs #2ndAct span,
+#mainContent #What #allTheActs #3rdAct span,
+#mainContent #What #allTheActs #4thAct span {
+  font-size: 1.5625em;
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+#mainContent #What #allTheActs #1stAct p ul li,
+#mainContent #What #allTheActs #2ndAct p ul li,
+#mainContent #What #allTheActs #3rdAct p ul li,
+#mainContent #What #allTheActs #4thAct p ul li {
+  font-size: 1.0625em;
+  line-height: 1.78;
+  color: #FFFFFF;
+}
+
+#mainContent #What #aboutFilipe #aboutFilipePhoto p {
+  font-size: 1.5625em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+#mainContent #What #aboutFilipe #aboutFilipeMission {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+#mainContent #What #aboutFilipe #aboutFilipeMission h3 {
+  font-size: 1.25em;
+  color: #f7fe6a;
+}
+
+#mainContent #What #aboutFilipe #aboutFilipeMission p {
+  font-size: 0.875em;
+  line-height: 1.78;
+}
+
+#mainContent #What #whatWeNeed h2 {
+  font-size: 5.125em;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f7fe6a;
+}
+
+#mainContent #What #whatWeNeed h2 span {
+  text-decoration: underline;
+}
+
+#mainContent #What #whatWeNeed p {
+  font-size: 1.875em;
+  color: #FFFFFF;
+}
+
+#mainContent #What #whatWeNeed p span {
+  color: #595959;
+}
+
+#mainContent #callToAction {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+#mainContent #callToAction #letsChat span {
+  font-size: 3.25em;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+#mainContent #callToAction #letsChat span a {
+  font-size: 1em;
+  color: #121212;
+  background-color: #f7fe6a;
+  padding: 10px 6px 11px 6px;
+}
+
+#mainContent #callToAction #followSound {
+  font-size: 1.5625em;
+  font-weight: 300;
+  color: #f7fe6a;
+}
+
+footer {
+  color: #FFFFFF;
+}
+
+footer #rightsMaestro {
+  font-size: 0.8125em;
+}
+
+footer #footerSocials a {
+  font-size: 1.0625em;
+  font-weight: 300;
+  line-height: 1.78;
 }
 /*# sourceMappingURL=main.css.map */
