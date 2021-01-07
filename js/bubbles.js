@@ -21,8 +21,10 @@ class Bubbles {
     }
 
     setSize() {
-        this.viewportWidth = document.documentElement.clientWidth;
-        this.viewportHeight = document.documentElement.clientHeight;
+        /* this.viewportWidth = document.documentElement.clientWidth;
+        this.viewportHeight = document.documentElement.clientHeight; */
+        this.viewportWidth = this.options.element.offsetWidth;
+        this.viewportHeight = this.options.element.offsetHeight;
     }
 
     initScene() {
