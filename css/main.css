@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 /* Variables */
 /* Colors */
 /* Padding and Margin */
@@ -15,6 +17,7 @@ body {
   background-color: #121212;
   width: 99vw;
   color: #e9e9e9;
+  font-family: 'Arimo', sans-serif;
 }
 
 header {
@@ -56,7 +59,6 @@ header #headingNav #navLinks {
 
 header #headingNav #navLinks a {
   padding: 0.625em 0.375em 0.6875em;
-  font-family: HelveticaNeue;
   font-size: 1em;
   font-weight: 500;
   font-stretch: normal;
@@ -100,7 +102,6 @@ canvas {
 }
 
 #mainContent #showMust {
-  font-family: HelveticaNeue;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -124,7 +125,6 @@ canvas {
 }
 
 #mainContent #aboutWorkFooter {
-  font-family: HelveticaNeue;
   font-size: 0.625em;
   font-weight: normal;
   font-stretch: normal;
@@ -141,5 +141,31 @@ canvas {
 
 #mainContent #aboutWorkFooter span:nth-of-type(2) {
   float: right;
+}
+
+#mainContent .doYou {
+  font-size: 3.125em;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #595959;
+}
+
+#mainContent .doYou p {
+  color: #f7fe6a;
+}
+
+#mainContent #aboutMaestro {
+  font-size: 1.5625em;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e9e9e9;
 }
 /*# sourceMappingURL=main.css.map */
