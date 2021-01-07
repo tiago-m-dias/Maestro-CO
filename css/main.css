@@ -31,7 +31,7 @@ header {
   width: 99vw;
 }
 
-header #heading-nav {
+header #headingNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +45,12 @@ header #heading-nav {
           align-items: center;
 }
 
-header #heading-nav #navLogo {
+header #headingNav #navLogo {
   width: 30%;
   margin: 0.0625em 1.87em 0.93em 6em;
 }
 
-header #heading-nav #navLinks {
+header #headingNav #navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@ header #heading-nav #navLinks {
   padding: 0 6em 0 0;
 }
 
-header #heading-nav #navLinks a {
+header #headingNav #navLinks a {
   padding: 0.625em 0.375em 0.6875em;
   font-family: HelveticaNeue;
   font-size: 1em;
@@ -79,13 +79,13 @@ header #heading-nav #navLinks a {
   margin-right: 3.8125em;
 }
 
-header #heading-nav #navLinks #joinUs::after {
+header #headingNav #navLinks #joinUs::after {
   content: ' ↗';
   font-size: 0.7em;
   color: #f7fe6a;
 }
 
-header #heading-nav #navLinks #getInTouch {
+header #headingNav #navLinks #getInTouch {
   color: #121212;
   background-color: #f7fe6a;
   margin-right: 0;
