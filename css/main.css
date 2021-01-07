@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* Variables */
+/* Colors */
+/* Padding and Margin */
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +14,7 @@ body {
           justify-content: center;
   background-color: #121212;
   width: 99vw;
+  color: #e9e9e9;
 }
 
 header {
