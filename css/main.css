@@ -4,6 +4,10 @@
 /* Variables */
 /* Colors */
 /* Padding and Margin */
+ul {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   padding: 0;

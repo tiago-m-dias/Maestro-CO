@@ -14,6 +14,10 @@ $mainTextColor: #e9e9e9;
 /* Padding and Margin */
 
 $sideMargin: 6em;
+ul {
+    list-style-type: none;
+}
+
 body {
     margin: 0;
     padding: 0;
