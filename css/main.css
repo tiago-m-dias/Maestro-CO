@@ -4,6 +4,7 @@
 /* Variables */
 /* Colors */
 /* Padding and Margin */
+/* Font Sizes */
 ul {
   list-style-type: none;
 }
@@ -139,6 +140,87 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #maestroContainer #showMust a::after {
   content: ' ↓';
   color: #f7fe6a;
+}
+
+#mainContent #About {
+  /* Circle Animation */
+  /*
+        &:hover #exploreWork {
+            animation: pepita 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        } */
+}
+
+@-webkit-keyframes pepita {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    font-size: 0px;
+  }
+  100% {
+    display: -webkit-box;
+    display: flex;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    font-size: 1.25em;
+  }
+}
+
+@keyframes pepita {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    font-size: 0px;
+  }
+  100% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    font-size: 1.25em;
+  }
+}
+
+#mainContent #About #workLinkContainer {
+  position: relative;
+}
+
+#mainContent #About #workLinkContainer a img {
+  max-width: 100%;
+}
+
+#mainContent #About #workLinkContainer a:hover {
+  cursor: none;
+}
+
+#mainContent #About #exploreWork {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: #f7fe6a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 143px;
+  width: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.25em;
+  position: absolute;
+  top: 178px;
+  left: calc(50% - 70px);
+  color: #1f1e1e;
 }
 
 #mainContent #About #aboutWorkFooter {
