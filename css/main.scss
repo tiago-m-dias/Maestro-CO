@@ -18,15 +18,21 @@ $sideMargin: 6em;
 
 /* Font Sizes */
 
+$font16px: 1em;
 $font20px: 1.25em;
+$font50px: 3.125em;
 ul {
     list-style-type: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: monospace;
     align-items: center;
     justify-content: center;
     background-color: $mainBgColor;
@@ -55,7 +61,7 @@ header {
             padding: 0 $sideMargin 0 0;
             a {
                 padding: 0.625em 0.375em 0.6875em;
-                font-size: 1em;
+                font-size: $font16px;
                 font-weight: 500;
                 font-stretch: normal;
                 font-style: normal;
@@ -109,7 +115,7 @@ header {
                 width: 70%;
             }
             a {
-                font-size: 1em;
+                font-size: $font16px;
                 font-weight: 500;
                 text-align: right;
                 text-decoration: none;
@@ -146,29 +152,29 @@ header {
                     cursor: none;
                 }
             }
-        }
-        #exploreWork {
-            transform: scale(1);
-            background-color: $mainYellow;
-            display: flex;
-            height: 143px;
-            width: 140px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 50%;
-            font-size: $font20px;
-            position: absolute;
-            top: 178px;
-            left: calc(50% - 70px);
-            color: $linkDark;
-        }
-        /*
+            #exploreWork {
+                transform: scale(1);
+                background-color: $mainYellow;
+                display: flex;
+                height: 143px;
+                width: 140px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 50%;
+                font-size: $font20px;
+                position: absolute;
+                top: 178px;
+                left: calc(70% - 70px);
+                color: $linkDark;
+            }
+            /*
         &:hover #exploreWork {
             animation: pepita 3s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
         } */
+        }
         #aboutWorkFooter {
             font-size: 0.625em;
             font-weight: normal;
@@ -182,12 +188,13 @@ header {
             width: 100%;
             border-top: 1px solid #FFFFFF;
             padding-top: 12px;
+            margin-bottom: 117px;
             span:nth-of-type(2) {
                 float: right;
             }
         }
         .doYou {
-            font-size: 3.125em;
+            font-size: $font50px;
             font-weight: 300;
             font-stretch: normal;
             font-style: normal;
@@ -195,19 +202,32 @@ header {
             letter-spacing: normal;
             text-align: left;
             color: #595959;
+            border-bottom: 1px solid #595959;
+            padding: 29px 18% 29px 0;
             p {
+                margin: 0;
                 color: $mainYellow;
             }
         }
         #aboutMaestro {
-            font-size: 1.5625em;
-            font-weight: 300;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: left;
-            color: #e9e9e9;
+            display: flex;
+            #aboutDescription {
+                font-size: 1.5625em;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #e9e9e9;
+                align-self: flex-end;
+                p {
+                    padding: 0 0 0 4.6875em;
+                }
+                p:nth-child(1) {
+                    padding-bottom: 1em;
+                }
+            }
         }
     }
     #How {
@@ -232,6 +252,7 @@ header {
             color: #FFFFFF;
         }
         #fullConcert {
+            display: flex;
             div {
                 font-weight: normal;
                 font-stretch: normal;
@@ -256,6 +277,7 @@ header {
     }
     #What {
         #allTheActs {
+            display: flex;
             #1stAct,
             #2ndAct,
             #3rdAct,
@@ -352,7 +374,7 @@ header {
                 font-weight: 500;
                 color: #FFFFFF;
                 a {
-                    font-size: 1em;
+                    font-size: $font16px;
                     color: $mainBgColor;
                     background-color: $mainYellow;
                     padding: 10px 6px 11px 6px;

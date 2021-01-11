@@ -9,10 +9,14 @@ ul {
   list-style-type: none;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: monospace;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -144,12 +148,6 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #About {
   /* Circle Animation */
-  /*
-        &:hover #exploreWork {
-            animation: pepita 3s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        } */
 }
 
 @-webkit-keyframes pepita {
@@ -189,6 +187,12 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #About #workLinkContainer {
   position: relative;
+  /*
+        &:hover #exploreWork {
+            animation: pepita 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        } */
 }
 
 #mainContent #About #workLinkContainer a img {
@@ -199,7 +203,7 @@ header #headingNav #navLinks #getInTouch {
   cursor: none;
 }
 
-#mainContent #About #exploreWork {
+#mainContent #About #workLinkContainer #exploreWork {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: #f7fe6a;
@@ -219,7 +223,7 @@ header #headingNav #navLinks #getInTouch {
   font-size: 1.25em;
   position: absolute;
   top: 178px;
-  left: calc(50% - 70px);
+  left: calc(70% - 70px);
   color: #1f1e1e;
 }
 
@@ -236,6 +240,7 @@ header #headingNav #navLinks #getInTouch {
   width: 100%;
   border-top: 1px solid #FFFFFF;
   padding-top: 12px;
+  margin-bottom: 117px;
 }
 
 #mainContent #About #aboutWorkFooter span:nth-of-type(2) {
@@ -251,13 +256,22 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   color: #595959;
+  border-bottom: 1px solid #595959;
+  padding: 29px 18% 29px 0;
 }
 
 #mainContent #About .doYou p {
+  margin: 0;
   color: #f7fe6a;
 }
 
 #mainContent #About #aboutMaestro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainContent #About #aboutMaestro #aboutDescription {
   font-size: 1.5625em;
   font-weight: 300;
   font-stretch: normal;
@@ -266,6 +280,16 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   color: #e9e9e9;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#mainContent #About #aboutMaestro #aboutDescription p {
+  padding: 0 0 0 4.6875em;
+}
+
+#mainContent #About #aboutMaestro #aboutDescription p:nth-child(1) {
+  padding-bottom: 1em;
 }
 
 #mainContent #How h2 {
@@ -290,6 +314,12 @@ header #headingNav #navLinks #getInTouch {
   color: #FFFFFF;
 }
 
+#mainContent #How #fullConcert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #mainContent #How #fullConcert div {
   font-weight: normal;
   font-stretch: normal;
@@ -312,6 +342,12 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #How #fullConcert div span {
   font-weight: 500;
+}
+
+#mainContent #What #allTheActs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #mainContent #What #allTheActs #1stAct,
