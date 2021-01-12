@@ -7,6 +7,7 @@
 /* Font Sizes */
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 p {
@@ -292,7 +293,13 @@ header #headingNav #navLinks #getInTouch {
   padding-bottom: 1em;
 }
 
-#mainContent #How h2 {
+#mainContent #How {
+  border-bottom: 1px solid #595959;
+  margin-bottom: 3.125em;
+  padding-bottom: 3.125em;
+}
+
+#mainContent #How #howDescription h2 {
   font-size: 1.25em;
   font-weight: 500;
   font-stretch: normal;
@@ -303,7 +310,7 @@ header #headingNav #navLinks #getInTouch {
   color: #f7fe6a;
 }
 
-#mainContent #How p {
+#mainContent #How #howDescription p {
   font-size: 2.5em;
   font-weight: 300;
   font-stretch: normal;
@@ -312,6 +319,7 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   color: #FFFFFF;
+  margin-bottom: 1.25em;
 }
 
 #mainContent #How #fullConcert {
@@ -327,6 +335,7 @@ header #headingNav #navLinks #getInTouch {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
+  padding: 0 2em 0 0;
 }
 
 #mainContent #How #fullConcert div h2 {
@@ -348,48 +357,83 @@ header #headingNav #navLinks #getInTouch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.125em;
 }
 
-#mainContent #What #allTheActs #1stAct,
-#mainContent #What #allTheActs #2ndAct,
-#mainContent #What #allTheActs #3rdAct,
-#mainContent #What #allTheActs #4thAct {
+#mainContent #What #allTheActs #firstAct,
+#mainContent #What #allTheActs #secondAct,
+#mainContent #What #allTheActs #thirdAct,
+#mainContent #What #allTheActs #fourthAct {
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   text-align: left;
 }
 
-#mainContent #What #allTheActs #1stAct h4,
-#mainContent #What #allTheActs #2ndAct h4,
-#mainContent #What #allTheActs #3rdAct h4,
-#mainContent #What #allTheActs #4thAct h4 {
-  font-weight: 0.625em;
+#mainContent #What #allTheActs #firstAct h4,
+#mainContent #What #allTheActs #secondAct h4,
+#mainContent #What #allTheActs #thirdAct h4,
+#mainContent #What #allTheActs #fourthAct h4 {
+  font-size: 0.625em;
   font-weight: bold;
   color: #f7fe6a;
   text-transform: uppercase;
 }
 
-#mainContent #What #allTheActs #1stAct span,
-#mainContent #What #allTheActs #2ndAct span,
-#mainContent #What #allTheActs #3rdAct span,
-#mainContent #What #allTheActs #4thAct span {
+#mainContent #What #allTheActs #firstAct span,
+#mainContent #What #allTheActs #secondAct span,
+#mainContent #What #allTheActs #thirdAct span,
+#mainContent #What #allTheActs #fourthAct span {
+  display: block;
   font-size: 1.5625em;
+  height: 3.125em;
   text-decoration: underline;
   color: #FFFFFF;
 }
 
-#mainContent #What #allTheActs #1stAct p ul li,
-#mainContent #What #allTheActs #2ndAct p ul li,
-#mainContent #What #allTheActs #3rdAct p ul li,
-#mainContent #What #allTheActs #4thAct p ul li {
+#mainContent #What #allTheActs #firstAct div,
+#mainContent #What #allTheActs #secondAct div,
+#mainContent #What #allTheActs #thirdAct div,
+#mainContent #What #allTheActs #fourthAct div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#mainContent #What #allTheActs #firstAct div ul li,
+#mainContent #What #allTheActs #secondAct div ul li,
+#mainContent #What #allTheActs #thirdAct div ul li,
+#mainContent #What #allTheActs #fourthAct div ul li {
   font-size: 1.0625em;
   line-height: 1.78;
   color: #FFFFFF;
 }
 
-#mainContent #What #aboutFilipe #aboutFilipePhoto p {
+#mainContent #What #aboutFilipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1d1c1c;
+  padding: 3.125em;
+}
+
+#mainContent #What #aboutFilipe #aboutFilipePhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainContent #What #aboutFilipe #aboutFilipePhoto div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#mainContent #What #aboutFilipe #aboutFilipePhoto div p {
   font-size: 1.5625em;
   font-weight: normal;
   font-stretch: normal;
@@ -400,6 +444,10 @@ header #headingNav #navLinks #getInTouch {
   color: #ffffff;
 }
 
+#mainContent #What #aboutFilipe #aboutFilipePhoto div span {
+  color: #f7fe6a;
+}
+
 #mainContent #What #aboutFilipe #aboutFilipeMission {
   font-weight: normal;
   font-stretch: normal;
@@ -407,6 +455,7 @@ header #headingNav #navLinks #getInTouch {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
+  width: 25.125em;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission h3 {

@@ -20,9 +20,11 @@ $sideMargin: 6em;
 
 $font16px: 1em;
 $font20px: 1.25em;
+$font25px: 1.5625em;
 $font50px: 3.125em;
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 p {
@@ -212,7 +214,7 @@ header {
         #aboutMaestro {
             display: flex;
             #aboutDescription {
-                font-size: 1.5625em;
+                font-size: $font25px;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
@@ -231,25 +233,31 @@ header {
         }
     }
     #How {
-        h2 {
-            font-size: 1.25em;
-            font-weight: 500;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: left;
-            color: $mainYellow;
-        }
-        p {
-            font-size: 2.5em;
-            font-weight: 300;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: left;
-            color: #FFFFFF;
+        border-bottom: 1px solid #595959;
+        margin-bottom: $font50px;
+        padding-bottom: $font50px;
+        #howDescription {
+            h2 {
+                font-size: 1.25em;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: $mainYellow;
+            }
+            p {
+                font-size: 2.5em;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #FFFFFF;
+                margin-bottom: $font20px;
+            }
         }
         #fullConcert {
             display: flex;
@@ -260,13 +268,14 @@ header {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
+                padding: 0 2em 0 0;
                 h2 {
                     font-size: 1.25em;
                     text-transform: uppercase;
                     color: $mainYellow;
                 }
                 p {
-                    font-size: 1.5625em;
+                    font-size: $font25px;
                     color: $mainTextColor;
                 }
                 span {
@@ -278,27 +287,31 @@ header {
     #What {
         #allTheActs {
             display: flex;
-            #1stAct,
-            #2ndAct,
-            #3rdAct,
-            #4thAct {
+            justify-content: space-between;
+            margin-bottom: $font50px;
+            #firstAct,
+            #secondAct,
+            #thirdAct,
+            #fourthAct {
                 font-stretch: normal;
                 font-style: normal;
-                line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
                 h4 {
-                    font-weight: 0.625em;
+                    font-size: 0.625em;
                     font-weight: bold;
                     color: $mainYellow;
                     text-transform: uppercase;
                 }
                 span {
-                    font-size: 1.5625em;
+                    display: block;
+                    font-size: $font25px;
+                    height: $font50px;
                     text-decoration: underline;
                     color: #FFFFFF;
                 }
-                p {
+                div {
+                    align-self: flex-end;
                     ul {
                         li {
                             font-size: 1.0625em;
@@ -310,16 +323,27 @@ header {
             }
         }
         #aboutFilipe {
+            display: flex;
+            justify-content: space-between;
+            background-color: #1d1c1c;
+            padding: $font50px;
             #aboutFilipePhoto {
-                p {
-                    font-size: 1.5625em;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #ffffff;
+                display: flex;
+                div {
+                    align-self: flex-end;
+                    p {
+                        font-size: $font25px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #ffffff;
+                    }
+                    span {
+                        color: $mainYellow;
+                    }
                 }
             }
             #aboutFilipeMission {
@@ -329,6 +353,7 @@ header {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
+                width: 25.125em;
                 h3 {
                     font-size: 1.25em;
                     color: $mainYellow;
@@ -382,7 +407,7 @@ header {
             }
         }
         #followSound {
-            font-size: 1.5625em;
+            font-size: $font25px;
             font-weight: 300;
             color: $mainYellow;
         }
