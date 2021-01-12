@@ -213,6 +213,9 @@ header {
         }
         #aboutMaestro {
             display: flex;
+            margin-top: $font50px;
+            padding-bottom: $font50px;
+            border-bottom: 1px solid #595959;
             #aboutDescription {
                 font-size: $font25px;
                 font-weight: 300;
@@ -237,6 +240,7 @@ header {
         margin-bottom: $font50px;
         padding-bottom: $font50px;
         #howDescription {
+            padding-bottom: $font50px;
             h2 {
                 font-size: 1.25em;
                 font-weight: 500;
@@ -285,6 +289,8 @@ header {
         }
     }
     #What {
+        border-bottom: 1px solid #595959;
+        padding-bottom: $font50px;
         #allTheActs {
             display: flex;
             justify-content: space-between;
@@ -374,42 +380,62 @@ header {
                 letter-spacing: normal;
                 text-align: left;
                 color: $mainYellow;
+                width: 75%;
                 span {
                     text-decoration: underline;
                 }
             }
+            h4 {
+                color: #FFFFFF;
+                font-size: 1.875em;
+                margin-bottom: 0;
+            }
             p {
                 font-size: 1.875em;
-                color: #FFFFFF;
-                span {
-                    color: #595959;
-                }
+                color: #595959;
+                width: 60%;
             }
         }
     }
     #callToAction {
+        padding-top: $font50px;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
         #letsChat {
-            span {
-                font-size: 3.25em;
-                font-weight: 500;
-                color: #FFFFFF;
-                a {
-                    font-size: $font16px;
-                    color: $mainBgColor;
-                    background-color: $mainYellow;
-                    padding: 10px 6px 11px 6px;
-                }
+            width: 35%;
+            font-size: 3.25em;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        #openChat {
+            width: 65%;
+            div {
+                font-size: 1.875em;
+                margin-bottom: $font20px;
+            }
+            a {
+                font-size: $font16px;
+                color: $mainBgColor;
+                background-color: $mainYellow;
+                padding: 0.625em 0.375em 0.6875em 0.375em;
+                text-decoration: none;
             }
         }
         #followSound {
+            width: 30%;
             font-size: $font25px;
             font-weight: 300;
             color: $mainYellow;
+            padding: $font50px 0 $font25px;
+            a {
+                color: #FFFFFF;
+            }
         }
     }
 }

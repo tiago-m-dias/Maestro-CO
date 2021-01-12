@@ -270,6 +270,9 @@ header #headingNav #navLinks #getInTouch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 3.125em;
+  padding-bottom: 3.125em;
+  border-bottom: 1px solid #595959;
 }
 
 #mainContent #About #aboutMaestro #aboutDescription {
@@ -296,6 +299,10 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #How {
   border-bottom: 1px solid #595959;
   margin-bottom: 3.125em;
+  padding-bottom: 3.125em;
+}
+
+#mainContent #How #howDescription {
   padding-bottom: 3.125em;
 }
 
@@ -351,6 +358,11 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #How #fullConcert div span {
   font-weight: 500;
+}
+
+#mainContent #What {
+  border-bottom: 1px solid #595959;
+  padding-bottom: 3.125em;
 }
 
 #mainContent #What #allTheActs {
@@ -477,46 +489,75 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   color: #f7fe6a;
+  width: 75%;
 }
 
 #mainContent #What #whatWeNeed h2 span {
   text-decoration: underline;
 }
 
-#mainContent #What #whatWeNeed p {
-  font-size: 1.875em;
+#mainContent #What #whatWeNeed h4 {
   color: #FFFFFF;
+  font-size: 1.875em;
+  margin-bottom: 0;
 }
 
-#mainContent #What #whatWeNeed p span {
+#mainContent #What #whatWeNeed p {
+  font-size: 1.875em;
   color: #595959;
+  width: 60%;
 }
 
 #mainContent #callToAction {
+  padding-top: 3.125em;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#mainContent #callToAction #letsChat span {
+#mainContent #callToAction #letsChat {
+  width: 35%;
   font-size: 3.25em;
   font-weight: 500;
   color: #FFFFFF;
 }
 
-#mainContent #callToAction #letsChat span a {
+#mainContent #callToAction #openChat {
+  width: 65%;
+}
+
+#mainContent #callToAction #openChat div {
+  font-size: 1.875em;
+  margin-bottom: 1.25em;
+}
+
+#mainContent #callToAction #openChat a {
   font-size: 1em;
   color: #121212;
   background-color: #f7fe6a;
-  padding: 10px 6px 11px 6px;
+  padding: 0.625em 0.375em 0.6875em 0.375em;
+  text-decoration: none;
 }
 
 #mainContent #callToAction #followSound {
+  width: 30%;
   font-size: 1.5625em;
   font-weight: 300;
   color: #f7fe6a;
+  padding: 3.125em 0 1.5625em;
+}
+
+#mainContent #callToAction #followSound a {
+  color: #FFFFFF;
 }
 
 footer {
