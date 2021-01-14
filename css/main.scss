@@ -103,7 +103,7 @@ header {
         }
         #showMust {
             position: absolute;
-            bottom: 20vh;
+            top: 5vh;
             font-stretch: normal;
             font-style: normal;
             line-height: normal;
@@ -115,18 +115,21 @@ header {
                 text-align: left;
                 color: $mainTextColor;
                 width: 70%;
+                top: 0;
             }
-            a {
-                font-size: $font16px;
-                font-weight: 500;
-                text-align: right;
-                text-decoration: none;
-                color: $mainTextColor;
-                float: right;
-                &::after {
-                    content: ' ↓';
-                    color: $mainYellow;
-                }
+        }
+        #learnLink {
+            font-size: $font16px;
+            font-weight: 500;
+            text-align: right;
+            text-decoration: none;
+            color: $mainTextColor;
+            position: absolute;
+            bottom: 20vh;
+            right: 0;
+            &::after {
+                content: ' ↓';
+                color: $mainYellow;
             }
         }
     }
