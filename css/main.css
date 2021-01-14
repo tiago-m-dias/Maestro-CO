@@ -204,16 +204,14 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About #workLinkContainer a:hover {
-  cursor: none;
+  /* cursor: none; */
 }
 
 #mainContent #About #workLinkContainer #exploreWork {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: #f7fe6a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 143px;
   width: 140px;
   -webkit-box-align: center;
@@ -261,12 +259,17 @@ header #headingNav #navLinks #getInTouch {
   text-align: left;
   color: #595959;
   border-bottom: 1px solid #595959;
-  padding: 29px 18% 29px 0;
+  padding: 29px 23% 29px 0;
+}
+
+#mainContent #About .doYou:nth-child(6) {
+  color: #ffffff;
 }
 
 #mainContent #About .doYou p {
   margin: 0;
   color: #f7fe6a;
+  font-weight: 400;
 }
 
 #mainContent #About #aboutMaestro {
@@ -292,7 +295,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About #aboutMaestro #aboutDescription p {
-  padding: 0 0 0 4.6875em;
+  padding: 0 0 0 4em;
 }
 
 #mainContent #About #aboutMaestro #aboutDescription p:nth-child(1) {
@@ -345,7 +348,8 @@ header #headingNav #navLinks #getInTouch {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  padding: 0 2em 0 0;
+  padding: 0 7.5em 0 0;
+  width: 50%;
 }
 
 #mainContent #How #fullConcert div h2 {
@@ -483,6 +487,10 @@ header #headingNav #navLinks #getInTouch {
   line-height: 1.78;
 }
 
+#mainContent #What #whatWeNeed {
+  padding: 3.125em 0 0 0;
+}
+
 #mainContent #What #whatWeNeed h2 {
   font-size: 5.125em;
   font-weight: 300;
@@ -500,15 +508,17 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #What #whatWeNeed h4 {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
   font-size: 1.875em;
   margin-bottom: 0;
+  font-weight: 300;
 }
 
 #mainContent #What #whatWeNeed p {
   font-size: 1.875em;
   color: #595959;
-  width: 60%;
+  width: 55%;
 }
 
 #mainContent #callToAction {
@@ -528,14 +538,15 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #callToAction #letsChat {
-  width: 35%;
+  width: 37%;
   font-size: 3.25em;
   font-weight: 500;
   color: #FFFFFF;
 }
 
 #mainContent #callToAction #openChat {
-  width: 65%;
+  width: 55%;
+  padding-left: 3em;
 }
 
 #mainContent #callToAction #openChat div {
@@ -565,6 +576,16 @@ header #headingNav #navLinks #getInTouch {
 
 footer {
   color: #FFFFFF;
+  padding: 0 6em 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer #rightsMaestro {
@@ -572,6 +593,8 @@ footer #rightsMaestro {
 }
 
 footer #footerSocials a {
+  display: block;
+  color: #ffffff;
   font-size: 1.0625em;
   font-weight: 300;
   line-height: 1.78;

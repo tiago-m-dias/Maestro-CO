@@ -154,13 +154,13 @@ header {
                     max-width: 100%;
                 }
                 &:hover {
-                    cursor: none;
+                    /* cursor: none; */
                 }
             }
             #exploreWork {
                 transform: scale(1);
                 background-color: $mainYellow;
-                display: flex;
+                display: none;
                 height: 143px;
                 width: 140px;
                 align-items: center;
@@ -208,10 +208,14 @@ header {
             text-align: left;
             color: #595959;
             border-bottom: 1px solid #595959;
-            padding: 29px 18% 29px 0;
+            padding: 29px 23% 29px 0;
+            &:nth-child(6) {
+                color: #ffffff;
+            }
             p {
                 margin: 0;
                 color: $mainYellow;
+                font-weight: 400;
             }
         }
         #aboutMaestro {
@@ -230,7 +234,7 @@ header {
                 color: #e9e9e9;
                 align-self: flex-end;
                 p {
-                    padding: 0 0 0 4.6875em;
+                    padding: 0 0 0 4em;
                 }
                 p:nth-child(1) {
                     padding-bottom: 1em;
@@ -275,7 +279,8 @@ header {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                padding: 0 2em 0 0;
+                padding: 0 7.5em 0 0;
+                width: 50%;
                 h2 {
                     font-size: 1.25em;
                     text-transform: uppercase;
@@ -374,6 +379,7 @@ header {
             }
         }
         #whatWeNeed {
+            padding: $font50px 0 0 0;
             h2 {
                 font-size: 5.125em;
                 font-weight: 300;
@@ -389,14 +395,16 @@ header {
                 }
             }
             h4 {
+                font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
                 color: #FFFFFF;
                 font-size: 1.875em;
                 margin-bottom: 0;
+                font-weight: 300;
             }
             p {
                 font-size: 1.875em;
                 color: #595959;
-                width: 60%;
+                width: 55%;
             }
         }
     }
@@ -411,13 +419,14 @@ header {
         align-content: flex-start;
         flex-wrap: wrap;
         #letsChat {
-            width: 35%;
+            width: 37%;
             font-size: 3.25em;
             font-weight: 500;
             color: #FFFFFF;
         }
         #openChat {
-            width: 65%;
+            width: 55%;
+            padding-left: 3em;
             div {
                 font-size: 1.875em;
                 margin-bottom: $font20px;
@@ -445,11 +454,17 @@ header {
 
 footer {
     color: #FFFFFF;
+    padding: 0 $sideMargin 4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     #rightsMaestro {
         font-size: 0.8125em;
     }
     #footerSocials {
         a {
+            display: block;
+            color: #ffffff;
             font-size: 1.0625em;
             font-weight: 300;
             line-height: 1.78;
