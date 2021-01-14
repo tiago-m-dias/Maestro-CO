@@ -209,6 +209,10 @@ header {
             color: #595959;
             border-bottom: 1px solid #595959;
             padding: 29px 23% 29px 0;
+            transition: 0.5s;
+            transition-delay: 0.5s;
+            transform-origin: bottom;
+            transform: scaleY(0);
             &:nth-child(6) {
                 color: #ffffff;
             }
@@ -217,6 +221,9 @@ header {
                 color: $mainYellow;
                 font-weight: 400;
             }
+        }
+        .doYou[data-scroll="in"] {
+            transform: scaleY(1);
         }
         #aboutMaestro {
             display: flex;
