@@ -260,14 +260,15 @@ header #headingNav #navLinks #getInTouch {
   color: #595959;
   border-bottom: 1px solid #595959;
   padding: 29px 23% 29px 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  opacity: 0;
 }
 
 #mainContent #About .doYou:nth-child(6) {
@@ -283,6 +284,7 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #About .doYou[data-scroll="in"] {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+  opacity: 1;
 }
 
 #mainContent #About #aboutMaestro {
