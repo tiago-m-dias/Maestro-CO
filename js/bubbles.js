@@ -30,7 +30,7 @@ class Bubbles {
     initScene() {
         // engine
         this.engine = Matter.Engine.create(); // handles the physics
-        this.engine.world.gravity.y = 3.5;
+        this.engine.world.gravity.y = 3.3;
 
         // world
         this.world = this.engine.world; // stores the bodies
@@ -87,7 +87,7 @@ class Bubbles {
                     fillStyle: '#000000',
                     strokeStyle: '#000000',
                     lineWidth: 1,
-                    airFriction: this.options.airFriction
+                    airFriction: this.options.airFriction,
                 },
             }, true));
         }
