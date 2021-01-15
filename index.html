@@ -59,16 +59,16 @@
                 <span>20©</span>
             </div>
             <div class="doYou">
-                Do you think traditional agencies are expensive, slow, and overstaffed?
+                Do you think traditional agencies are<br>expensive, slow, and overstaffed?
             </div>
             <div class="doYou">
-                Do you have the feeling that they are more interested in promoting their agenda than your costumers'?
+                Do you have the feeling that they are more interested<br>in promoting their agenda than your costumers'?
             </div>
             <div class="doYou">
-                Do you see your work more often shared by creatives than your customers?
+                Do you see your work more often shared by creatives<br>than your customers?
             </div>
             <div class="doYou">
-                If you answered yes to all the above, then say hello to
+                If you answered yes to all the above, then say hello to<br>
                 <p>Maestro&Co. Our players. Your show.</p>
             </div>
             <div id="aboutMaestro">
@@ -228,8 +228,22 @@
         </div>
     </footer>
     <!-- <script src='js/follow.js'></script>-->
-    <script src='js/scroll-out.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scroll-out.js"></script>
     <script type="text/javascript">
+        jQuery('.doYou').each(function() {
+            var currentElement = $(this);
+            var listHTML = currentElement.html();
+            var listItems = listHTML.split("<br>");
+            currentElement.html("");
+            $.each(listItems, function(i, v) {
+                var item =
+                    '<div class="Title-mask"><span class="Title-line">' + v + "</span></div>";
+                currentElement.append(item);
+            });
+        });
+
+
         ScrollOut({
             targets: '.doYou',
             once: true

@@ -322,6 +322,23 @@ header #headingNav #navLinks #getInTouch {
           animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
 }
 
+#mainContent #About .doYou[data-scroll="in"] .Title-mask {
+  display: block;
+  position: relative;
+  text-align: start;
+  overflow: hidden;
+}
+
+#mainContent #About .doYou[data-scroll="in"] .Title-line {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+          transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  will-change: opacity, transform;
+  -webkit-animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+          animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+
 #mainContent #About #aboutMaestro {
   display: -webkit-box;
   display: -ms-flexbox;

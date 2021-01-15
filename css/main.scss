@@ -247,6 +247,21 @@ header {
             opacity: 1;
             */
             animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards .4s;
+            // === Mask each line ======
+            .Title-mask {
+                display: block;
+                position: relative;
+                text-align: start;
+                overflow: hidden;
+            }
+            // === Animate each line within the mask ======
+            .Title-line {
+                display: inline-block;
+                opacity: 0;
+                transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+                will-change: opacity, transform;
+                animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+            }
         }
         #aboutMaestro {
             display: flex;
