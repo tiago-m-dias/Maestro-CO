@@ -314,19 +314,19 @@ header #headingNav #navLinks #getInTouch {
   font-weight: 400;
 }
 
+#mainContent #About .Title-mask {
+  display: block;
+  position: relative;
+  text-align: start;
+  overflow: hidden;
+}
+
 #mainContent #About .doYou[data-scroll="in"] {
   /*transform: scaleY(1);
             opacity: 1;
             */
   -webkit-animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
           animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
-}
-
-#mainContent #About .doYou[data-scroll="in"] .Title-mask {
-  display: block;
-  position: relative;
-  text-align: start;
-  overflow: hidden;
 }
 
 #mainContent #About .doYou[data-scroll="in"] .Title-line {
