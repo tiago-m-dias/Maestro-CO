@@ -82,7 +82,7 @@ class Bubbles {
             const points = Matter.Svg.pathToVertices(path, 3);
             vertexSets.push(Matter.Vertices.scale(points, 1.2, 1.2));
 
-            Matter.World.add(this.engine.world, Matter.Bodies.fromVertices(100 + i * 100, 200 + i * 50, vertexSets, {
+            Matter.World.add(this.engine.world, Matter.Bodies.fromVertices(500 + i * 150, 200 + i * 50, vertexSets, {
                 render: {
                     fillStyle: '#000000',
                     strokeStyle: '#000000',
