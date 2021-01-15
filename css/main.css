@@ -249,6 +249,32 @@ header #headingNav #navLinks #getInTouch {
   float: right;
 }
 
+@-webkit-keyframes revealText {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+@keyframes revealText {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
 #mainContent #About .doYou {
   font-size: 3.125em;
   font-weight: 300;
@@ -257,18 +283,25 @@ header #headingNav #navLinks #getInTouch {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #595959;
+  /*color: #595959; */
+  color: rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid #595959;
   padding: 29px 23% 29px 0;
-  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
+  /*
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-delay: 0.5s;
+            transform-origin: bottom;
+            transform: translateY(30%);
+            opacity: 0;
+            */
   opacity: 0;
+  -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+          transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  will-change: opacity, transform;
+}
+
+#mainContent #About .doYou::after {
+  visibility: visible;
 }
 
 #mainContent #About .doYou:nth-child(6) {
@@ -282,9 +315,11 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About .doYou[data-scroll="in"] {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  opacity: 1;
+  /*transform: scaleY(1);
+            opacity: 1;
+            */
+  -webkit-animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
+          animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
 }
 
 #mainContent #About #aboutMaestro {
