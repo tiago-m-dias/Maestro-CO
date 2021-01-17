@@ -21,10 +21,10 @@ class Bubbles {
     }
 
     setSize() {
-        /* this.viewportWidth = document.documentElement.clientWidth;
-        this.viewportHeight = document.documentElement.clientHeight; */
-        this.viewportWidth = this.options.element.offsetWidth;
-        this.viewportHeight = this.options.element.offsetHeight;
+        this.viewportWidth = document.documentElement.clientWidth;
+        this.viewportHeight = document.documentElement.clientHeight;
+        /* this.viewportWidth = this.options.element.offsetWidth;
+        this.viewportHeight = this.options.element.offsetHeight; */
     }
 
     initScene() {
@@ -66,7 +66,7 @@ class Bubbles {
         return Matter.Bodies.rectangle(x, y, width, height, {
             isStatic: true,
             render: {
-                visible: false,
+                visible: true,
             },
         });
     }
@@ -82,7 +82,7 @@ class Bubbles {
             const points = Matter.Svg.pathToVertices(path, 3);
             vertexSets.push(Matter.Vertices.scale(points, 1.2, 1.2));
 
-            Matter.World.add(this.engine.world, Matter.Bodies.fromVertices(500 + i * 150, 200 + i * 50, vertexSets, {
+            Matter.World.add(this.engine.world, Matter.Bodies.fromVertices(800 + i * 150, 200 + i * 50, vertexSets, {
                 render: {
                     fillStyle: '#000000',
                     strokeStyle: '#000000',

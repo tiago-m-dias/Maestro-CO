@@ -92,6 +92,9 @@ header {
     padding: 3.25em $sideMargin 0em $sideMargin;
     #maestroContainer {
         position: relative;
+        margin-left: -$sideMargin;
+        margin-right: -$sideMargin;
+        overflow-x: hidden;
         .grain,
         canvas {
             display: flex;
@@ -104,6 +107,7 @@ header {
         #showMust {
             position: absolute;
             top: 5vh;
+            left: $sideMargin;
             font-stretch: normal;
             font-style: normal;
             line-height: normal;
@@ -126,7 +130,7 @@ header {
             color: $mainTextColor;
             position: absolute;
             bottom: 20vh;
-            right: 0;
+            right: $sideMargin;
             &::after {
                 content: ' ↓';
                 color: $mainYellow;

@@ -99,6 +99,9 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #maestroContainer {
   position: relative;
+  margin-left: -6em;
+  margin-right: -6em;
+  overflow-x: hidden;
 }
 
 #mainContent #maestroContainer .grain,
@@ -118,6 +121,7 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #maestroContainer #showMust {
   position: absolute;
   top: 5vh;
+  left: 6em;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -142,7 +146,7 @@ header #headingNav #navLinks #getInTouch {
   color: #e9e9e9;
   position: absolute;
   bottom: 20vh;
-  right: 0;
+  right: 6em;
 }
 
 #mainContent #maestroContainer #learnLink::after {
