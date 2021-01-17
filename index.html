@@ -29,21 +29,27 @@
             </div>
         </nav>
     </header>
-
+    <div class="grain">
+        <canvas id="world"></canvas>
+    </div>
     <main id="mainContent">
         <section id="maestroContainer">
-            <div class="grain">
-                <canvas id="world"></canvas>
-            </div>
+
             <!--<svg id="svg" width="100%" height="80%" viewBox="0 0 989 589" fill="none" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
 <g><path d="M0.551737 449.452L68.5283 588.609L988.62 139.158L920.644 -4.38144e-05L0.551737 449.452Z"/></g>
 </svg>-->
             <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+<defs>
+    <lineargradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </lineargradient>
+  </defs>
   <g>
     <!--<path d="m139.5,230.45313l41,0l0,201l-41,0l0,-201z"/>
     <path d="m139.5,230.45313l41,0l0,201l-41,0l0,-201z"/>
     <path d="m139.5,230.45313l41,0l0,201l-41,0l0,-201z"/>-->
-    <path d="m139.5,230.45313l71,0l0,501l-71,0l0,-501z"/>
+    <path d="m139.5,230.45313l71,0l0,501l-71,0l0,-501z" fill="url(#grad3)"/>
     <path d="m139.5,230.45313l71,0l0,501l-71,0l0,-501z"/>
     <path d="m139.5,230.45313l71,0l0,501l-71,0l0,-501z"/>
 
