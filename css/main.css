@@ -24,9 +24,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #121212;
+  background-color: #ffffff;
   width: 99vw;
-  color: #e9e9e9;
+  color: #465364;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -52,7 +52,7 @@ header #headingNav {
 
 header #headingNav #navLogo {
   width: 30%;
-  margin: 0.0625em 1.87em 0.93em 6em;
+  margin: 0.0625em 1.87em 0.93em 5.938em;
 }
 
 header #headingNav #navLinks {
@@ -66,7 +66,7 @@ header #headingNav #navLinks {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0 6em 0 0;
+  padding: 0 5.938em 0 0;
 }
 
 header #headingNav #navLinks a {
@@ -78,20 +78,22 @@ header #headingNav #navLinks a {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #e9e9e9;
+  color: #465364;
   text-decoration: none;
-  margin-right: 3.8125em;
+  margin-right: 3.813em;
 }
 
 header #headingNav #navLinks #joinUs::after {
   content: ' ↗';
-  font-size: 0.7em;
-  color: #f7fe6a;
+  font-size: 0.625em;
+  color: #766ff6;
 }
 
 header #headingNav #navLinks #getInTouch {
-  color: #121212;
-  background-color: #f7fe6a;
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to right, #766ff6, #d3c2ce);
+  padding: 0.6875em;
   margin-right: 0;
 }
 
@@ -103,7 +105,7 @@ canvas {
   position: absolute;
   left: 0;
   top: 0;
-  background: #121212;
+  background: #ffffff;
   width: 100%;
   height: 100vh;
   -webkit-box-pack: center;
@@ -114,13 +116,13 @@ canvas {
 }
 
 #mainContent {
-  padding: 3.25em 6em 0em 6em;
+  padding: 3.25em 5.938em 0em 5.938em;
 }
 
 #mainContent #maestroContainer {
   position: relative;
-  margin-left: -6em;
-  margin-right: -6em;
+  margin-left: -5.938em;
+  margin-right: -5.938em;
   overflow-x: hidden;
   height: 75vh;
 }
@@ -129,7 +131,7 @@ canvas {
   position: absolute;
   z-index: 3;
   top: 5vh;
-  left: 6em;
+  left: 5.938em;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -138,12 +140,11 @@ canvas {
 }
 
 #mainContent #maestroContainer #showMust div {
-  font-size: 5.125em;
+  font-size: 7.1875em;
   font-weight: 300;
   text-align: left;
-  color: #e9e9e9;
+  color: #465364;
   width: 70%;
-  top: 0;
 }
 
 #mainContent #maestroContainer #learnLink {
@@ -151,19 +152,20 @@ canvas {
   font-weight: 500;
   text-align: right;
   text-decoration: none;
-  color: #e9e9e9;
+  color: #465364;
   position: absolute;
   z-index: 3;
-  bottom: 20vh;
-  right: 6em;
+  bottom: 5vh;
+  right: 5.938em;
 }
 
 #mainContent #maestroContainer #learnLink::after {
   content: ' ↓';
-  color: #f7fe6a;
+  color: #766ff6;
 }
 
 #mainContent #About {
+  margin-top: 9.163em;
   /* Circle Animation */
 }
 
@@ -213,7 +215,8 @@ canvas {
 }
 
 #mainContent #About #workLinkContainer a img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 #mainContent #About #workLinkContainer a:hover {
@@ -223,7 +226,7 @@ canvas {
 #mainContent #About #workLinkContainer #exploreWork {
   -webkit-transform: scale(1);
           transform: scale(1);
-  background-color: #f7fe6a;
+  background-color: #766ff6;
   display: none;
   height: 143px;
   width: 140px;
@@ -251,9 +254,9 @@ canvas {
   letter-spacing: normal;
   text-align: left;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #465364;
   width: 100%;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #465364;
   padding-top: 12px;
   margin-bottom: 117px;
 }
@@ -318,12 +321,12 @@ canvas {
 }
 
 #mainContent #About .doYou:nth-child(6) {
-  color: #ffffff;
+  color: #465364;
 }
 
 #mainContent #About .doYou p {
   margin: 0;
-  color: #f7fe6a;
+  color: #766ff6;
   font-weight: 400;
 }
 
@@ -400,7 +403,7 @@ canvas {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #f7fe6a;
+  color: #766ff6;
 }
 
 #mainContent #How #howDescription p {
@@ -411,7 +414,7 @@ canvas {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #FFFFFF;
+  color: #465364;
   margin-bottom: 1.25em;
 }
 
@@ -435,12 +438,12 @@ canvas {
 #mainContent #How #fullConcert div h2 {
   font-size: 1.25em;
   text-transform: uppercase;
-  color: #f7fe6a;
+  color: #766ff6;
 }
 
 #mainContent #How #fullConcert div p {
   font-size: 1.5625em;
-  color: #e9e9e9;
+  color: #465364;
 }
 
 #mainContent #How #fullConcert div span {
@@ -478,7 +481,7 @@ canvas {
 #mainContent #What #allTheActs #fourthAct h4 {
   font-size: 0.625em;
   font-weight: bold;
-  color: #f7fe6a;
+  color: #766ff6;
   text-transform: uppercase;
 }
 
@@ -490,7 +493,7 @@ canvas {
   font-size: 1.5625em;
   height: 3.125em;
   text-decoration: underline;
-  color: #FFFFFF;
+  color: #465364;
 }
 
 #mainContent #What #allTheActs #firstAct div,
@@ -507,7 +510,7 @@ canvas {
 #mainContent #What #allTheActs #fourthAct div ul li {
   font-size: 1.0625em;
   line-height: 1.78;
-  color: #FFFFFF;
+  color: #465364;
 }
 
 #mainContent #What #aboutFilipe {
@@ -540,11 +543,11 @@ canvas {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #ffffff;
+  color: #465364;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipePhoto div span {
-  color: #f7fe6a;
+  color: #766ff6;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission {
@@ -559,7 +562,7 @@ canvas {
 
 #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
   font-size: 1.25em;
-  color: #f7fe6a;
+  color: #766ff6;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission p {
@@ -579,7 +582,7 @@ canvas {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #f7fe6a;
+  color: #766ff6;
   width: 75%;
 }
 
@@ -589,7 +592,7 @@ canvas {
 
 #mainContent #What #whatWeNeed h4 {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF;
+  color: #465364;
   font-size: 1.875em;
   margin-bottom: 0;
   font-weight: 300;
@@ -621,7 +624,7 @@ canvas {
   width: 37%;
   font-size: 3.25em;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #465364;
 }
 
 #mainContent #callToAction #openChat {
@@ -636,8 +639,8 @@ canvas {
 
 #mainContent #callToAction #openChat a {
   font-size: 1em;
-  color: #121212;
-  background-color: #f7fe6a;
+  color: #ffffff;
+  background-color: #766ff6;
   padding: 0.625em 0.375em 0.6875em 0.375em;
   text-decoration: none;
 }
@@ -646,17 +649,17 @@ canvas {
   width: 30%;
   font-size: 1.5625em;
   font-weight: 300;
-  color: #f7fe6a;
+  color: #766ff6;
   padding: 3.125em 0 1.5625em;
 }
 
 #mainContent #callToAction #followSound a {
-  color: #FFFFFF;
+  color: #465364;
 }
 
 footer {
-  color: #FFFFFF;
-  padding: 0 6em 4em;
+  color: #465364;
+  padding: 0 5.938em 4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,7 +677,7 @@ footer #rightsMaestro {
 
 footer #footerSocials a {
   display: block;
-  color: #ffffff;
+  color: #465364;
   font-size: 1.0625em;
   font-weight: 300;
   line-height: 1.78;

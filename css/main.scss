@@ -7,21 +7,27 @@
 
 /* Colors */
 
-$mainBgColor: #121212;
+$mainBgColor: #ffffff;
 $mainYellow: #f7fe6a;
-$mainTextColor: #e9e9e9;
+$mainPurple: #766ff6;
+$mainTextColor: #465364;
 $linkDark: #1f1e1e;
+$gradientStart: $mainPurple;
+$gradientStop: #d3c2ce;
 
 /* Padding and Margin */
 
-$sideMargin: 6em;
+$sideMargin: 5.938em;
 
 /* Font Sizes */
 
+$font10px: 0.625em;
 $font16px: 1em;
 $font20px: 1.25em;
 $font25px: 1.5625em;
+$font30px: 1.875em;
 $font50px: 3.125em;
+$font115px: 7.1875em;
 ul {
     list-style-type: none;
     padding: 0;
@@ -64,7 +70,7 @@ header {
             justify-content: flex-end;
             padding: 0 $sideMargin 0 0;
             a {
-                padding: 0.625em 0.375em 0.6875em;
+                padding: $font10px 0.375em 0.6875em;
                 font-size: $font16px;
                 font-weight: 500;
                 font-stretch: normal;
@@ -72,18 +78,19 @@ header {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
-                color: #e9e9e9;
+                color: $mainTextColor;
                 text-decoration: none;
-                margin-right: 3.8125em;
+                margin-right: 3.813em;
             }
             #joinUs::after {
                 content: ' ↗';
-                font-size: 0.7em;
-                color: $mainYellow;
+                font-size: $font10px;
+                color: $mainPurple;
             }
             #getInTouch {
                 color: $mainBgColor;
-                background-color: $mainYellow;
+                background-image: linear-gradient(to right, $gradientStart, $gradientStop);
+                padding: 0.6875em;
                 margin-right: 0;
             }
         }
@@ -123,12 +130,11 @@ canvas {
             letter-spacing: normal;
             width: 100%;
             div {
-                font-size: 5.125em;
+                font-size: $font115px;
                 font-weight: 300;
                 text-align: left;
                 color: $mainTextColor;
                 width: 70%;
-                top: 0;
             }
         }
         #learnLink {
@@ -139,15 +145,16 @@ canvas {
             color: $mainTextColor;
             position: absolute;
             z-index: 3;
-            bottom: 20vh;
+            bottom: 5vh;
             right: $sideMargin;
             &::after {
                 content: ' ↓';
-                color: $mainYellow;
+                color: $mainPurple;
             }
         }
     }
     #About {
+        margin-top: 9.163em;
         /* Circle Animation */
         @keyframes pepita {
             0% {
@@ -165,7 +172,8 @@ canvas {
             position: relative;
             a {
                 img {
-                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
                 }
                 &:hover {
                     /* cursor: none; */
@@ -173,7 +181,7 @@ canvas {
             }
             #exploreWork {
                 transform: scale(1);
-                background-color: $mainYellow;
+                background-color: $mainPurple;
                 display: none;
                 height: 143px;
                 width: 140px;
@@ -195,7 +203,7 @@ canvas {
         } */
         }
         #aboutWorkFooter {
-            font-size: 0.625em;
+            font-size: $font10px;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
@@ -203,9 +211,9 @@ canvas {
             letter-spacing: normal;
             text-align: left;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $mainTextColor;
             width: 100%;
-            border-top: 1px solid #FFFFFF;
+            border-top: 1px solid $mainTextColor;
             padding-top: 12px;
             margin-bottom: 117px;
             span:nth-of-type(2) {
@@ -248,11 +256,11 @@ canvas {
                 visibility: visible;
             }
             &:nth-child(6) {
-                color: #ffffff;
+                color: $mainTextColor;
             }
             p {
                 margin: 0;
-                color: $mainYellow;
+                color: $mainPurple;
                 font-weight: 400;
             }
         }
@@ -296,7 +304,7 @@ canvas {
                     padding: 0 0 0 4em;
                 }
                 p:nth-child(1) {
-                    padding-bottom: 1em;
+                    padding-bottom: $font16px;
                 }
             }
         }
@@ -308,14 +316,14 @@ canvas {
         #howDescription {
             padding-bottom: $font50px;
             h2 {
-                font-size: 1.25em;
+                font-size: $font20px;
                 font-weight: 500;
                 font-stretch: normal;
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: $mainYellow;
+                color: $mainPurple;
             }
             p {
                 font-size: 2.5em;
@@ -325,7 +333,7 @@ canvas {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: #FFFFFF;
+                color: $mainTextColor;
                 margin-bottom: $font20px;
             }
         }
@@ -341,9 +349,9 @@ canvas {
                 padding: 0 7.5em 0 0;
                 width: 50%;
                 h2 {
-                    font-size: 1.25em;
+                    font-size: $font20px;
                     text-transform: uppercase;
-                    color: $mainYellow;
+                    color: $mainPurple;
                 }
                 p {
                     font-size: $font25px;
@@ -371,9 +379,9 @@ canvas {
                 letter-spacing: normal;
                 text-align: left;
                 h4 {
-                    font-size: 0.625em;
+                    font-size: $font10px;
                     font-weight: bold;
-                    color: $mainYellow;
+                    color: $mainPurple;
                     text-transform: uppercase;
                 }
                 span {
@@ -381,7 +389,7 @@ canvas {
                     font-size: $font25px;
                     height: $font50px;
                     text-decoration: underline;
-                    color: #FFFFFF;
+                    color: $mainTextColor;
                 }
                 div {
                     align-self: flex-end;
@@ -389,7 +397,7 @@ canvas {
                         li {
                             font-size: 1.0625em;
                             line-height: 1.78;
-                            color: #FFFFFF;
+                            color: $mainTextColor;
                         }
                     }
                 }
@@ -412,10 +420,10 @@ canvas {
                         line-height: normal;
                         letter-spacing: normal;
                         text-align: left;
-                        color: #ffffff;
+                        color: $mainTextColor;
                     }
                     span {
-                        color: $mainYellow;
+                        color: $mainPurple;
                     }
                 }
             }
@@ -428,8 +436,8 @@ canvas {
                 text-align: left;
                 width: 25.125em;
                 h3 {
-                    font-size: 1.25em;
-                    color: $mainYellow;
+                    font-size: $font20px;
+                    color: $mainPurple;
                 }
                 p {
                     font-size: 0.875em;
@@ -447,7 +455,7 @@ canvas {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: $mainYellow;
+                color: $mainPurple;
                 width: 75%;
                 span {
                     text-decoration: underline;
@@ -455,13 +463,13 @@ canvas {
             }
             h4 {
                 font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-                color: #FFFFFF;
-                font-size: 1.875em;
+                color: $mainTextColor;
+                font-size: $font30px;
                 margin-bottom: 0;
                 font-weight: 300;
             }
             p {
-                font-size: 1.875em;
+                font-size: $font30px;
                 color: #595959;
                 width: 55%;
             }
@@ -481,20 +489,20 @@ canvas {
             width: 37%;
             font-size: 3.25em;
             font-weight: 500;
-            color: #FFFFFF;
+            color: $mainTextColor;
         }
         #openChat {
             width: 55%;
             padding-left: 3em;
             div {
-                font-size: 1.875em;
+                font-size: $font30px;
                 margin-bottom: $font20px;
             }
             a {
                 font-size: $font16px;
                 color: $mainBgColor;
-                background-color: $mainYellow;
-                padding: 0.625em 0.375em 0.6875em 0.375em;
+                background-color: $mainPurple;
+                padding: $font10px 0.375em 0.6875em 0.375em;
                 text-decoration: none;
             }
         }
@@ -502,17 +510,17 @@ canvas {
             width: 30%;
             font-size: $font25px;
             font-weight: 300;
-            color: $mainYellow;
+            color: $mainPurple;
             padding: $font50px 0 $font25px;
             a {
-                color: #FFFFFF;
+                color: $mainTextColor;
             }
         }
     }
 }
 
 footer {
-    color: #FFFFFF;
+    color: $mainTextColor;
     padding: 0 $sideMargin 4em;
     display: flex;
     align-items: flex-end;
@@ -523,7 +531,7 @@ footer {
     #footerSocials {
         a {
             display: block;
-            color: #ffffff;
+            color: $mainTextColor;
             font-size: 1.0625em;
             font-weight: 300;
             line-height: 1.78;

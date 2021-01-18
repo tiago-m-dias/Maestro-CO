@@ -84,8 +84,9 @@ class Bubbles {
 
             Matter.World.add(this.engine.world, Matter.Bodies.fromVertices(850 + i * 150, 200 + i * 50, vertexSets, {
                 render: {
-                    fillStyle: '#000000',
-                    strokeStyle: '#000000',
+                    globalAlpha: 0.5,
+                    fillStyle: 'rgb(118, 111, 246, 0.6)',
+                    strokeStyle: 'rgb(211, 194, 206, 0.5)',
                     lineWidth: 1,
                     airFriction: this.options.airFriction,
                 },
