@@ -138,6 +138,7 @@ canvas {
             text-decoration: none;
             color: $mainTextColor;
             position: absolute;
+            z-index: 3;
             bottom: 20vh;
             right: $sideMargin;
             &::after {
