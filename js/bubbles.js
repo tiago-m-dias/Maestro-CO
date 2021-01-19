@@ -98,8 +98,8 @@ class Bubbles {
         Matter.World.add(this.engine.world, [
             this.rectangle(this.options.element.offsetWidth / 2, 0, this.options.element.offsetWidth, 10), // top
             this.rectangle(this.options.element.offsetWidth / 2, this.options.element.offsetHeight, this.options.element.offsetWidth, 10), // bottom
-            this.rectangle(0, 400, 10, this.options.element.offsetHeight + 10), // left
-            this.rectangle(this.options.element.offsetWidth, 400, 10, this.options.element.offsetHeight + 10), // right
+            this.rectangle(0, 400, 10, this.options.element.offsetHeight + 400), // left
+            this.rectangle(this.options.element.offsetWidth, 400, 10, this.options.element.offsetHeight + 400), // right
         ]);
     }
 
