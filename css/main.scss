@@ -14,6 +14,11 @@ $mainTextColor: #465364;
 $linkDark: #1f1e1e;
 $gradientStart: $mainPurple;
 $gradientStop: #d3c2ce;
+$doYouColor: rgba(70,
+83,
+100,
+0.2);
+$howPurple: #7770f7;
 
 /* Padding and Margin */
 
@@ -213,7 +218,6 @@ canvas {
             text-transform: uppercase;
             color: $mainTextColor;
             width: 100%;
-            border-top: 1px solid $mainTextColor;
             padding-top: 12px;
             margin-bottom: 117px;
             span:nth-of-type(2) {
@@ -238,9 +242,7 @@ canvas {
             line-height: normal;
             letter-spacing: normal;
             text-align: left;
-            /*color: #595959; */
-            color: rgba(70, 83, 100, 0.2);
-            border-bottom: 1px solid #595959;
+            color: $doYouColor;
             padding: 29px 23% 29px 0;
             /*
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -255,6 +257,7 @@ canvas {
             &::after {
                 visibility: visible;
             }
+            a,
             &:nth-child(6) {
                 color: $mainTextColor;
             }
@@ -287,11 +290,18 @@ canvas {
         }
         #aboutMaestro {
             display: flex;
+            flex-wrap: wrap;
             margin-top: $font50px;
             padding-bottom: $font50px;
-            border-bottom: 1px solid #595959;
+            #aboutImage {
+                padding-right: 9.313em;
+                img {
+                    width: 52.375em;
+                    height: auto;
+                }
+            }
             #aboutDescription {
-                font-size: $font25px;
+                font-size: $font20px;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
@@ -300,8 +310,9 @@ canvas {
                 text-align: left;
                 color: $mainTextColor;
                 align-self: flex-end;
+                padding-top: 4em;
                 p {
-                    padding: 0 0 0 4em;
+                    width: 29em;
                 }
                 p:nth-child(1) {
                     padding-bottom: $font16px;
@@ -310,7 +321,6 @@ canvas {
         }
     }
     #How {
-        border-bottom: 1px solid #595959;
         margin-bottom: $font50px;
         padding-bottom: $font50px;
         #howDescription {
@@ -323,7 +333,7 @@ canvas {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: $mainPurple;
+                color: $howPurple;
             }
             p {
                 font-size: 2.5em;
@@ -364,7 +374,6 @@ canvas {
         }
     }
     #What {
-        border-bottom: 1px solid #595959;
         padding-bottom: $font50px;
         #allTheActs {
             display: flex;
