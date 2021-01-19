@@ -597,16 +597,20 @@ canvas {
       flex-wrap: wrap;
 }
 
+#mainContent #callToAction #whatWeNeed {
+  height: 76.563em;
+}
+
 #mainContent #callToAction #whatWeNeed h2 {
-  font-size: 5.125em;
+  font-size: 3.125em;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #766ff6;
-  width: 75%;
+  color: #465364;
+  margin-bottom: 2em;
 }
 
 #mainContent #callToAction #whatWeNeed h2 span {
@@ -615,15 +619,15 @@ canvas {
 
 #mainContent #callToAction #whatWeNeed h4 {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #465364;
-  font-size: 1.875em;
+  color: #7770f7;
+  font-size: 1.25em;
   margin-bottom: 0;
   font-weight: 300;
 }
 
 #mainContent #callToAction #whatWeNeed p {
-  font-size: 1.875em;
-  color: #595959;
+  font-size: 1.25em;
+  color: #465364;
   width: 55%;
 }
 

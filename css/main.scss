@@ -471,30 +471,31 @@ canvas {
         align-content: flex-start;
         flex-wrap: wrap;
         #whatWeNeed {
+            height: 76.563em;
             h2 {
-                font-size: 5.125em;
+                font-size: $font50px;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: $mainPurple;
-                width: 75%;
+                color: $mainTextColor;
+                margin-bottom: 2em;
                 span {
                     text-decoration: underline;
                 }
             }
             h4 {
                 font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-                color: $mainTextColor;
-                font-size: $font30px;
+                color: $howPurple;
+                font-size: $font20px;
                 margin-bottom: 0;
                 font-weight: 300;
             }
             p {
-                font-size: $font30px;
-                color: #595959;
+                font-size: $font20px;
+                color: $mainTextColor;
                 width: 55%;
             }
         }
