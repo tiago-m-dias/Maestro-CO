@@ -21,6 +21,7 @@ $doYouColor: rgba(70,
 $howPurple: #7770f7;
 $allTheActs: $mainBgColor;
 $cardBG: #f5f7fa;
+$borderColor: #e7ebf0;
 
 /* Padding and Margin */
 
@@ -245,6 +246,7 @@ canvas {
             text-align: left;
             color: $doYouColor;
             padding: 29px 23% 29px 0;
+            border-bottom: 1px solid $borderColor;
             /*
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition-delay: 0.5s;
@@ -294,6 +296,7 @@ canvas {
             flex-wrap: wrap;
             margin-top: $font50px;
             padding-bottom: $font50px;
+            border-bottom: 1px solid $borderColor;
             #aboutImage {
                 padding-right: 9.313em;
                 img {
@@ -494,9 +497,11 @@ canvas {
                 font-weight: 300;
             }
             p {
+                font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
                 font-size: $font20px;
+                line-height: $font25px;
                 color: $mainTextColor;
-                width: 55%;
+                width: 61%;
             }
         }
         #letsChat {

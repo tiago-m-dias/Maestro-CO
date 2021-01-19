@@ -299,6 +299,7 @@ canvas {
   text-align: left;
   color: rgba(70, 83, 100, 0.2);
   padding: 29px 23% 29px 0;
+  border-bottom: 1px solid #e7ebf0;
   /*
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition-delay: 0.5s;
@@ -359,6 +360,7 @@ canvas {
       flex-wrap: wrap;
   margin-top: 3.125em;
   padding-bottom: 3.125em;
+  border-bottom: 1px solid #e7ebf0;
 }
 
 #mainContent #About #aboutMaestro #aboutImage {
@@ -626,9 +628,11 @@ canvas {
 }
 
 #mainContent #callToAction #whatWeNeed p {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
+  line-height: 1.5625em;
   color: #465364;
-  width: 55%;
+  width: 61%;
 }
 
 #mainContent #callToAction #letsChat {
