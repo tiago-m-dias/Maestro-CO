@@ -116,13 +116,11 @@ canvas {
 }
 
 #mainContent {
-  padding: 3.25em 5.938em 0em 5.938em;
+  padding: 3.25em 0em 0em;
 }
 
 #mainContent #maestroContainer {
   position: relative;
-  margin-left: -5.938em;
-  margin-right: -5.938em;
   overflow-x: hidden;
   height: 75vh;
 }
@@ -166,6 +164,7 @@ canvas {
 
 #mainContent #About {
   margin-top: 9.163em;
+  padding: 0em 5.938em;
   /* Circle Animation */
 }
 
@@ -395,7 +394,7 @@ canvas {
 
 #mainContent #How {
   margin-bottom: 3.125em;
-  padding-bottom: 3.125em;
+  padding: 0em 5.938em 3.125em;
 }
 
 #mainContent #How #howDescription {
@@ -414,7 +413,7 @@ canvas {
 }
 
 #mainContent #How #howDescription p {
-  font-size: 2.5em;
+  font-size: 1.875em;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -444,13 +443,13 @@ canvas {
 
 #mainContent #How #fullConcert div h2 {
   font-size: 1.25em;
-  text-transform: uppercase;
-  color: #766ff6;
+  color: #7770f7;
 }
 
 #mainContent #How #fullConcert div p {
-  font-size: 1.5625em;
+  font-size: 1.25em;
   color: #465364;
+  max-width: 37rem;
 }
 
 #mainContent #How #fullConcert div span {
@@ -458,7 +457,9 @@ canvas {
 }
 
 #mainContent #What {
-  padding-bottom: 3.125em;
+  background-image: -webkit-gradient(linear, left top, right top, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to right, #766ff6, #d3c2ce);
+  height: calc(43.375em + (43.375em / 3));
 }
 
 #mainContent #What #allTheActs {
@@ -468,7 +469,8 @@ canvas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 3.125em;
+  padding: 6.063em 5.938em 0;
+  color: #ffffff;
 }
 
 #mainContent #What #allTheActs #firstAct,
@@ -487,7 +489,6 @@ canvas {
 #mainContent #What #allTheActs #fourthAct h4 {
   font-size: 0.625em;
   font-weight: bold;
-  color: #766ff6;
   text-transform: uppercase;
 }
 
@@ -496,10 +497,9 @@ canvas {
 #mainContent #What #allTheActs #thirdAct span,
 #mainContent #What #allTheActs #fourthAct span {
   display: block;
-  font-size: 1.5625em;
+  font-size: 1.25em;
   height: 3.125em;
   text-decoration: underline;
-  color: #465364;
 }
 
 #mainContent #What #allTheActs #firstAct div,
@@ -514,20 +514,22 @@ canvas {
 #mainContent #What #allTheActs #secondAct div ul li,
 #mainContent #What #allTheActs #thirdAct div ul li,
 #mainContent #What #allTheActs #fourthAct div ul li {
-  font-size: 1.0625em;
-  line-height: 1.78;
-  color: #465364;
+  font-size: 1em;
+  line-height: 1.77em;
 }
 
 #mainContent #What #aboutFilipe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #1d1c1c;
-  padding: 3.125em;
+  background-color: #f5f7fa;
+  padding: 3.9em;
+  margin: 7.25em 5.938em 0em;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipePhoto {
@@ -563,55 +565,24 @@ canvas {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  width: 25.125em;
+  width: 29.063em;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
   font-size: 1.25em;
-  color: #766ff6;
+  color: #7770f7;
+  font-weight: normal;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission p {
-  font-size: 0.875em;
-  line-height: 1.78;
-}
-
-#mainContent #What #whatWeNeed {
-  padding: 3.125em 0 0 0;
-}
-
-#mainContent #What #whatWeNeed h2 {
-  font-size: 5.125em;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #766ff6;
-  width: 75%;
-}
-
-#mainContent #What #whatWeNeed h2 span {
-  text-decoration: underline;
-}
-
-#mainContent #What #whatWeNeed h4 {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #465364;
-  font-size: 1.875em;
-  margin-bottom: 0;
-  font-weight: 300;
-}
-
-#mainContent #What #whatWeNeed p {
-  font-size: 1.875em;
-  color: #595959;
-  width: 55%;
+  font-size: 1em;
+  line-height: 1.78em;
+  padding-top: 1em;
 }
 
 #mainContent #callToAction {
-  padding-top: 3.125em;
+  margin-top: 14.46em;
+  padding: 12.875em 5.938em 0;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -624,6 +595,36 @@ canvas {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#mainContent #callToAction #whatWeNeed h2 {
+  font-size: 5.125em;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #766ff6;
+  width: 75%;
+}
+
+#mainContent #callToAction #whatWeNeed h2 span {
+  text-decoration: underline;
+}
+
+#mainContent #callToAction #whatWeNeed h4 {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #465364;
+  font-size: 1.875em;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+#mainContent #callToAction #whatWeNeed p {
+  font-size: 1.875em;
+  color: #595959;
+  width: 55%;
 }
 
 #mainContent #callToAction #letsChat {
@@ -684,7 +685,7 @@ footer #rightsMaestro {
 footer #footerSocials a {
   display: block;
   color: #465364;
-  font-size: 1.0625em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.78;
 }

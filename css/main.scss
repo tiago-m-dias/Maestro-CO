@@ -19,6 +19,8 @@ $doYouColor: rgba(70,
 100,
 0.2);
 $howPurple: #7770f7;
+$allTheActs: $mainBgColor;
+$cardBG: #f5f7fa;
 
 /* Padding and Margin */
 
@@ -117,11 +119,9 @@ canvas {
 }
 
 #mainContent {
-    padding: 3.25em $sideMargin 0em $sideMargin;
+    padding: 3.25em 0em 0em;
     #maestroContainer {
         position: relative;
-        margin-left: -$sideMargin;
-        margin-right: -$sideMargin;
         overflow-x: hidden;
         height: 75vh;
         #showMust {
@@ -160,6 +160,7 @@ canvas {
     }
     #About {
         margin-top: 9.163em;
+        padding: 0em $sideMargin;
         /* Circle Animation */
         @keyframes pepita {
             0% {
@@ -322,7 +323,7 @@ canvas {
     }
     #How {
         margin-bottom: $font50px;
-        padding-bottom: $font50px;
+        padding: 0em $sideMargin $font50px;
         #howDescription {
             padding-bottom: $font50px;
             h2 {
@@ -336,7 +337,7 @@ canvas {
                 color: $howPurple;
             }
             p {
-                font-size: 2.5em;
+                font-size: $font30px;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
@@ -360,12 +361,12 @@ canvas {
                 width: 50%;
                 h2 {
                     font-size: $font20px;
-                    text-transform: uppercase;
-                    color: $mainPurple;
+                    color: $howPurple;
                 }
                 p {
-                    font-size: $font25px;
+                    font-size: $font20px;
                     color: $mainTextColor;
+                    max-width: 37rem;
                 }
                 span {
                     font-weight: 500;
@@ -374,11 +375,13 @@ canvas {
         }
     }
     #What {
-        padding-bottom: $font50px;
+        background-image: linear-gradient(to right, $gradientStart, $gradientStop);
+        height: calc(43.375em + (43.375em / 3));
         #allTheActs {
             display: flex;
             justify-content: space-between;
-            margin-bottom: $font50px;
+            padding: 6.063em $sideMargin 0;
+            color: $allTheActs;
             #firstAct,
             #secondAct,
             #thirdAct,
@@ -390,23 +393,20 @@ canvas {
                 h4 {
                     font-size: $font10px;
                     font-weight: bold;
-                    color: $mainPurple;
                     text-transform: uppercase;
                 }
                 span {
                     display: block;
-                    font-size: $font25px;
+                    font-size: $font20px;
                     height: $font50px;
                     text-decoration: underline;
-                    color: $mainTextColor;
                 }
                 div {
                     align-self: flex-end;
                     ul {
                         li {
-                            font-size: 1.0625em;
-                            line-height: 1.78;
-                            color: $mainTextColor;
+                            font-size: $font16px;
+                            line-height: 1.77em;
                         }
                     }
                 }
@@ -414,9 +414,11 @@ canvas {
         }
         #aboutFilipe {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            background-color: #1d1c1c;
-            padding: $font50px;
+            background-color: $cardBG;
+            padding: 3.9em;
+            margin: 7.25em $sideMargin 0em;
             #aboutFilipePhoto {
                 display: flex;
                 div {
@@ -443,19 +445,32 @@ canvas {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                width: 25.125em;
+                width: 29.063em;
                 h3 {
                     font-size: $font20px;
-                    color: $mainPurple;
+                    color: $howPurple;
+                    font-weight: normal;
                 }
                 p {
-                    font-size: 0.875em;
-                    line-height: 1.78;
+                    font-size: $font16px;
+                    line-height: 1.78em;
+                    padding-top: $font16px;
                 }
             }
         }
+    }
+    #callToAction {
+        margin-top: 14.46em;
+        padding: 12.875em $sideMargin 0;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
         #whatWeNeed {
-            padding: $font50px 0 0 0;
             h2 {
                 font-size: 5.125em;
                 font-weight: 300;
@@ -483,17 +498,6 @@ canvas {
                 width: 55%;
             }
         }
-    }
-    #callToAction {
-        padding-top: $font50px;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: left;
-        display: flex;
-        align-content: flex-start;
-        flex-wrap: wrap;
         #letsChat {
             width: 37%;
             font-size: 3.25em;
@@ -541,7 +545,7 @@ footer {
         a {
             display: block;
             color: $mainTextColor;
-            font-size: 1.0625em;
+            font-size: $font16px;
             font-weight: 300;
             line-height: 1.78;
         }
