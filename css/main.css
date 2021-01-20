@@ -532,6 +532,7 @@ canvas {
   background-color: #f5f7fa;
   padding: 3.9em;
   margin: 7.25em 5.938em 0em;
+  position: relative;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipePhoto {
@@ -597,6 +598,11 @@ canvas {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-image: url(/img/Stripes@3x.png);
+  background-size: contain;
+  background-position: right;
+  background-position-y: -14.46em;
+  background-repeat: no-repeat;
 }
 
 #mainContent #callToAction #whatWeNeed {
@@ -635,24 +641,46 @@ canvas {
   width: 61%;
 }
 
-#mainContent #callToAction #letsChat {
+#mainContent #musicForEars {
+  padding: 0 5.938em;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#mainContent #musicForEars #musicSplit {
+  width: 100%;
+  height: 3em;
+  border-top: 1px solid #e7ebf0;
+}
+
+#mainContent #musicForEars #letsChat {
   width: 37%;
   font-size: 3.25em;
   font-weight: 500;
   color: #465364;
 }
 
-#mainContent #callToAction #openChat {
+#mainContent #musicForEars #openChat {
   width: 55%;
   padding-left: 3em;
 }
 
-#mainContent #callToAction #openChat div {
+#mainContent #musicForEars #openChat div {
   font-size: 1.875em;
   margin-bottom: 1.25em;
 }
 
-#mainContent #callToAction #openChat a {
+#mainContent #musicForEars #openChat a {
   font-size: 1em;
   color: #ffffff;
   background-color: #766ff6;
@@ -660,7 +688,7 @@ canvas {
   text-decoration: none;
 }
 
-#mainContent #callToAction #followSound {
+#mainContent #musicForEars #followSound {
   width: 30%;
   font-size: 1.5625em;
   font-weight: 300;
@@ -668,7 +696,7 @@ canvas {
   padding: 3.125em 0 1.5625em;
 }
 
-#mainContent #callToAction #followSound a {
+#mainContent #musicForEars #followSound a {
   color: #465364;
 }
 

@@ -422,6 +422,7 @@ canvas {
             background-color: $cardBG;
             padding: 3.9em;
             margin: 7.25em $sideMargin 0em;
+            position: relative;
             #aboutFilipePhoto {
                 display: flex;
                 div {
@@ -473,6 +474,11 @@ canvas {
         display: flex;
         align-content: flex-start;
         flex-wrap: wrap;
+        background-image: url(/img/Stripes@3x.png);
+        background-size: contain;
+        background-position: right;
+        background-position-y: -14.46em;
+        background-repeat: no-repeat;
         #whatWeNeed {
             height: 76.563em;
             h2 {
@@ -503,6 +509,22 @@ canvas {
                 color: $mainTextColor;
                 width: 61%;
             }
+        }
+    }
+    #musicForEars {
+        padding: 0 $sideMargin;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        #musicSplit {
+            width: 100%;
+            height: 3em;
+            border-top: 1px solid $borderColor;
         }
         #letsChat {
             width: 37%;
