@@ -5,7 +5,7 @@
 /* Variables */
 
 
-/* Colors */
+/* Colors START */
 
 $mainBgColor: #ffffff;
 $mainYellow: #f7fe6a;
@@ -23,11 +23,17 @@ $allTheActs: $mainBgColor;
 $cardBG: #f5f7fa;
 $borderColor: #e7ebf0;
 
-/* Padding and Margin */
+/* Colors END */
+
+
+/* Padding and Margin START */
 
 $sideMargin: 5.938em;
 
-/* Font Sizes */
+/* Padding and Margin END */
+
+
+/* Font Sizes START */
 
 $font10px: 0.625em;
 $font16px: 1em;
@@ -36,6 +42,68 @@ $font25px: 1.5625em;
 $font30px: 1.875em;
 $font50px: 3.125em;
 $font115px: 7.1875em;
+
+/* Font Sizes END */
+
+
+/* Keyframes START */
+
+
+/* Circle Animation */
+
+@keyframes pepita {
+    0% {
+        transform: scale(0);
+        transform-origin: center;
+        font-size: 0px;
+    }
+    100% {
+        display: flex;
+        transform: scale(1);
+        font-size: $font20px;
+    }
+}
+
+
+/* Reveal Animation and respective classes */
+
+@keyframes revealText {
+    from {
+        opacity: 0;
+        transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+// === Mask each line ======
+.reveal-mask {
+    display: block;
+    position: relative;
+    text-align: start;
+    overflow: hidden;
+}
+
+.reveal-animation[data-scroll="in"] {
+    /*transform: scaleY(1);
+            opacity: 1;
+            */
+    animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards .4s;
+    // === Animate each line within the mask ======
+    .reveal-line {
+        display: inline-block;
+        opacity: 0;
+        transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+        will-change: opacity, transform;
+        animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+    }
+}
+
+
+/* Keyframes END */
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -162,19 +230,6 @@ canvas {
     #About {
         margin-top: 9.163em;
         padding: 0em $sideMargin;
-        /* Circle Animation */
-        @keyframes pepita {
-            0% {
-                transform: scale(0);
-                transform-origin: center;
-                font-size: 0px;
-            }
-            100% {
-                display: flex;
-                transform: scale(1);
-                font-size: $font20px;
-            }
-        }
         #workLinkContainer {
             position: relative;
             a {
@@ -226,16 +281,6 @@ canvas {
                 float: right;
             }
         }
-        @keyframes revealText {
-            from {
-                opacity: 0;
-                transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-            }
-            to {
-                opacity: 1;
-                transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
-            }
-        }
         .doYou {
             font-size: $font50px;
             font-weight: 300;
@@ -268,27 +313,6 @@ canvas {
                 margin: 0;
                 color: $mainPurple;
                 font-weight: 400;
-            }
-        }
-        // === Mask each line ======
-        .Title-mask {
-            display: block;
-            position: relative;
-            text-align: start;
-            overflow: hidden;
-        }
-        .doYou[data-scroll="in"] {
-            /*transform: scaleY(1);
-            opacity: 1;
-            */
-            animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards .4s;
-            // === Animate each line within the mask ======
-            .Title-line {
-                display: inline-block;
-                opacity: 0;
-                transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-                will-change: opacity, transform;
-                animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
             }
         }
         #aboutMaestro {

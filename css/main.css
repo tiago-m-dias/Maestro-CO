@@ -2,9 +2,100 @@
 /* Import Font */
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 /* Variables */
-/* Colors */
-/* Padding and Margin */
-/* Font Sizes */
+/* Colors START */
+/* Colors END */
+/* Padding and Margin START */
+/* Padding and Margin END */
+/* Font Sizes START */
+/* Font Sizes END */
+/* Keyframes START */
+/* Circle Animation */
+@-webkit-keyframes pepita {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    font-size: 0px;
+  }
+  100% {
+    display: -webkit-box;
+    display: flex;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    font-size: 1.25em;
+  }
+}
+@keyframes pepita {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    font-size: 0px;
+  }
+  100% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    font-size: 1.25em;
+  }
+}
+
+/* Reveal Animation and respective classes */
+@-webkit-keyframes revealText {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+@keyframes revealText {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+            transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.reveal-mask {
+  display: block;
+  position: relative;
+  text-align: start;
+  overflow: hidden;
+}
+
+.reveal-animation[data-scroll="in"] {
+  /*transform: scaleY(1);
+            opacity: 1;
+            */
+  -webkit-animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
+          animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
+}
+
+.reveal-animation[data-scroll="in"] .reveal-line {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+          transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  will-change: opacity, transform;
+  -webkit-animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+          animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+
+/* Keyframes END */
 ul {
   list-style-type: none;
   padding: 0;
@@ -165,42 +256,6 @@ canvas {
 #mainContent #About {
   margin-top: 9.163em;
   padding: 0em 5.938em;
-  /* Circle Animation */
-}
-
-@-webkit-keyframes pepita {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    font-size: 0px;
-  }
-  100% {
-    display: -webkit-box;
-    display: flex;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    font-size: 1.25em;
-  }
-}
-
-@keyframes pepita {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    font-size: 0px;
-  }
-  100% {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    font-size: 1.25em;
-  }
 }
 
 #mainContent #About #workLinkContainer {
@@ -263,32 +318,6 @@ canvas {
   float: right;
 }
 
-@-webkit-keyframes revealText {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-            transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
-            transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
-  }
-}
-
-@keyframes revealText {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-            transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
-            transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
-  }
-}
-
 #mainContent #About .doYou {
   font-size: 3.125em;
   font-weight: 300;
@@ -325,31 +354,6 @@ canvas {
   margin: 0;
   color: #766ff6;
   font-weight: 400;
-}
-
-#mainContent #About .Title-mask {
-  display: block;
-  position: relative;
-  text-align: start;
-  overflow: hidden;
-}
-
-#mainContent #About .doYou[data-scroll="in"] {
-  /*transform: scaleY(1);
-            opacity: 1;
-            */
-  -webkit-animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
-          animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.4s;
-}
-
-#mainContent #About .doYou[data-scroll="in"] .Title-line {
-  display: inline-block;
-  opacity: 0;
-  -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-          transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-  will-change: opacity, transform;
-  -webkit-animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
-          animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
 }
 
 #mainContent #About #aboutMaestro {

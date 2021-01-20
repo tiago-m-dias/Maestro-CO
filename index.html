@@ -77,22 +77,22 @@
                 <span>20©</span>
             </div>
             -->
-            <div class="doYou">
+            <div class="doYou reveal-animation">
                 Do you think traditional agencies are<br>expensive, slow, and overstaffed?
             </div>
-            <div class="doYou">
+            <div class="doYou reveal-animation">
                 Do you have the feeling that they are more interested<br>in promoting their agenda than your costumers'?
             </div>
-            <div class="doYou">
+            <div class="doYou reveal-animation">
                 Do you see your work more often shared by creatives<br>than your customers?
             </div>
-            <div class="doYou">
+            <div class="doYou reveal-animation">
                 <a>If you answered yes to all the above, then say hello to</a><br>
                 <p>Maestro&Co. Our players. Your show.</p>
             </div>
             <div id="aboutMaestro">
                 <div id="aboutImage"><img src="https://via.placeholder.com/912x770" alt="Photo about Maestro&Co."></div>
-                <div id="aboutDescription">
+                <div id="aboutDescription" class="reveal-animation">
                     <p>We are a global collective of designers, technologists, creatives, and strategists. From startups to global brands, our tested method has helped create end-to-end digital customer experiences in an agile, fast, and collaborative way.</p>
                     <br>
                     <p>We are not a network of offices, but a network of hands-on talent. We specialize in bulletproofing your future - overcoming barriers to innovation, bringing creativity to the process, and getting to market quickly with the right product,
@@ -103,10 +103,10 @@
         <section id="How">
             <div id="howDescription">
                 <h2>How</h2>
-                <p>
+                <p class="reveal-animation">
                     Think of A-Team, The Avengers, NBA All-Stars or We Are The World.<br>When the best talent gathers together, the show is awesome.
                 </p>
-                <p>
+                <p class="reveal-animation">
                     Do you need a team to go through all the stages of your project or a quick staff augmentation?<br>We have both options.
                 </p>
             </div>
@@ -124,7 +124,7 @@
              img/popUpShow@3x.png 3x">
                     <h2>The Pop-Up Show</h2>
                     <p>
-                        Often your in-house resourcces are already stretched. We can accelerate the creation of your digital products, services and brands by temporarily augmenting your team with skills and knowledge only possible by sourcing the best talent in the world.
+                        Often your in-house resources are already stretched. We can accelerate the creation of your digital products, services and brands by temporarily augmenting your team with skills and knowledge only possible by sourcing the best talent in the world.
                     </p>
                 </div>
             </div>
@@ -195,18 +195,18 @@
                     </div>
                 </div>
                 <div id="aboutFilipeMission">
-                    <h3>
+                    <h3 class="reveal-animation">
                         “The Maestro&Co. strives to make every customers’ experience with your business and products meaningful.”
                     </h3>
-                    <p>
+                    <p class="reveal-animation">
                         As Founder & Chief Creative Officer, Filipe ensures Maestro&Co.’s creative vision is expressed across all global projects, and leads custom creative teams that operate at the intersection of business and people to global clients.
                     </p>
-                    <p>
+                    <p class="reveal-animation">
                         Filipe, for more than a decade, has been helping brands and companies of all sizes building and improving their business, brands, products and services through people-driven thinking, smart and simple design and interactive experiences. During that time,
                         he has collaborated with global brands like FIFA, Vodafone, IKEA, Nestle, Johnson & Johnson, Canon, Talkdesk, Instapage, Fidelidade, Sagres and a bunch of awesome startups and small companies that you probably will hear of in the
                         near future.
                     </p>
-                    <p>
+                    <p class="reveal-animation">
                         His work has been featured in leading publications such as Financial Times, Forbes, TechCrunch, CNBC, The Sunday Times, MIT, amongst others.
                     </p>
                 </div>
@@ -216,15 +216,15 @@
             <div id="whatWeNeed">
                 <h2>To <span>play our best</span>, here is what<br>we need from you:</h2>
                 <h4>— Have a clear goal</h4>
-                <p>
+                <p class="reveal-animation">
                     There is no time to play around, looking for a goal. To start playing, we first must know what the play is about.
                 </p>
                 <h4>— Share our values</h4>
-                <p>
+                <p class="reveal-animation">
                     We want to change the show. We want to innovate, to have results, and to make everyone's life better. Do you?
                 </p>
                 <h4>— Access to senior stakeholders</h4>
-                <p>
+                <p class="reveal-animation">
                     Our work has a profound impact on a company's business. We need to discuss it with the decision-makers to make our time worth it.
                 </p>
             </div>
@@ -238,7 +238,7 @@
                 <div>We're always open for a chat, so get in touch with Filipe<br>for new business enquires.</div>
                 <a href="mailto:filipe@maestroand.co">Get in touch</a>
             </div>
-            <div id="followSound">
+            <div id="followSound" class="reveal-animation">
                 <p>Do you wanna join the Maestro?</p><a href="mailto:filipe@maestroand.co">Follow the sound</a> ↗
             </div>
 
@@ -257,17 +257,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scroll-out.js"></script>
     <script type="text/javascript">
-        jQuery('.doYou').each(function() {
+        jQuery('.reveal-animation').each(function() {
             var currentElement = $(this);
             var listHTML = currentElement.html();
             var listItems = listHTML.split("<br>");
             currentElement.html("");
             $.each(listItems, function(i, v) {
                 var item =
-                    '<div class="Title-mask"><span class="Title-line">' + v + "</span></div>";
+                    '<div class="reveal-mask"><span class="reveal-line">' + v + "</span></div>";
                 currentElement.append(item);
             });
         });
+
+        ScrollOut({
+            targets: '.reveal-animation',
+            once: true
+        })
 
         $(document).on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
@@ -276,12 +281,6 @@
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
         });
-
-
-        ScrollOut({
-            targets: '.doYou',
-            once: true
-        })
     </script>
 
 </body>
