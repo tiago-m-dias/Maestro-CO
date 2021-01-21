@@ -97,7 +97,7 @@ $font115px: 7.1875em;
         opacity: 0;
         transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
         will-change: opacity, transform;
-        animation: revealText 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+        animation: revealText 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
     }
 }
 
