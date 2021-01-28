@@ -572,6 +572,13 @@ canvas {
       flex-wrap: wrap;
 }
 
+@media (min-width: 992px) {
+  #mainContent #How #fullConcert {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 #mainContent #How #fullConcert div {
   font-weight: normal;
   font-stretch: normal;

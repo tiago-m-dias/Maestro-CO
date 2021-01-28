@@ -519,6 +519,9 @@ canvas {
         #fullConcert {
             display: flex;
             flex-wrap: wrap;
+            @include lg {
+                flex-wrap: nowrap;
+            }
             div {
                 font-weight: normal;
                 font-stretch: normal;
