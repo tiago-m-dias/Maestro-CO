@@ -16,6 +16,7 @@
 <body>
     <header>
         <nav id="headingNav">
+            <input type="checkbox" name="" id="chk1">
             <div id="navLogo">
                 <a href="index.html"><img src="img/logos/brand.svg"></a>
             </div>
@@ -26,6 +27,11 @@
                 <a href="#What">What we do</a>
                 <a href="#Join" target="_blank" id="joinUs">Join us</a>
                 <a href="mailto:filipe@maestroand.co" id="getInTouch">Get in touch</a>
+            </div>
+            <div id="menuButton">
+                <label for="chk1">
+<i id="burgerHandler">=</i>
+</label>
             </div>
         </nav>
     </header>
@@ -131,6 +137,8 @@
         </section>
         <section id="What">
             <div id="allTheActs">
+                <div id="fourActs">We play in 4 acts</div>
+
                 <div id="firstAct">
                     <h4>1st act - First Things First</h4><span>Start slowly so <br>we can finish faster.</span>
                     <div>
@@ -185,15 +193,6 @@
                 </div>
             </div>
             <div id="aboutFilipe">
-                <div id="aboutFilipePhoto">
-                    <div>
-                        <p>
-                            Filipe Moreira
-                        </p>
-                        <p>Founder & CCCO</p>
-                        <span>↗</span>
-                    </div>
-                </div>
                 <div id="aboutFilipeMission">
                     <h3 class="reveal-animation">
                         “The Maestro&Co. strives to make every customers’ experience with your business and products meaningful.”
@@ -209,6 +208,15 @@
                     <p class="reveal-animation">
                         His work has been featured in leading publications such as Financial Times, Forbes, TechCrunch, CNBC, The Sunday Times, MIT, amongst others.
                     </p>
+                </div>
+                <div id="aboutFilipePhoto">
+                    <div>
+                        <p>
+                            Filipe Moreira
+                        </p>
+                        <p>Founder, CEO & Creative Director</p>
+                        <span>↗</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -276,7 +284,7 @@
 
         $(document).on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
-
+            $('#chk1').click();
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);

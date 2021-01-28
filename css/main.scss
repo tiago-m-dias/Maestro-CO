@@ -29,6 +29,7 @@ $borderColor: #e7ebf0;
 /* Padding and Margin START */
 
 $sideMargin: 5.938em;
+$sideMarginMobile: 1.438em;
 
 /* Padding and Margin END */
 
@@ -40,6 +41,7 @@ $font16px: 1em;
 $font20px: 1.25em;
 $font25px: 1.5625em;
 $font30px: 1.875em;
+$font40px: 2.5em;
 $font50px: 3.125em;
 $font115px: 7.1875em;
 
@@ -104,6 +106,55 @@ $font115px: 7.1875em;
 
 /* Keyframes END */
 
+
+/* Breakpoints START */
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+}
+
+
+/* Breakpoints END */
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -123,6 +174,7 @@ body {
     width: 99vw;
     color: $mainTextColor;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include sm {}
 }
 
 header {
@@ -130,23 +182,68 @@ header {
     width: 99vw;
     z-index: 2;
     #headingNav {
-        display: flex;
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 3.25em;
-        justify-content: space-between;
-        align-items: center;
+        position: relative;
+        //flex on desktop
+        @include lg {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #menuButton {
+            font-size: $font40px;
+            display: block;
+            width: 2em;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: -10px;
+            color: $mainTextColor;
+            //no button on desktop
+            @include lg {
+                display: none;
+            }
+            #burgerHandler {
+                font-weight: 100;
+                cursor: pointer;
+            }
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        #chk1:checked~#navLinks {
+            display: block;
+            @include lg {
+                display: flex;
+            }
+        }
+        #chk1:checked~#menuButton {
+            color: $howPurple;
+        }
         #navLogo {
             width: 30%;
-            margin: 0.0625em 1.87em 0.93em $sideMargin;
+            //margin for desktop
+            margin: 0.0625em 0em 0.93em $sideMarginMobile;
+            @include lg {
+                margin: 0.0625em 1.87em 0.93em $sideMargin;
+            }
         }
         #navLinks {
-            display: flex;
-            width: 70%;
-            align-items: baseline;
-            justify-content: flex-end;
-            padding: 0 $sideMargin 0 0;
+            display: none;
+            width: 100%;
+            position: relative;
+            //Desktop
+            @include lg {
+                display: flex;
+                width: 70%;
+                align-items: baseline;
+                justify-content: flex-end;
+                padding: 0 $sideMargin 0 0;
+            }
             a {
-                padding: $font10px 0.375em 0.6875em;
                 font-size: $font16px;
                 font-weight: 500;
                 font-stretch: normal;
@@ -156,7 +253,15 @@ header {
                 text-align: center;
                 color: $mainTextColor;
                 text-decoration: none;
-                margin-right: 3.813em;
+                display: block;
+                width: 100%;
+                padding: $font10px 0.375em 0.6875em;
+                //Desktop
+                @include lg {
+                    display: flex;
+                    width: auto;
+                    margin-right: 3.813em;
+                }
             }
             #joinUs::after {
                 content: ' ↗';
@@ -175,16 +280,19 @@ header {
 
 .grain,
 canvas {
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: $mainBgColor;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    margin: 0 auto;
-    z-index: 1;
+    display: none;
+    @include lg {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: $mainBgColor;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 1;
+    }
 }
 
 #mainContent {
@@ -192,27 +300,36 @@ canvas {
     #maestroContainer {
         position: relative;
         overflow-x: hidden;
-        height: 75vh;
+        height: 17em;
+        @include lg {
+            height: 75vh;
+        }
         #showMust {
             position: absolute;
             z-index: 3;
             top: 5vh;
-            left: $sideMargin;
+            left: $sideMarginMobile;
             font-stretch: normal;
             font-style: normal;
             line-height: normal;
             letter-spacing: normal;
             width: 100%;
+            @include lg {
+                left: $sideMargin;
+            }
             div {
-                font-size: $font115px;
+                font-size: $font40px;
                 font-weight: 300;
                 text-align: left;
                 color: $mainTextColor;
                 width: 70%;
+                @include lg {
+                    font-size: $font115px;
+                }
             }
         }
         #learnLink {
-            font-size: $font16px;
+            font-size: 0.75em;
             font-weight: 500;
             text-align: right;
             text-decoration: none;
@@ -225,20 +342,23 @@ canvas {
                 content: ' ↓';
                 color: $mainPurple;
             }
+            @include lg {
+                font-size: $font16px;
+            }
         }
     }
     #About {
-        margin-top: 9.163em;
-        padding: 0em $sideMargin;
+        padding: 0em $sideMarginMobile;
+        @include lg {
+            margin-top: 9.163em;
+            padding: 0em $sideMargin;
+        }
         #workLinkContainer {
             position: relative;
             a {
                 img {
                     width: 100%;
                     height: auto;
-                }
-                &:hover {
-                    /* cursor: none; */
                 }
             }
             #exploreWork {
@@ -282,7 +402,7 @@ canvas {
             }
         }
         .doYou {
-            font-size: $font50px;
+            font-size: $font30px;
             font-weight: 300;
             font-stretch: normal;
             font-style: normal;
@@ -290,8 +410,12 @@ canvas {
             letter-spacing: normal;
             text-align: left;
             color: $doYouColor;
-            padding: 29px 23% 29px 0;
+            padding: 29px $sideMarginMobile 29px 0;
             border-bottom: 1px solid $borderColor;
+            @include lg {
+                font-size: $font50px;
+                padding: 29px 23% 29px 0;
+            }
             /*
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition-delay: 0.5s;
@@ -300,8 +424,15 @@ canvas {
             opacity: 0;
             */
             opacity: 0;
-            transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
-            will-change: opacity, transform;
+            transform: translate(0%,
+            100%) matrix(1,
+            0,
+            0,
+            1,
+            0,
+            0);
+            will-change: opacity,
+            transform;
             &::after {
                 visibility: visible;
             }
@@ -325,11 +456,12 @@ canvas {
                 padding-right: 9.313em;
                 img {
                     width: 52.375em;
+                    max-width: 100%;
                     height: auto;
                 }
             }
             #aboutDescription {
-                font-size: $font20px;
+                font-size: $font16px;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
@@ -339,8 +471,11 @@ canvas {
                 color: $mainTextColor;
                 align-self: flex-end;
                 padding-top: 4em;
+                @include lg {
+                    font-size: $font20px;
+                }
                 p {
-                    width: 29em;
+                    //width: 29em;
                 }
                 p:nth-child(1) {
                     padding-bottom: $font16px;
@@ -350,7 +485,10 @@ canvas {
     }
     #How {
         margin-bottom: $font50px;
-        padding: 0em $sideMargin $font50px;
+        padding: 0em $sideMarginMobile $font50px;
+        @include lg {
+            padding: 0em $sideMargin $font50px;
+        }
         #howDescription {
             padding-bottom: $font50px;
             h2 {
@@ -364,7 +502,7 @@ canvas {
                 color: $howPurple;
             }
             p {
-                font-size: $font30px;
+                font-size: $font20px;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
@@ -373,10 +511,14 @@ canvas {
                 text-align: left;
                 color: $mainTextColor;
                 margin-bottom: $font20px;
+                @include lg {
+                    font-size: $font30px;
+                }
             }
         }
         #fullConcert {
             display: flex;
+            flex-wrap: wrap;
             div {
                 font-weight: normal;
                 font-stretch: normal;
@@ -388,12 +530,17 @@ canvas {
                 width: 50%;
                 h2 {
                     font-size: $font20px;
+                    font-weight: normal;
                     color: $howPurple;
+                    text-transform: uppercase;
                 }
                 p {
-                    font-size: $font20px;
+                    font-size: $font16px;
                     color: $mainTextColor;
                     max-width: 37rem;
+                    @include lg {
+                        font-size: $font20px;
+                    }
                 }
                 span {
                     font-weight: 500;
@@ -403,12 +550,25 @@ canvas {
     }
     #What {
         background-image: linear-gradient(to right, $gradientStart, $gradientStop);
-        height: calc(43.375em + (43.375em / 3));
+        @include lg {
+            height: calc(43.375em + (43.375em / 3));
+        }
         #allTheActs {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            padding: 6.063em $sideMargin 0;
+            padding: 3.063em $sideMarginMobile 0;
             color: $allTheActs;
+            @include lg {
+                padding: 6.063em $sideMargin 0;
+            }
+            #fourActs {
+                display: block;
+                width: 100%;
+                font-size: 1.563rem;
+                font-weight: 300;
+                margin-bottom: 1.75em;
+            }
             #firstAct,
             #secondAct,
             #thirdAct,
@@ -418,15 +578,21 @@ canvas {
                 letter-spacing: normal;
                 text-align: left;
                 h4 {
-                    font-size: $font10px;
+                    font-size: 0.5em;
                     font-weight: bold;
                     text-transform: uppercase;
+                    @include lg {
+                        font-size: $font10px;
+                    }
                 }
                 span {
                     display: block;
-                    font-size: $font20px;
+                    font-size: $font16px;
                     height: $font50px;
                     text-decoration: underline;
+                    @include lg {
+                        font-size: $font20px;
+                    }
                 }
                 div {
                     align-self: flex-end;
@@ -434,6 +600,7 @@ canvas {
                         li {
                             font-size: $font16px;
                             line-height: 1.77em;
+                            font-weight: 300;
                         }
                     }
                 }
@@ -445,14 +612,17 @@ canvas {
             justify-content: space-between;
             background-color: $cardBG;
             padding: 3.9em;
-            margin: 7.25em $sideMargin 0em;
+            margin: 7.25em $sideMarginMobile 0em;
             position: relative;
+            @include lg {
+                margin: 7.25em $sideMargin 0em;
+            }
             #aboutFilipePhoto {
                 display: flex;
                 div {
                     align-self: flex-end;
                     p {
-                        font-size: $font25px;
+                        font-size: $font16px;
                         font-weight: normal;
                         font-stretch: normal;
                         font-style: normal;
@@ -460,6 +630,9 @@ canvas {
                         letter-spacing: normal;
                         text-align: left;
                         color: $mainTextColor;
+                        @include lg {
+                            font-size: $font25px;
+                        }
                     }
                     span {
                         color: $mainPurple;
@@ -475,21 +648,28 @@ canvas {
                 text-align: left;
                 width: 29.063em;
                 h3 {
-                    font-size: $font20px;
+                    font-size: 1.875em;
                     color: $howPurple;
                     font-weight: normal;
+                    @include lg {
+                        font-size: $font20px;
+                    }
                 }
                 p {
-                    font-size: $font16px;
+                    font-size: 0.875em;
                     line-height: 1.78em;
                     padding-top: $font16px;
+                    font-weight: 300;
+                    @include lg {
+                        font-size: $font16px;
+                    }
                 }
             }
         }
     }
     #callToAction {
         margin-top: 14.46em;
-        padding: 12.875em $sideMargin 0;
+        padding: 12.875em $sideMarginMobile 0;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
@@ -503,40 +683,53 @@ canvas {
         background-position: right;
         background-position-y: -14.46em;
         background-repeat: no-repeat;
+        @include lg {
+            padding: 12.875em $sideMargin 0;
+        }
         #whatWeNeed {
             height: 76.563em;
             h2 {
-                font-size: $font50px;
+                font-size: 1.875em;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: $mainTextColor;
+                color: $mainPurple;
                 margin-bottom: 2em;
+                @include lg {
+                    font-size: $font50px;
+                }
                 span {
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
             }
             h4 {
                 font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
                 color: $howPurple;
-                font-size: $font20px;
+                font-size: $font16px;
                 margin-bottom: 0;
                 font-weight: 300;
+                @include lg {
+                    font-size: $font20px;
+                }
             }
             p {
                 font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-                font-size: $font20px;
+                font-size: $font16px;
                 line-height: $font25px;
                 color: $mainTextColor;
-                width: 61%;
+                width: 91%;
+                @include lg {
+                    font-size: $font20px;
+                    width: 61%;
+                }
             }
         }
     }
     #musicForEars {
-        padding: 0 $sideMargin;
+        padding: 0 $sideMarginMobile;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
@@ -545,23 +738,37 @@ canvas {
         display: flex;
         align-content: flex-start;
         flex-wrap: wrap;
+        @include lg {
+            padding: 0 $sideMargin;
+        }
         #musicSplit {
             width: 100%;
             height: 3em;
             border-top: 1px solid $borderColor;
         }
         #letsChat {
-            width: 37%;
-            font-size: 3.25em;
+            width: 100%;
+            font-size: 2.188em;
             font-weight: 500;
             color: $mainTextColor;
+            @include lg {
+                font-size: 3.25em;
+                width: 37%;
+            }
         }
         #openChat {
-            width: 55%;
-            padding-left: 3em;
+            width: 100%;
+            padding-top: 1.25em;
+            @include lg {
+                width: 55%;
+                padding-left: 3em;
+            }
             div {
-                font-size: $font30px;
+                font-size: 1.563em;
                 margin-bottom: $font20px;
+                @include lg {
+                    font-size: $font30px;
+                }
             }
             a {
                 font-size: $font16px;
@@ -572,11 +779,14 @@ canvas {
             }
         }
         #followSound {
-            width: 30%;
+            width: 100%;
             font-size: $font25px;
             font-weight: 300;
             color: $mainPurple;
             padding: $font50px 0 $font25px;
+            @include lg {
+                width: 30%;
+            }
             a {
                 color: $mainTextColor;
             }
@@ -586,20 +796,33 @@ canvas {
 
 footer {
     color: $mainTextColor;
-    padding: 0 $sideMargin 4em;
+    padding: 0 $sideMarginMobile 4em;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include lg {
+        padding: 0 $sideMargin 4em;
+    }
     #rightsMaestro {
         font-size: 0.8125em;
+        order: 1;
     }
     #footerSocials {
+        order: -1;
+        padding: 0 0 $font20px;
+        @include lg {
+            order: 1;
+            padding: 0;
+        }
         a {
-            display: block;
             color: $mainTextColor;
             font-size: $font16px;
             font-weight: 300;
             line-height: 1.78;
+            @include lg {
+                display: block;
+            }
         }
     }
 }
