@@ -748,11 +748,16 @@ canvas {
   padding: 3.9em;
   margin: 7.25em 1.438em 0em;
   position: relative;
+  background-image: url(/img/filipePhoto.png);
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe {
     margin: 7.25em 5.938em 0em;
+    background-image: url(/img/filipePhoto@3x.png);
+    background-size: cover;
   }
 }
 
@@ -781,11 +786,18 @@ canvas {
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe #aboutFilipePhoto div p {
     font-size: 1.5625em;
+    color: #ffffff;
   }
 }
 
 #mainContent #What #aboutFilipe #aboutFilipePhoto div span {
   color: #766ff6;
+}
+
+@media (min-width: 992px) {
+  #mainContent #What #aboutFilipe #aboutFilipePhoto div span {
+    color: #ffffff;
+  }
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission {
@@ -807,6 +819,7 @@ canvas {
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
     font-size: 1.25em;
+    color: #ffffff;
   }
 }
 
@@ -820,6 +833,7 @@ canvas {
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe #aboutFilipeMission p {
     font-size: 1em;
+    color: #ffffff;
   }
 }
 

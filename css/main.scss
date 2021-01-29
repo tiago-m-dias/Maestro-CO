@@ -626,8 +626,13 @@ canvas {
             padding: 3.9em;
             margin: 7.25em $sideMarginMobile 0em;
             position: relative;
+            background-image: url(/img/filipePhoto.png);
+            background-repeat: no-repeat;
+            background-position: center top;
             @include lg {
                 margin: 7.25em $sideMargin 0em;
+                background-image: url(/img/filipePhoto@3x.png);
+                background-size: cover;
             }
             #aboutFilipePhoto {
                 display: flex;
@@ -644,10 +649,14 @@ canvas {
                         color: $mainTextColor;
                         @include lg {
                             font-size: $font25px;
+                            color: $mainBgColor;
                         }
                     }
                     span {
                         color: $mainPurple;
+                        @include lg {
+                            color: $mainBgColor;
+                        }
                     }
                 }
             }
@@ -665,6 +674,7 @@ canvas {
                     font-weight: normal;
                     @include lg {
                         font-size: $font20px;
+                        color: $mainBgColor;
                     }
                 }
                 p {
@@ -674,6 +684,7 @@ canvas {
                     font-weight: 300;
                     @include lg {
                         font-size: $font16px;
+                        color: $mainBgColor;
                     }
                 }
             }
