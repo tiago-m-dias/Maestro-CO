@@ -624,11 +624,12 @@ canvas {
             justify-content: space-between;
             background-color: $cardBG;
             padding: 3.9em;
-            margin: 7.25em $sideMarginMobile 0em;
+            margin: 7.25em 0em 0em;
             position: relative;
             background-image: url(/img/filipePhoto.png);
             background-repeat: no-repeat;
             background-position: center top;
+            background-size: 140vw;
             @include lg {
                 margin: 7.25em $sideMargin 0em;
                 background-image: url(/img/filipePhoto@3x.png);
@@ -636,6 +637,10 @@ canvas {
             }
             #aboutFilipePhoto {
                 display: flex;
+                order: 2;
+                @include lg {
+                    order: 1;
+                }
                 div {
                     align-self: flex-end;
                     p {
@@ -668,6 +673,7 @@ canvas {
                 letter-spacing: normal;
                 text-align: left;
                 width: 29.063em;
+                order: 1;
                 h3 {
                     font-size: 1.875em;
                     color: $howPurple;
@@ -675,6 +681,7 @@ canvas {
                     @include lg {
                         font-size: $font20px;
                         color: $mainBgColor;
+                        padding-right: $font50px;
                     }
                 }
                 p {

@@ -746,11 +746,12 @@ canvas {
           justify-content: space-between;
   background-color: #f5f7fa;
   padding: 3.9em;
-  margin: 7.25em 1.438em 0em;
+  margin: 7.25em 0em 0em;
   position: relative;
   background-image: url(/img/filipePhoto.png);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 140vw;
 }
 
 @media (min-width: 992px) {
@@ -765,6 +766,17 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 992px) {
+  #mainContent #What #aboutFilipe #aboutFilipePhoto {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 #mainContent #What #aboutFilipe #aboutFilipePhoto div {
@@ -808,6 +820,9 @@ canvas {
   letter-spacing: normal;
   text-align: left;
   width: 29.063em;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
@@ -820,6 +835,7 @@ canvas {
   #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
     font-size: 1.25em;
     color: #ffffff;
+    padding-right: 3.125em;
   }
 }
 
