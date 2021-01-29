@@ -452,8 +452,14 @@ canvas {
             margin-top: $font50px;
             padding-bottom: $font50px;
             border-bottom: 1px solid $borderColor;
+            @include lg {
+                flex-wrap: nowrap;
+            }
             #aboutImage {
                 padding-right: 9.313em;
+                @include lg {
+                    width: 50%;
+                }
                 img {
                     width: 52.375em;
                     max-width: 100%;
@@ -473,9 +479,12 @@ canvas {
                 padding-top: 4em;
                 @include lg {
                     font-size: $font20px;
+                    width: 50%;
                 }
                 p {
-                    //width: 29em;
+                    @include lg {
+                        width: 29em;
+                    }
                 }
                 p:nth-child(1) {
                     padding-bottom: $font16px;

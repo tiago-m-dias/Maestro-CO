@@ -486,8 +486,21 @@ canvas {
   border-bottom: 1px solid #e7ebf0;
 }
 
+@media (min-width: 992px) {
+  #mainContent #About #aboutMaestro {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 #mainContent #About #aboutMaestro #aboutImage {
   padding-right: 9.313em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #About #aboutMaestro #aboutImage {
+    width: 50%;
+  }
 }
 
 #mainContent #About #aboutMaestro #aboutImage img {
@@ -513,6 +526,13 @@ canvas {
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutDescription {
     font-size: 1.25em;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  #mainContent #About #aboutMaestro #aboutDescription p {
+    width: 29em;
   }
 }
 
