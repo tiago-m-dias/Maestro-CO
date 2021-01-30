@@ -622,8 +622,8 @@ canvas {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            background-color: $cardBG;
-            padding: 3.9em;
+            background-color: $mainBgColor;
+            padding: 29em $sideMarginMobile 0em;
             margin: 7.25em 0em 0em;
             position: relative;
             background-image: url(/img/filipePhoto.png);
@@ -631,6 +631,8 @@ canvas {
             background-position: center top;
             background-size: 140vw;
             @include lg {
+                background-color: $cardBG;
+                padding: 3.9em;
                 margin: 7.25em $sideMargin 0em;
                 background-image: url(/img/filipePhoto@3x.png);
                 background-size: cover;
@@ -638,8 +640,10 @@ canvas {
             #aboutFilipePhoto {
                 display: flex;
                 order: 2;
+                padding: $font50px 0;
                 @include lg {
                     order: 1;
+                    padding: 0;
                 }
                 div {
                     align-self: flex-end;
@@ -698,7 +702,6 @@ canvas {
         }
     }
     #callToAction {
-        margin-top: 14.46em;
         padding: 12.875em $sideMarginMobile 0;
         font-stretch: normal;
         font-style: normal;
@@ -708,12 +711,15 @@ canvas {
         display: flex;
         align-content: flex-start;
         flex-wrap: wrap;
-        background-image: url(/img/Stripes@3x.png);
+        background-image: url(/img/Stripes.png);
         background-size: contain;
         background-position: right;
-        background-position-y: -14.46em;
+        background-position-y: 0em;
         background-repeat: no-repeat;
         @include lg {
+            background-image: url(/img/Stripes@3x.png);
+            background-position-y: -14.46em;
+            margin-top: 14.46em;
             padding: 12.875em $sideMargin 0;
         }
         #whatWeNeed {

@@ -744,8 +744,8 @@ canvas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f5f7fa;
-  padding: 3.9em;
+  background-color: #ffffff;
+  padding: 29em 1.438em 0em;
   margin: 7.25em 0em 0em;
   position: relative;
   background-image: url(/img/filipePhoto.png);
@@ -756,6 +756,8 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe {
+    background-color: #f5f7fa;
+    padding: 3.9em;
     margin: 7.25em 5.938em 0em;
     background-image: url(/img/filipePhoto@3x.png);
     background-size: cover;
@@ -769,6 +771,7 @@ canvas {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  padding: 3.125em 0;
 }
 
 @media (min-width: 992px) {
@@ -776,6 +779,7 @@ canvas {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    padding: 0;
   }
 }
 
@@ -854,7 +858,6 @@ canvas {
 }
 
 #mainContent #callToAction {
-  margin-top: 14.46em;
   padding: 12.875em 1.438em 0;
   font-stretch: normal;
   font-style: normal;
@@ -868,15 +871,18 @@ canvas {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-image: url(/img/Stripes@3x.png);
+  background-image: url(/img/Stripes.png);
   background-size: contain;
   background-position: right;
-  background-position-y: -14.46em;
+  background-position-y: 0em;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
   #mainContent #callToAction {
+    background-image: url(/img/Stripes@3x.png);
+    background-position-y: -14.46em;
+    margin-top: 14.46em;
     padding: 12.875em 5.938em 0;
   }
 }
