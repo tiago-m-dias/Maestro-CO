@@ -1,8 +1,31 @@
 /* Import Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@font-face {
+    font-family: "GilroyLight";
+    src: url("/fonts/GilroyLight/font.woff2") format("woff2"), url("/fonts/GilroyLight/font.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GilroyRegular";
+    src: url("/fonts/GilroyRegular/font.woff2") format("woff2"), url("/fonts/GilroyRegular/font.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GilroySemiBold";
+    src: url("/fonts/GilroySemiBold/font.woff2") format("woff2"), url("/fonts/GilroySemiBold/font.woff") format("woff");
+}
+
 
 /* Variables */
+
+
+/* Fonts START */
+
+$gilroyL: "GilroyLight";
+$gilroyR: "GilroyRegular";
+$gilroySB: "GilroySemiBold";
+
+/* Fonts END */
 
 
 /* Colors START */
@@ -173,7 +196,7 @@ body {
     background-color: $mainBgColor;
     width: 99vw;
     color: $mainTextColor;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $gilroyR, Helvetica, Arial, sans-serif;
     @include sm {}
 }
 
@@ -744,7 +767,7 @@ canvas {
                 }
             }
             h4 {
-                font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: $gilroyL, $gilroyR, Helvetica, Arial, sans-serif;
                 color: $howPurple;
                 font-size: $font16px;
                 margin-bottom: 0;
@@ -754,7 +777,7 @@ canvas {
                 }
             }
             p {
-                font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: $gilroyL, $gilroyR, Helvetica, Arial, sans-serif;
                 font-size: $font16px;
                 line-height: $font25px;
                 color: $mainTextColor;

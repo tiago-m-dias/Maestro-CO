@@ -1,7 +1,23 @@
 @charset "UTF-8";
 /* Import Font */
-@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@font-face {
+  font-family: "GilroyLight";
+  src: url("/fonts/GilroyLight/font.woff2") format("woff2"), url("/fonts/GilroyLight/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GilroyRegular";
+  src: url("/fonts/GilroyRegular/font.woff2") format("woff2"), url("/fonts/GilroyRegular/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GilroySemiBold";
+  src: url("/fonts/GilroySemiBold/font.woff2") format("woff2"), url("/fonts/GilroySemiBold/font.woff") format("woff");
+}
+
 /* Variables */
+/* Fonts START */
+/* Fonts END */
 /* Colors START */
 /* Colors END */
 /* Padding and Margin START */
@@ -120,7 +136,7 @@ body {
   background-color: #ffffff;
   width: 99vw;
   color: #465364;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "GilroyRegular", Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -919,7 +935,7 @@ canvas {
 }
 
 #mainContent #callToAction #whatWeNeed h4 {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "GilroyLight", "GilroyRegular", Helvetica, Arial, sans-serif;
   color: #7770f7;
   font-size: 1em;
   margin-bottom: 0;
@@ -933,7 +949,7 @@ canvas {
 }
 
 #mainContent #callToAction #whatWeNeed p {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "GilroyLight", "GilroyRegular", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5625em;
   color: #465364;
