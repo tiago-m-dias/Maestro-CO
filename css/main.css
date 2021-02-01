@@ -748,18 +748,23 @@ canvas {
   padding: 29em 1.438em 0em;
   margin: 7.25em 0em 0em;
   position: relative;
-  background-image: url(/img/filipePhoto.png);
+  background-image: url(/img/filipe-pic-mobile@2x.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 140vw;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 376px) {
   #mainContent #What #aboutFilipe {
     background-color: #f5f7fa;
+    background-image: url(/img/filipe-pic-desktop@2x.jpg);
+  }
+}
+
+@media (min-width: 992px) {
+  #mainContent #What #aboutFilipe {
     padding: 3.9em;
     margin: 7.25em 5.938em 0em;
-    background-image: url(/img/filipePhoto@3x.png);
     background-size: cover;
   }
 }

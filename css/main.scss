@@ -626,15 +626,17 @@ canvas {
             padding: 29em $sideMarginMobile 0em;
             margin: 7.25em 0em 0em;
             position: relative;
-            background-image: url(/img/filipePhoto.png);
+            background-image: url(/img/filipe-pic-mobile@2x.jpg);
             background-repeat: no-repeat;
             background-position: center top;
             background-size: 140vw;
-            @include lg {
+            @include rwd(376) {
                 background-color: $cardBG;
+                background-image: url(/img/filipe-pic-desktop@2x.jpg);
+            }
+            @include lg {
                 padding: 3.9em;
                 margin: 7.25em $sideMargin 0em;
-                background-image: url(/img/filipePhoto@3x.png);
                 background-size: cover;
             }
             #aboutFilipePhoto {
