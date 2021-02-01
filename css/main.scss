@@ -232,6 +232,7 @@ header {
             #burgerHandler {
                 font-weight: 100;
                 cursor: pointer;
+                font-style: normal;
             }
         }
         input[type="checkbox"] {
@@ -802,7 +803,45 @@ canvas {
         @include lg {
             padding: 0 $sideMargin;
         }
-        #musicSplit {
+        #testemonials {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: space-between;
+            font-family: $gilroyL;
+            padding-bottom: 3em;
+            margin-bottom: 3em;
+            border-bottom: 1px solid $borderColor;
+            width: 100%;
+            .testefy {
+                display: flex;
+                width: 50%;
+                .testemonialPhoto {
+                    width: 30%;
+                    display: inherit;
+                    justify-content: flex-end;
+                    padding-right: 1.3em;
+                    i {
+                        font-family: $gilroySB;
+                        color: $mainPurple;
+                        font-size: 2em;
+                    }
+                }
+                .testemonial {
+                    width: 69%;
+                    color: $mainTextColor;
+                    font-size: $font20px;
+                    line-height: 1.912em;
+                    .testefier {
+                        padding-top: 1em;
+                        color: $doYouColor;
+                        font-family: $gilroyR;
+                        font-size: $font16px;
+                        line-height: 1.53em;
+                    }
+                }
+            }
+        }
+        .musicSplit {
             width: 100%;
             height: 3em;
             border-top: 1px solid $borderColor;

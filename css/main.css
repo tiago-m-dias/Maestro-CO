@@ -189,6 +189,7 @@ header #headingNav #menuButton {
 header #headingNav #menuButton #burgerHandler {
   font-weight: 100;
   cursor: pointer;
+  font-style: normal;
 }
 
 header #headingNav input[type="checkbox"] {
@@ -985,7 +986,60 @@ canvas {
   }
 }
 
-#mainContent #musicForEars #musicSplit {
+#mainContent #musicForEars #testemonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  font-family: "GilroyLight";
+  padding-bottom: 3em;
+  margin-bottom: 3em;
+  border-bottom: 1px solid #e7ebf0;
+  width: 100%;
+}
+
+#mainContent #musicForEars #testemonials .testefy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+#mainContent #musicForEars #testemonials .testefy .testemonialPhoto {
+  width: 30%;
+  display: inherit;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 1.3em;
+}
+
+#mainContent #musicForEars #testemonials .testefy .testemonialPhoto i {
+  font-family: "GilroySemiBold";
+  color: #766ff6;
+  font-size: 2em;
+}
+
+#mainContent #musicForEars #testemonials .testefy .testemonial {
+  width: 69%;
+  color: #465364;
+  font-size: 1.25em;
+  line-height: 1.912em;
+}
+
+#mainContent #musicForEars #testemonials .testefy .testemonial .testefier {
+  padding-top: 1em;
+  color: rgba(70, 83, 100, 0.2);
+  font-family: "GilroyRegular";
+  font-size: 1em;
+  line-height: 1.53em;
+}
+
+#mainContent #musicForEars .musicSplit {
   width: 100%;
   height: 3em;
   border-top: 1px solid #e7ebf0;
