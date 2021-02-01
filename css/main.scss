@@ -808,18 +808,24 @@ canvas {
             flex-wrap: wrap;
             align-items: space-between;
             font-family: $gilroyL;
-            padding-bottom: 3em;
             margin-bottom: 3em;
             border-bottom: 1px solid $borderColor;
             width: 100%;
             .testefy {
                 display: flex;
-                width: 50%;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-bottom: 3em;
+                @include lg {
+                    width: 50%;
+                }
                 .testemonialPhoto {
-                    width: 30%;
                     display: inherit;
                     justify-content: flex-end;
                     padding-right: 1.3em;
+                    img {
+                        max-height: 100px;
+                    }
                     i {
                         font-family: $gilroySB;
                         color: $mainPurple;

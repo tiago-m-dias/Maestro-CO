@@ -996,7 +996,6 @@ canvas {
       -ms-flex-align: space-between;
           align-items: space-between;
   font-family: "GilroyLight";
-  padding-bottom: 3em;
   margin-bottom: 3em;
   border-bottom: 1px solid #e7ebf0;
   width: 100%;
@@ -1006,16 +1005,28 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 3em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #musicForEars #testemonials .testefy {
+    width: 50%;
+  }
 }
 
 #mainContent #musicForEars #testemonials .testefy .testemonialPhoto {
-  width: 30%;
   display: inherit;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 1.3em;
+}
+
+#mainContent #musicForEars #testemonials .testefy .testemonialPhoto img {
+  max-height: 100px;
 }
 
 #mainContent #musicForEars #testemonials .testefy .testemonialPhoto i {
