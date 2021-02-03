@@ -306,6 +306,11 @@
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
         });
+
+        $(window).resize(function() {
+            if ($(window).width() > 991) $('#chk1').prop('checked', false);;
+
+        });
     </script>
 
 </body>

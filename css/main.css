@@ -187,6 +187,7 @@ header #headingNav #menuButton {
 }
 
 header #headingNav #menuButton #burgerHandler {
+  font-family: "GilroyLight";
   font-weight: 100;
   cursor: pointer;
   font-style: normal;
@@ -208,8 +209,21 @@ header #headingNav #chk1:checked ~ #navLogo {
   background-image: linear-gradient(to bottom, #766ff6, #d3c2ce);
 }
 
+@media (min-width: 992px) {
+  header #headingNav #chk1:checked ~ #navLogo {
+    position: inherit;
+    width: 30%;
+    margin: 0.0625em 1.87em 0.93em 5.938em;
+    background: none;
+  }
+}
+
 header #headingNav #chk1:checked ~ #navLogo img {
   margin: 3.25em 0em 0.93em 1.438em;
+}
+
+header #headingNav #chk1:checked ~ #navLogo img include lg {
+  margin: auto;
 }
 
 header #headingNav #chk1:checked ~ #navLinks {

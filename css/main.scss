@@ -230,6 +230,7 @@ header {
                 display: none;
             }
             #burgerHandler {
+                font-family: $gilroyL;
                 font-weight: 100;
                 cursor: pointer;
                 font-style: normal;
@@ -247,8 +248,17 @@ header {
             margin: 0;
             overflow-y: hidden;
             background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
+            @include lg {
+                position: inherit;
+                width: 30%;
+                margin: 0.0625em 1.87em 0.93em $sideMargin;
+                background: none;
+            }
             img {
                 margin: 3.25em 0em 0.93em $sideMarginMobile;
+                include lg {
+                    margin: auto;
+                }
             }
         }
         #chk1:checked~#navLinks {
