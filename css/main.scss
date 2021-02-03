@@ -382,7 +382,7 @@ canvas {
                 left: $sideMargin;
             }
             div {
-                font-size: $font40px;
+                font-size: 2.188em;
                 font-weight: 300;
                 text-align: left;
                 color: $mainTextColor;
@@ -394,7 +394,7 @@ canvas {
         }
         #learnLink {
             font-size: 0.75em;
-            font-weight: 500;
+            font-weight: 600;
             text-align: right;
             text-decoration: none;
             color: $mainTextColor;
@@ -466,7 +466,7 @@ canvas {
             }
         }
         .doYou {
-            font-size: $font30px;
+            font-size: 1.563em;
             font-weight: 300;
             font-stretch: normal;
             font-style: normal;
@@ -566,7 +566,7 @@ canvas {
             padding-bottom: $font50px;
             h2 {
                 font-size: $font20px;
-                font-weight: 500;
+                font-weight: 600;
                 font-stretch: normal;
                 font-style: normal;
                 line-height: normal;
@@ -613,6 +613,7 @@ canvas {
                 p {
                     font-size: $font16px;
                     color: $mainTextColor;
+                    font-weight: 300;
                     max-width: 37rem;
                     @include lg {
                         font-size: $font20px;
@@ -642,7 +643,7 @@ canvas {
                 display: block;
                 width: 100%;
                 font-size: 1.563rem;
-                font-weight: 300;
+                font-weight: 600;
                 margin-bottom: 1.75em;
             }
             #firstAct,
@@ -747,7 +748,7 @@ canvas {
                 h3 {
                     font-size: 1.875em;
                     color: $howPurple;
-                    font-weight: normal;
+                    font-weight: 300;
                     @include lg {
                         font-size: $font20px;
                         color: $mainBgColor;

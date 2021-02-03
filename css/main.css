@@ -393,7 +393,7 @@ canvas {
 }
 
 #mainContent #maestroContainer #showMust div {
-  font-size: 2.5em;
+  font-size: 2.188em;
   font-weight: 300;
   text-align: left;
   color: #465364;
@@ -408,7 +408,7 @@ canvas {
 
 #mainContent #maestroContainer #learnLink {
   font-size: 0.75em;
-  font-weight: 500;
+  font-weight: 600;
   text-align: right;
   text-decoration: none;
   color: #465364;
@@ -497,7 +497,7 @@ canvas {
 }
 
 #mainContent #About .doYou {
-  font-size: 1.875em;
+  font-size: 1.563em;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -623,7 +623,7 @@ canvas {
 
 #mainContent #How #howDescription h2 {
   font-size: 1.25em;
-  font-weight: 500;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -686,6 +686,7 @@ canvas {
 #mainContent #How #fullConcert div p {
   font-size: 1em;
   color: #465364;
+  font-weight: 300;
   max-width: 37rem;
 }
 
@@ -733,7 +734,7 @@ canvas {
   display: block;
   width: 100%;
   font-size: 1.563rem;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 1.75em;
 }
 
@@ -903,7 +904,7 @@ canvas {
 #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
   font-size: 1.875em;
   color: #7770f7;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 @media (min-width: 992px) {
