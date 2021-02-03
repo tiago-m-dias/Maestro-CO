@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: "GilroyLight";
-    src: url("/fonts/GilroyLight/font.woff2") format("woff2"), url("/fonts/GilroyLight/font.woff") format("woff");
+    src: url("../fonts/GilroyLight/font.woff2") format("woff2"), url("../fonts/GilroyLight/font.woff") format("woff");
 }
 
 @font-face {
     font-family: "GilroyRegular";
-    src: url("/fonts/GilroyRegular/font.woff2") format("woff2"), url("/fonts/GilroyRegular/font.woff") format("woff");
+    src: url("../fonts/GilroyRegular/font.woff2") format("woff2"), url("../fonts/GilroyRegular/font.woff") format("woff");
 }
 
 @font-face {
     font-family: "GilroySemiBold";
-    src: url("/fonts/GilroySemiBold/font.woff2") format("woff2"), url("/fonts/GilroySemiBold/font.woff") format("woff");
+    src: url("../fonts/GilroySemiBold/font.woff2") format("woff2"), url("../fonts/GilroySemiBold/font.woff") format("woff");
 }
 
 
@@ -691,13 +691,13 @@ canvas {
             padding: 29em $sideMarginMobile 0em;
             margin: 7.25em 0em 0em;
             position: relative;
-            background-image: url(/img/filipe-pic-mobile@2x.jpg);
+            background-image: url(../img/filipe-pic-mobile@2x.jpg);
             background-repeat: no-repeat;
             background-position: center top;
             background-size: 140vw;
             @include rwd(376) {
                 background-color: $cardBG;
-                background-image: url(/img/filipe-pic-desktop@2x.jpg);
+                background-image: url(../img/filipe-pic-desktop@2x.jpg);
             }
             @include lg {
                 padding: 3.9em;

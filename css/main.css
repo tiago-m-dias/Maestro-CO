@@ -2,17 +2,17 @@
 /* Import Font */
 @font-face {
   font-family: "GilroyLight";
-  src: url("/fonts/GilroyLight/font.woff2") format("woff2"), url("/fonts/GilroyLight/font.woff") format("woff");
+  src: url("../fonts/GilroyLight/font.woff2") format("woff2"), url("../fonts/GilroyLight/font.woff") format("woff");
 }
 
 @font-face {
   font-family: "GilroyRegular";
-  src: url("/fonts/GilroyRegular/font.woff2") format("woff2"), url("/fonts/GilroyRegular/font.woff") format("woff");
+  src: url("../fonts/GilroyRegular/font.woff2") format("woff2"), url("../fonts/GilroyRegular/font.woff") format("woff");
 }
 
 @font-face {
   font-family: "GilroySemiBold";
-  src: url("/fonts/GilroySemiBold/font.woff2") format("woff2"), url("/fonts/GilroySemiBold/font.woff") format("woff");
+  src: url("../fonts/GilroySemiBold/font.woff2") format("woff2"), url("../fonts/GilroySemiBold/font.woff") format("woff");
 }
 
 /* Variables */
@@ -815,7 +815,7 @@ canvas {
   padding: 29em 1.438em 0em;
   margin: 7.25em 0em 0em;
   position: relative;
-  background-image: url(/img/filipe-pic-mobile@2x.jpg);
+  background-image: url(../img/filipe-pic-mobile@2x.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 140vw;
@@ -824,7 +824,7 @@ canvas {
 @media (min-width: 376px) {
   #mainContent #What #aboutFilipe {
     background-color: #f5f7fa;
-    background-image: url(/img/filipe-pic-desktop@2x.jpg);
+    background-image: url(../img/filipe-pic-desktop@2x.jpg);
   }
 }
 
