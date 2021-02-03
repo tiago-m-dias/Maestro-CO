@@ -778,13 +778,13 @@ canvas {
         display: flex;
         align-content: flex-start;
         flex-wrap: wrap;
-        background-image: url(/img/Stripes.png);
+        background-image: url(../img/Stripes.png);
         background-size: contain;
         background-position: right;
         background-position-y: 0em;
         background-repeat: no-repeat;
         @include lg {
-            background-image: url(/img/Stripes@3x.png);
+            background-image: url(../img/Stripes@3x.png);
             background-position-y: -14.46em;
             margin-top: 14.46em;
             padding: 12.875em $sideMargin 0;

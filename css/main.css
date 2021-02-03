@@ -943,7 +943,7 @@ canvas {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-image: url(/img/Stripes.png);
+  background-image: url(../img/Stripes.png);
   background-size: contain;
   background-position: right;
   background-position-y: 0em;
@@ -952,7 +952,7 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #callToAction {
-    background-image: url(/img/Stripes@3x.png);
+    background-image: url(../img/Stripes@3x.png);
     background-position-y: -14.46em;
     margin-top: 14.46em;
     padding: 12.875em 5.938em 0;
