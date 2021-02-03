@@ -203,7 +203,7 @@ body {
 header {
     position: relative;
     width: 99vw;
-    z-index: 2;
+    z-index: 4;
     #headingNav {
         width: 100%;
         display: flex;
@@ -238,14 +238,45 @@ header {
         input[type="checkbox"] {
             display: none;
         }
+        #chk1:checked~#navLogo {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            overflow-y: hidden;
+            background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
+            img {
+                margin: 3.25em 0em 0.93em $sideMarginMobile;
+            }
+        }
         #chk1:checked~#navLinks {
             display: block;
+            position: fixed;
+            top: 9em;
+            left: $sideMarginMobile;
+            a {
+                font-family: $gilroyR;
+                font-weight: 600;
+                color: $mainBgColor;
+                font-size: 1.563em;
+                text-align: left;
+                padding: 0;
+                margin-bottom: $font16px;
+            }
+            #getInTouch {
+                padding: 0.75em 0;
+                font-size: 0.875em;
+                width: 6.875em;
+                text-align: center;
+            }
             @include lg {
                 display: flex;
             }
         }
         #chk1:checked~#menuButton {
-            color: $howPurple;
+            color: $mainBgColor;
         }
         #navLogo {
             width: 30%;
@@ -257,7 +288,6 @@ header {
         }
         #navLinks {
             display: none;
-            width: 100%;
             position: relative;
             //Desktop
             @include lg {

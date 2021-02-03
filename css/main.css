@@ -142,7 +142,7 @@ body {
 header {
   position: relative;
   width: 99vw;
-  z-index: 2;
+  z-index: 4;
 }
 
 header #headingNav {
@@ -196,8 +196,44 @@ header #headingNav input[type="checkbox"] {
   display: none;
 }
 
+header #headingNav #chk1:checked ~ #navLogo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  overflow-y: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to bottom, #766ff6, #d3c2ce);
+}
+
+header #headingNav #chk1:checked ~ #navLogo img {
+  margin: 3.25em 0em 0.93em 1.438em;
+}
+
 header #headingNav #chk1:checked ~ #navLinks {
   display: block;
+  position: fixed;
+  top: 9em;
+  left: 1.438em;
+}
+
+header #headingNav #chk1:checked ~ #navLinks a {
+  font-family: "GilroyRegular";
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.563em;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+header #headingNav #chk1:checked ~ #navLinks #getInTouch {
+  padding: 0.75em 0;
+  font-size: 0.875em;
+  width: 6.875em;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -209,7 +245,7 @@ header #headingNav #chk1:checked ~ #navLinks {
 }
 
 header #headingNav #chk1:checked ~ #menuButton {
-  color: #7770f7;
+  color: #ffffff;
 }
 
 header #headingNav #navLogo {
@@ -225,7 +261,6 @@ header #headingNav #navLogo {
 
 header #headingNav #navLinks {
   display: none;
-  width: 100%;
   position: relative;
 }
 
