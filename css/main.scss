@@ -833,7 +833,7 @@ canvas {
         @include lg {
             padding: 0 $sideMargin;
         }
-        #testemonials {
+        #testimonials {
             display: flex;
             flex-wrap: wrap;
             align-items: space-between;
@@ -849,7 +849,7 @@ canvas {
                 @include lg {
                     width: 50%;
                 }
-                .testemonialPhoto {
+                .testimonialPhoto {
                     display: inherit;
                     justify-content: flex-end;
                     padding-right: 1.3em;
@@ -862,7 +862,7 @@ canvas {
                         font-size: 4em;
                     }
                 }
-                .testemonial {
+                .testimonial {
                     width: 69%;
                     color: $mainTextColor;
                     font-size: $font20px;

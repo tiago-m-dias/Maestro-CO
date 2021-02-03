@@ -1021,7 +1021,7 @@ canvas {
   }
 }
 
-#mainContent #musicForEars #testemonials {
+#mainContent #musicForEars #testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,7 +1036,7 @@ canvas {
   width: 100%;
 }
 
-#mainContent #musicForEars #testemonials .testefy {
+#mainContent #musicForEars #testimonials .testefy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1047,12 +1047,12 @@ canvas {
 }
 
 @media (min-width: 992px) {
-  #mainContent #musicForEars #testemonials .testefy {
+  #mainContent #musicForEars #testimonials .testefy {
     width: 50%;
   }
 }
 
-#mainContent #musicForEars #testemonials .testefy .testemonialPhoto {
+#mainContent #musicForEars #testimonials .testefy .testimonialPhoto {
   display: inherit;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -1060,24 +1060,24 @@ canvas {
   padding-right: 1.3em;
 }
 
-#mainContent #musicForEars #testemonials .testefy .testemonialPhoto img {
+#mainContent #musicForEars #testimonials .testefy .testimonialPhoto img {
   max-height: 100px;
 }
 
-#mainContent #musicForEars #testemonials .testefy .testemonialPhoto i {
+#mainContent #musicForEars #testimonials .testefy .testimonialPhoto i {
   font-family: "GilroySemiBold";
   color: #766ff6;
   font-size: 4em;
 }
 
-#mainContent #musicForEars #testemonials .testefy .testemonial {
+#mainContent #musicForEars #testimonials .testefy .testimonial {
   width: 69%;
   color: #465364;
   font-size: 1.25em;
   line-height: 1.912em;
 }
 
-#mainContent #musicForEars #testemonials .testefy .testemonial .testefier {
+#mainContent #musicForEars #testimonials .testefy .testimonial .testefier {
   padding-top: 1em;
   color: rgba(70, 83, 100, 0.2);
   font-family: "GilroyRegular";
