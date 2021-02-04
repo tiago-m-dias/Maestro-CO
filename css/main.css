@@ -294,6 +294,7 @@ header #headingNav #navLinks {
 }
 
 header #headingNav #navLinks a {
+  font-family: "GilroySemiBold";
   font-size: 1em;
   font-weight: 500;
   font-stretch: normal;
@@ -325,7 +326,6 @@ header #headingNav #navLinks #joinUs::after {
 }
 
 header #headingNav #navLinks #getInTouch {
-  font-family: "GilroySemiBold";
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#766ff6), to(#d3c2ce));
   background-image: linear-gradient(to right, #766ff6, #d3c2ce);

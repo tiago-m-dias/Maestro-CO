@@ -307,6 +307,7 @@ header {
                 padding: 0 $sideMargin 0 0;
             }
             a {
+                font-family: $gilroySB;
                 font-size: $font16px;
                 font-weight: 500;
                 font-stretch: normal;
@@ -332,7 +333,6 @@ header {
                 padding-left: 0.3em;
             }
             #getInTouch {
-                font-family: $gilroySB;
                 color: $mainBgColor;
                 background-image: linear-gradient(to right, $gradientStart, $gradientStop);
                 padding: 0.6875em 1em;
