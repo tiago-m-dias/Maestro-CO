@@ -218,7 +218,7 @@
         </section>
         <section id="callToAction">
             <div id="whatWeNeed">
-                <h2>To <span>play our best</span>, here is what<br>we need from you:</h2>
+                <h2>To <span>play our best</span>, here <br>is what<br>we need from you:</h2>
                 <h4>— Have a clear goal</h4>
                 <p class="reveal-animation">
                     There is no time to play around, looking for a goal. To start playing, we first must know what the play is about.
@@ -302,14 +302,14 @@
 
         $(document).on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
-            $('#chk1').click();
+            $('#chk1').prop('checked', false);
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
         });
 
         $(window).resize(function() {
-            if ($(window).width() > 991) $('#chk1').prop('checked', false);;
+            if ($(window).width() > 991) $('#chk1').prop('checked', false);
 
         });
     </script>

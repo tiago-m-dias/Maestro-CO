@@ -196,7 +196,7 @@ body {
     background-color: $mainBgColor;
     width: 99vw;
     color: $mainTextColor;
-    font-family: $gilroyR, Helvetica, Arial, sans-serif;
+    font-family: $gilroyL, Helvetica, Arial, sans-serif;
     @include sm {}
 }
 
@@ -230,7 +230,6 @@ header {
                 display: none;
             }
             #burgerHandler {
-                font-family: $gilroyL;
                 font-weight: 100;
                 cursor: pointer;
                 font-style: normal;
@@ -365,13 +364,14 @@ canvas {
         position: relative;
         overflow-x: hidden;
         height: 17em;
+        //background-color: red; maestrinhos mobile aqui
         @include lg {
             height: 75vh;
         }
         #showMust {
             position: absolute;
             z-index: 3;
-            top: 5vh;
+            top: 0;
             left: $sideMarginMobile;
             font-stretch: normal;
             font-style: normal;
@@ -379,6 +379,7 @@ canvas {
             letter-spacing: normal;
             width: 100%;
             @include lg {
+                top: 5vh;
                 left: $sideMargin;
             }
             div {
@@ -401,13 +402,15 @@ canvas {
             position: absolute;
             z-index: 3;
             bottom: 5vh;
-            right: $sideMargin;
+            right: $sideMarginMobile;
             &::after {
                 content: ' ↓';
                 color: $mainPurple;
+                font-size: $font20px;
             }
             @include lg {
                 font-size: $font16px;
+                right: $sideMargin;
             }
         }
     }
@@ -535,7 +538,7 @@ canvas {
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
-                line-height: normal;
+                line-height: 1.5;
                 letter-spacing: normal;
                 text-align: left;
                 color: $mainTextColor;
@@ -579,7 +582,7 @@ canvas {
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: normal;
-                line-height: normal;
+                line-height: 1.5;
                 letter-spacing: normal;
                 text-align: left;
                 color: $mainTextColor;
@@ -602,13 +605,16 @@ canvas {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                padding: 0 7.5em 0 0;
-                width: 50%;
+                padding: 0 0 4em;
+                @include lg {
+                    padding: 0 7.5em 0 0;
+                    width: 50%;
+                }
                 h2 {
                     font-size: $font20px;
                     font-weight: normal;
                     color: $howPurple;
-                    text-transform: uppercase;
+                    //text-transform: uppercase;
                 }
                 p {
                     font-size: $font16px;
@@ -626,7 +632,7 @@ canvas {
         }
     }
     #What {
-        background-image: linear-gradient(to right, $gradientStart, $gradientStop);
+        background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
         @include lg {
             height: calc(43.375em + (43.375em / 3));
         }
@@ -640,6 +646,7 @@ canvas {
                 padding: 6.063em $sideMargin 0;
             }
             #fourActs {
+                font-family: $gilroyR;
                 display: block;
                 width: 100%;
                 font-size: 1.563rem;
@@ -654,10 +661,16 @@ canvas {
                 font-style: normal;
                 letter-spacing: normal;
                 text-align: left;
+                margin-bottom: 3.688em;
+                @include lg {
+                    margin-bottom: 0;
+                }
                 h4 {
+                    font-family: $gilroySB;
                     font-size: 0.5em;
-                    font-weight: bold;
+                    font-weight: 800;
                     text-transform: uppercase;
+                    line-height: 3;
                     @include lg {
                         font-size: $font10px;
                     }
@@ -665,8 +678,8 @@ canvas {
                 span {
                     display: block;
                     font-size: $font16px;
-                    height: $font50px;
                     text-decoration: underline;
+                    line-height: normal;
                     @include lg {
                         font-size: $font20px;
                     }
@@ -676,7 +689,7 @@ canvas {
                     ul {
                         li {
                             font-size: $font16px;
-                            line-height: 1.77em;
+                            line-height: 1.78em;
                             font-weight: 300;
                         }
                     }
@@ -686,6 +699,7 @@ canvas {
         #aboutFilipe {
             display: flex;
             flex-wrap: wrap;
+            font-family: $gilroyL;
             justify-content: space-between;
             background-color: $mainBgColor;
             padding: 29em $sideMarginMobile 0em;
@@ -715,6 +729,7 @@ canvas {
                 div {
                     align-self: flex-end;
                     p {
+                        font-family: $gilroyR;
                         font-size: $font16px;
                         font-weight: normal;
                         font-stretch: normal;
@@ -745,10 +760,19 @@ canvas {
                 text-align: left;
                 width: 29.063em;
                 order: 1;
+                margin-top: 9em;
+                @include lg {
+                    margin-top: 0;
+                }
                 h3 {
                     font-size: 1.875em;
+                    line-height: normal;
                     color: $howPurple;
                     font-weight: 300;
+                    // background-image: linear-gradient(to top #766ff6, #d3c2ce);
+                    // -webkit-background-clip: text;
+                    // background-clip: text;
+                    // -webkit-text-fill-color: transparent;
                     @include lg {
                         font-size: $font20px;
                         color: $mainBgColor;
@@ -757,9 +781,10 @@ canvas {
                 }
                 p {
                     font-size: 0.875em;
-                    line-height: 1.78em;
+                    line-height: 1.5;
                     padding-top: $font16px;
                     font-weight: 300;
+                    margin-bottom: $font16px;
                     @include lg {
                         font-size: $font16px;
                         color: $mainBgColor;
@@ -790,7 +815,11 @@ canvas {
             padding: 12.875em $sideMargin 0;
         }
         #whatWeNeed {
-            height: 76.563em;
+            margin-top: 12em;
+            @include lg {
+                margin-top: 0;
+                height: 76.563em;
+            }
             h2 {
                 font-size: 1.875em;
                 font-weight: 300;
@@ -800,7 +829,6 @@ canvas {
                 letter-spacing: normal;
                 text-align: left;
                 color: $mainPurple;
-                margin-bottom: 2em;
                 @include lg {
                     font-size: $font50px;
                 }
@@ -812,6 +840,7 @@ canvas {
                 font-family: $gilroyL, $gilroyR, Helvetica, Arial, sans-serif;
                 color: $howPurple;
                 font-size: $font16px;
+                line-height: 1.5;
                 margin-bottom: 0;
                 font-weight: 300;
                 @include lg {
@@ -821,9 +850,10 @@ canvas {
             p {
                 font-family: $gilroyL, $gilroyR, Helvetica, Arial, sans-serif;
                 font-size: $font16px;
-                line-height: $font25px;
+                line-height: 1.5;
                 color: $mainTextColor;
                 width: 91%;
+                margin-bottom: 3em;
                 @include lg {
                     font-size: $font20px;
                     width: 61%;
@@ -848,7 +878,6 @@ canvas {
             display: flex;
             flex-wrap: wrap;
             align-items: space-between;
-            font-family: $gilroyL;
             margin-bottom: 3em;
             border-bottom: 1px solid $borderColor;
             width: 100%;
@@ -897,7 +926,7 @@ canvas {
             width: 100%;
             font-size: 2.188em;
             font-weight: 500;
-            color: $mainTextColor;
+            color: $howPurple;
             @include lg {
                 font-size: 3.25em;
                 width: 37%;
@@ -913,29 +942,35 @@ canvas {
             div {
                 font-size: 1.563em;
                 margin-bottom: $font20px;
+                line-height: 1.5;
+                font-weight: 300;
                 @include lg {
                     font-size: $font30px;
                 }
             }
             a {
+                font-family: $gilroyR;
                 font-size: $font16px;
+                font-weight: 600;
                 color: $mainBgColor;
                 background-color: $mainPurple;
-                padding: $font10px 0.375em 0.6875em 0.375em;
+                padding: $font10px 1em 0.6875em;
                 text-decoration: none;
             }
         }
         #followSound {
             width: 100%;
-            font-size: $font25px;
+            font-size: $font20px;
             font-weight: 300;
             color: $mainPurple;
+            line-height: 1.5;
             padding: $font50px 0 $font25px;
             @include lg {
+                font-size: $font25px;
                 width: 30%;
             }
             a {
-                color: $mainTextColor;
+                //color: $mainTextColor;
             }
         }
     }
@@ -952,12 +987,12 @@ footer {
         padding: 0 $sideMargin 4em;
     }
     #rightsMaestro {
-        font-size: 0.8125em;
+        font-size: 0.813em;
         order: 1;
     }
     #footerSocials {
         order: -1;
-        padding: 0 0 $font20px;
+        padding: 0 0 2.5em;
         @include lg {
             order: 1;
             padding: 0;

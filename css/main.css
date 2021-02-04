@@ -136,7 +136,7 @@ body {
   background-color: #ffffff;
   width: 99vw;
   color: #465364;
-  font-family: "GilroyRegular", Helvetica, Arial, sans-serif;
+  font-family: "GilroyLight", Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -187,7 +187,6 @@ header #headingNav #menuButton {
 }
 
 header #headingNav #menuButton #burgerHandler {
-  font-family: "GilroyLight";
   font-weight: 100;
   cursor: pointer;
   font-style: normal;
@@ -377,7 +376,7 @@ canvas {
 #mainContent #maestroContainer #showMust {
   position: absolute;
   z-index: 3;
-  top: 5vh;
+  top: 0;
   left: 1.438em;
   font-stretch: normal;
   font-style: normal;
@@ -388,6 +387,7 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #maestroContainer #showMust {
+    top: 5vh;
     left: 5.938em;
   }
 }
@@ -415,17 +415,19 @@ canvas {
   position: absolute;
   z-index: 3;
   bottom: 5vh;
-  right: 5.938em;
+  right: 1.438em;
 }
 
 #mainContent #maestroContainer #learnLink::after {
   content: ' ↓';
   color: #766ff6;
+  font-size: 1.25em;
 }
 
 @media (min-width: 992px) {
   #mainContent #maestroContainer #learnLink {
     font-size: 1em;
+    right: 5.938em;
   }
 }
 
@@ -580,7 +582,7 @@ canvas {
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
   color: #465364;
@@ -637,7 +639,7 @@ canvas {
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
   color: #465364;
@@ -672,15 +674,20 @@ canvas {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  padding: 0 7.5em 0 0;
-  width: 50%;
+  padding: 0 0 4em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #How #fullConcert div {
+    padding: 0 7.5em 0 0;
+    width: 50%;
+  }
 }
 
 #mainContent #How #fullConcert div h2 {
   font-size: 1.25em;
   font-weight: normal;
   color: #7770f7;
-  text-transform: uppercase;
 }
 
 #mainContent #How #fullConcert div p {
@@ -701,8 +708,8 @@ canvas {
 }
 
 #mainContent #What {
-  background-image: -webkit-gradient(linear, left top, right top, from(#766ff6), to(#d3c2ce));
-  background-image: linear-gradient(to right, #766ff6, #d3c2ce);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to bottom, #766ff6, #d3c2ce);
 }
 
 @media (min-width: 992px) {
@@ -731,6 +738,7 @@ canvas {
 }
 
 #mainContent #What #allTheActs #fourActs {
+  font-family: "GilroyRegular";
   display: block;
   width: 100%;
   font-size: 1.563rem;
@@ -746,15 +754,27 @@ canvas {
   font-style: normal;
   letter-spacing: normal;
   text-align: left;
+  margin-bottom: 3.688em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #What #allTheActs #firstAct,
+  #mainContent #What #allTheActs #secondAct,
+  #mainContent #What #allTheActs #thirdAct,
+  #mainContent #What #allTheActs #fourthAct {
+    margin-bottom: 0;
+  }
 }
 
 #mainContent #What #allTheActs #firstAct h4,
 #mainContent #What #allTheActs #secondAct h4,
 #mainContent #What #allTheActs #thirdAct h4,
 #mainContent #What #allTheActs #fourthAct h4 {
+  font-family: "GilroySemiBold";
   font-size: 0.5em;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
+  line-height: 3;
 }
 
 @media (min-width: 992px) {
@@ -772,8 +792,8 @@ canvas {
 #mainContent #What #allTheActs #fourthAct span {
   display: block;
   font-size: 1em;
-  height: 3.125em;
   text-decoration: underline;
+  line-height: normal;
 }
 
 @media (min-width: 992px) {
@@ -798,7 +818,7 @@ canvas {
 #mainContent #What #allTheActs #thirdAct div ul li,
 #mainContent #What #allTheActs #fourthAct div ul li {
   font-size: 1em;
-  line-height: 1.77em;
+  line-height: 1.78em;
   font-weight: 300;
 }
 
@@ -808,6 +828,7 @@ canvas {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-family: "GilroyLight";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -861,6 +882,7 @@ canvas {
 }
 
 #mainContent #What #aboutFilipe #aboutFilipePhoto div p {
+  font-family: "GilroyRegular";
   font-size: 1em;
   font-weight: normal;
   font-stretch: normal;
@@ -899,10 +921,18 @@ canvas {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  margin-top: 9em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #What #aboutFilipe #aboutFilipeMission {
+    margin-top: 0;
+  }
 }
 
 #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
   font-size: 1.875em;
+  line-height: normal;
   color: #7770f7;
   font-weight: 300;
 }
@@ -917,9 +947,10 @@ canvas {
 
 #mainContent #What #aboutFilipe #aboutFilipeMission p {
   font-size: 0.875em;
-  line-height: 1.78em;
+  line-height: 1.5;
   padding-top: 1em;
   font-weight: 300;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 992px) {
@@ -960,7 +991,14 @@ canvas {
 }
 
 #mainContent #callToAction #whatWeNeed {
-  height: 76.563em;
+  margin-top: 12em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #callToAction #whatWeNeed {
+    margin-top: 0;
+    height: 76.563em;
+  }
 }
 
 #mainContent #callToAction #whatWeNeed h2 {
@@ -972,7 +1010,6 @@ canvas {
   letter-spacing: normal;
   text-align: left;
   color: #766ff6;
-  margin-bottom: 2em;
 }
 
 @media (min-width: 992px) {
@@ -989,6 +1026,7 @@ canvas {
   font-family: "GilroyLight", "GilroyRegular", Helvetica, Arial, sans-serif;
   color: #7770f7;
   font-size: 1em;
+  line-height: 1.5;
   margin-bottom: 0;
   font-weight: 300;
 }
@@ -1002,9 +1040,10 @@ canvas {
 #mainContent #callToAction #whatWeNeed p {
   font-family: "GilroyLight", "GilroyRegular", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  line-height: 1.5625em;
+  line-height: 1.5;
   color: #465364;
   width: 91%;
+  margin-bottom: 3em;
 }
 
 @media (min-width: 992px) {
@@ -1045,7 +1084,6 @@ canvas {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  font-family: "GilroyLight";
   margin-bottom: 3em;
   border-bottom: 1px solid #e7ebf0;
   width: 100%;
@@ -1110,7 +1148,7 @@ canvas {
   width: 100%;
   font-size: 2.188em;
   font-weight: 500;
-  color: #465364;
+  color: #7770f7;
 }
 
 @media (min-width: 992px) {
@@ -1135,6 +1173,8 @@ canvas {
 #mainContent #musicForEars #openChat div {
   font-size: 1.563em;
   margin-bottom: 1.25em;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 @media (min-width: 992px) {
@@ -1144,29 +1184,29 @@ canvas {
 }
 
 #mainContent #musicForEars #openChat a {
+  font-family: "GilroyRegular";
   font-size: 1em;
+  font-weight: 600;
   color: #ffffff;
   background-color: #766ff6;
-  padding: 0.625em 0.375em 0.6875em 0.375em;
+  padding: 0.625em 1em 0.6875em;
   text-decoration: none;
 }
 
 #mainContent #musicForEars #followSound {
   width: 100%;
-  font-size: 1.5625em;
+  font-size: 1.25em;
   font-weight: 300;
   color: #766ff6;
+  line-height: 1.5;
   padding: 3.125em 0 1.5625em;
 }
 
 @media (min-width: 992px) {
   #mainContent #musicForEars #followSound {
+    font-size: 1.5625em;
     width: 30%;
   }
-}
-
-#mainContent #musicForEars #followSound a {
-  color: #465364;
 }
 
 footer {
@@ -1192,7 +1232,7 @@ footer {
 }
 
 footer #rightsMaestro {
-  font-size: 0.8125em;
+  font-size: 0.813em;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -1202,7 +1242,7 @@ footer #footerSocials {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-  padding: 0 0 1.25em;
+  padding: 0 0 2.5em;
 }
 
 @media (min-width: 992px) {
