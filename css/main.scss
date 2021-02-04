@@ -328,13 +328,14 @@ header {
             }
             #joinUs::after {
                 content: ' ↗';
-                font-size: $font10px;
                 color: $mainPurple;
+                padding-left: 0.3em;
             }
             #getInTouch {
+                font-family: $gilroySB;
                 color: $mainBgColor;
                 background-image: linear-gradient(to right, $gradientStart, $gradientStop);
-                padding: 0.6875em;
+                padding: 0.6875em 1em;
                 margin-right: 0;
             }
         }
