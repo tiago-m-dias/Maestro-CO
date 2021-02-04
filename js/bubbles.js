@@ -73,7 +73,14 @@ class Bubbles {
 
     initSvg() {
         const el = document.getElementById('svg');
+        const world = document.getElementById('world');
         const paths = el.querySelectorAll('path');
+
+        var ctx = world.getContext("2d");
+        var my_gradient = ctx.createLinearGradient(0, 0, 0, 870);
+        my_gradient.addColorStop(0, "#766FF6");
+        my_gradient.addColorStop(1, "#D3C2CE");
+
 
         for (let i = 0; i < paths.length; i++) {
             const path = paths[i];
@@ -82,10 +89,16 @@ class Bubbles {
             const points = Matter.Svg.pathToVertices(path, 3);
             vertexSets.push(Matter.Vertices.scale(points, 1.2, 1.2));
 
+
+            
+
+
+
             Matter.World.add(this.engine.world, Matter.Bodies.fromVertices(850 + i * 150, 200 + i * 50, vertexSets, {
                 render: {
                     globalAlpha: 0.5,
-                    fillStyle: 'rgb(118, 111, 246, 0.6)',
+                    //fillStyle: 'rgb(118, 111, 246, 0.6)',
+                    fillStyle: my_gradient,
                     strokeStyle: 'rgb(211, 194, 206, 0.5)',
                     lineWidth: 1,
                     airFriction: this.options.airFriction,
