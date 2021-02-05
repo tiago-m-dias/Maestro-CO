@@ -325,6 +325,7 @@ header #headingNav #navLinks a {
 
 @media (min-width: 992px) {
   header #headingNav #navLinks a {
+    font-weight: 600;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -417,7 +418,7 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #maestroContainer #showMust div {
-    font-size: 7.1875em;
+    font-size: 6.25em;
   }
 }
 
@@ -441,6 +442,7 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #maestroContainer #learnLink {
+    font-family: "GilroySemiBold";
     font-size: 1em;
     right: 5.938em;
   }
@@ -539,7 +541,7 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #About .doYou {
-    font-size: 3.125em;
+    font-size: 2.5em;
     padding: 29px 23% 29px 0;
   }
 }
@@ -609,6 +611,7 @@ canvas {
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutDescription {
     font-size: 1.25em;
+    line-height: 1.53;
     width: 50%;
   }
 }
@@ -715,6 +718,7 @@ canvas {
 @media (min-width: 992px) {
   #mainContent #How #fullConcert div p {
     font-size: 1.25em;
+    line-height: 1.53;
   }
 }
 
@@ -759,6 +763,13 @@ canvas {
   font-size: 1.563rem;
   font-weight: 600;
   margin-bottom: 1.75em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #What #allTheActs #fourActs {
+    font-family: "GilroySemiBold";
+    font-size: 1.875em;
+  }
 }
 
 #mainContent #What #allTheActs #firstAct,
@@ -817,6 +828,8 @@ canvas {
   #mainContent #What #allTheActs #thirdAct span,
   #mainContent #What #allTheActs #fourthAct span {
     font-size: 1.25em;
+    font-family: "GilroyRegular";
+    height: 3em;
   }
 }
 
@@ -910,8 +923,10 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe #aboutFilipePhoto div p {
-    font-size: 1.5625em;
+    font-family: "GilroyLight";
+    font-size: 1.25em;
     color: #ffffff;
+    line-height: 1.5;
   }
 }
 
@@ -954,9 +969,11 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
+    font-family: "GilroyRegular";
     font-size: 1.25em;
     color: #ffffff;
     padding-right: 3.125em;
+    line-height: 1.5;
   }
 }
 
@@ -970,6 +987,7 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe #aboutFilipeMission p {
+    font-family: "GilroyRegular";
     font-size: 1em;
     color: #ffffff;
   }
@@ -1168,7 +1186,8 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #musicForEars #letsChat {
-    font-size: 3.25em;
+    font-size: 3.125em;
+    font-weight: 300;
     width: 37%;
   }
 }
@@ -1219,7 +1238,6 @@ canvas {
 
 @media (min-width: 992px) {
   #mainContent #musicForEars #followSound {
-    font-size: 1.5625em;
     width: 30%;
   }
 }
@@ -1253,6 +1271,13 @@ footer #rightsMaestro {
           order: 1;
 }
 
+@media (min-width: 992px) {
+  footer #rightsMaestro {
+    font-family: "GilroyRegular";
+    font-size: 0.688em;
+  }
+}
+
 footer #footerSocials {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
@@ -1279,6 +1304,8 @@ footer #footerSocials a {
 @media (min-width: 992px) {
   footer #footerSocials a {
     display: block;
+    font-family: "GilroyRegular";
+    font-weight: normal;
   }
 }
 /*# sourceMappingURL=main.css.map */

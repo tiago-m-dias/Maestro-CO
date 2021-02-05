@@ -66,6 +66,7 @@ $font25px: 1.5625em;
 $font30px: 1.875em;
 $font40px: 2.5em;
 $font50px: 3.125em;
+$font100px: 6.25em;
 $font115px: 7.1875em;
 
 /* Font Sizes END */
@@ -331,6 +332,7 @@ header {
                 padding: $font10px 0.375em 0.6875em;
                 //Desktop
                 @include lg {
+                    font-weight: 600;
                     display: flex;
                     width: auto;
                     margin-right: 3.813em;
@@ -399,7 +401,7 @@ canvas {
                 color: $mainTextColor;
                 width: 70%;
                 @include lg {
-                    font-size: $font115px;
+                    font-size: $font100px;
                 }
             }
         }
@@ -419,6 +421,7 @@ canvas {
                 font-size: $font20px;
             }
             @include lg {
+                font-family: $gilroySB;
                 font-size: $font16px;
                 right: $sideMargin;
             }
@@ -490,7 +493,7 @@ canvas {
             padding: 29px $sideMarginMobile 29px 0;
             border-bottom: 1px solid $borderColor;
             @include lg {
-                font-size: $font50px;
+                font-size: $font40px;
                 padding: 29px 23% 29px 0;
             }
             /*
@@ -556,6 +559,7 @@ canvas {
                 padding-top: 4em;
                 @include lg {
                     font-size: $font20px;
+                    line-height: 1.53;
                     width: 50%;
                 }
                 p {
@@ -633,6 +637,7 @@ canvas {
                     max-width: 37rem;
                     @include lg {
                         font-size: $font20px;
+                        line-height: 1.53;
                     }
                 }
                 span {
@@ -662,6 +667,10 @@ canvas {
                 font-size: 1.563rem;
                 font-weight: 600;
                 margin-bottom: 1.75em;
+                @include lg {
+                    font-family: $gilroySB;
+                    font-size: 1.875em;
+                }
             }
             #firstAct,
             #secondAct,
@@ -692,6 +701,8 @@ canvas {
                     line-height: normal;
                     @include lg {
                         font-size: $font20px;
+                        font-family: $gilroyR;
+                        height: 3em;
                     }
                 }
                 div {
@@ -749,8 +760,10 @@ canvas {
                         text-align: left;
                         color: $mainTextColor;
                         @include lg {
-                            font-size: $font25px;
+                            font-family: $gilroyL;
+                            font-size: $font20px;
                             color: $mainBgColor;
+                            line-height: 1.5;
                         }
                     }
                     span {
@@ -784,9 +797,11 @@ canvas {
                     // background-clip: text;
                     // -webkit-text-fill-color: transparent;
                     @include lg {
+                        font-family: $gilroyR;
                         font-size: $font20px;
                         color: $mainBgColor;
                         padding-right: $font50px;
+                        line-height: 1.5;
                     }
                 }
                 p {
@@ -796,6 +811,7 @@ canvas {
                     font-weight: 300;
                     margin-bottom: $font16px;
                     @include lg {
+                        font-family: $gilroyR;
                         font-size: $font16px;
                         color: $mainBgColor;
                     }
@@ -938,7 +954,8 @@ canvas {
             font-weight: 500;
             color: $howPurple;
             @include lg {
-                font-size: 3.25em;
+                font-size: 3.125em;
+                font-weight: 300;
                 width: 37%;
             }
         }
@@ -976,7 +993,6 @@ canvas {
             line-height: 1.5;
             padding: $font50px 0 $font25px;
             @include lg {
-                font-size: $font25px;
                 width: 30%;
             }
             a {
@@ -999,6 +1015,10 @@ footer {
     #rightsMaestro {
         font-size: 0.813em;
         order: 1;
+        @include lg {
+            font-family: $gilroyR;
+            font-size: 0.688em;
+        }
     }
     #footerSocials {
         order: -1;
@@ -1014,6 +1034,8 @@ footer {
             line-height: 1.78;
             @include lg {
                 display: block;
+                font-family: $gilroyR;
+                font-weight: normal;
             }
         }
     }
