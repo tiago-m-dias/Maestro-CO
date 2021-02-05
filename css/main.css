@@ -225,6 +225,10 @@ header #headingNav #chk1:checked ~ #navLogo img include lg {
   margin: auto;
 }
 
+header #headingNav #chk1:checked ~ #navLogo #logoImage {
+  content: url("../img/logos/brandWhite.svg");
+}
+
 header #headingNav #chk1:checked ~ #navLinks {
   display: block;
   position: fixed;
@@ -269,6 +273,16 @@ header #headingNav #navLogo {
 @media (min-width: 992px) {
   header #headingNav #navLogo {
     margin: 0.0625em 1.87em 0.93em 5.938em;
+  }
+}
+
+header #headingNav #navLogo #logoImage {
+  content: url("../img/logos/brand.svg");
+}
+
+@media (min-width: 992px) {
+  header #headingNav #navLogo #logoImage {
+    content: url("../img/logos/brandDesktop.svg");
   }
 }
 

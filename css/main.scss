@@ -259,6 +259,9 @@ header {
                     margin: auto;
                 }
             }
+            #logoImage {
+                content: url('../img/logos/brandWhite.svg');
+            }
         }
         #chk1:checked~#navLinks {
             display: block;
@@ -293,6 +296,12 @@ header {
             margin: 0.0625em 0em 0.93em $sideMarginMobile;
             @include lg {
                 margin: 0.0625em 1.87em 0.93em $sideMargin;
+            }
+            #logoImage {
+                content: url('../img/logos/brand.svg');
+                @include lg {
+                    content: url('../img/logos/brandDesktop.svg');
+                }
             }
         }
         #navLinks {
