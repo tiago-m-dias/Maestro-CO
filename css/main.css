@@ -112,6 +112,24 @@
 }
 
 /* Keyframes END */
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: red;
+  /* Create the gradient. */
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to top, #766ff6, #d3c2ce);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 /* Breakpoints START */
 /* Breakpoints END */
 ul {
@@ -1227,6 +1245,8 @@ header #headingNav #navLinks #getInTouch {
   font-weight: 600;
   color: #ffffff;
   background-color: #766ff6;
+  background-image: -webkit-gradient(linear, left top, right top, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to right, #766ff6, #d3c2ce);
   padding: 0.625em 1em 0.6875em;
   text-decoration: none;
 }
@@ -1235,7 +1255,6 @@ header #headingNav #navLinks #getInTouch {
   width: 100%;
   font-size: 1.25em;
   font-weight: 300;
-  color: #766ff6;
   line-height: 1.5;
   padding: 3.125em 0 1.5625em;
 }
@@ -1244,6 +1263,10 @@ header #headingNav #navLinks #getInTouch {
   #mainContent #musicForEars #followSound {
     width: 30%;
   }
+}
+
+#mainContent #musicForEars #followSound .gradient-text p {
+  color: #465364;
 }
 
 footer {
