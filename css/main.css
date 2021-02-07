@@ -116,8 +116,8 @@
   /* Fallback: Set a background color. */
   background-color: red;
   /* Create the gradient. */
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#766ff6), to(#d3c2ce));
-  background-image: linear-gradient(to top, #766ff6, #d3c2ce);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to bottom, #766ff6, #d3c2ce);
   /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
