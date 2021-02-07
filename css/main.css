@@ -265,6 +265,10 @@ header #headingNav #chk1:checked ~ #menuButton {
   color: #ffffff;
 }
 
+header #headingNav #chk1:checked ~ #menuButton img {
+  content: url("../img/menuC.svg");
+}
+
 header #headingNav #navLogo {
   width: 30%;
   margin: 0.0625em 0em 0.93em 1.438em;
@@ -349,13 +353,13 @@ header #headingNav #navLinks #getInTouch {
 }
 
 .grain,
-canvas {
+#world {
   display: none;
 }
 
 @media (min-width: 992px) {
   .grain,
-  canvas {
+  #world {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

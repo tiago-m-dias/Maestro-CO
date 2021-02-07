@@ -290,6 +290,9 @@ header {
         }
         #chk1:checked~#menuButton {
             color: $mainBgColor;
+            img {
+                content: url('../img/menuC.svg');
+            }
         }
         #navLogo {
             width: 30%;
@@ -354,7 +357,7 @@ header {
 }
 
 .grain,
-canvas {
+#world {
     display: none;
     @include lg {
         display: flex;
