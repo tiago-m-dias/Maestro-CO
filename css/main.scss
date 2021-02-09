@@ -435,12 +435,15 @@ header {
                 top: 5vh;
                 left: $sideMargin;
             }
-            div {
+            .reveal-animation {
+                animation-delay: inherit;
+                width: 70%;
+            }
+            .showMustHeadline {
                 font-size: 2.188em;
                 font-weight: 300;
                 text-align: left;
                 color: $mainTextColor;
-                width: 70%;
                 @include lg {
                     font-size: $font100px;
                 }
@@ -897,6 +900,9 @@ header {
                 margin-top: 0;
                 height: 76.563em;
             }
+            .reveal-animation {
+                animation-delay: inherit;
+            }
             h2 {
                 font-size: 1.875em;
                 font-weight: 300;
@@ -989,7 +995,7 @@ header {
                         color: $doYouColor;
                         font-family: $gilroyR;
                         font-size: $font16px;
-                        line-height: 1.53em;
+                        line-height: 1.53;
                     }
                 }
             }

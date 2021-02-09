@@ -490,16 +490,21 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #maestroContainer #showMust div {
+#mainContent #maestroContainer #showMust .reveal-animation {
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+  width: 70%;
+}
+
+#mainContent #maestroContainer #showMust .showMustHeadline {
   font-size: 2.188em;
   font-weight: 300;
   text-align: left;
   color: #465364;
-  width: 70%;
 }
 
 @media (min-width: 992px) {
-  #mainContent #maestroContainer #showMust div {
+  #mainContent #maestroContainer #showMust .showMustHeadline {
     font-size: 6.25em;
   }
 }
@@ -1116,6 +1121,11 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
+#mainContent #callToAction #whatWeNeed .reveal-animation {
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+}
+
 #mainContent #callToAction #whatWeNeed h2 {
   font-size: 1.875em;
   font-weight: 300;
@@ -1250,7 +1260,7 @@ header #headingNav #navLinks #getInTouch {
   color: rgba(70, 83, 100, 0.2);
   font-family: "GilroyRegular";
   font-size: 1em;
-  line-height: 1.53em;
+  line-height: 1.53;
 }
 
 #mainContent #musicForEars .musicSplit {
