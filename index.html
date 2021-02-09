@@ -301,13 +301,23 @@
         $(document).on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
             $('#chk1').prop('checked', false);
+            $("body").removeClass("menuOpen");
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
         });
 
+        $('#chk1').change(
+            function() {
+                $("body").toggleClass("menuOpen");
+            });
+
         $(window).resize(function() {
-            if ($(window).width() > 991) $('#chk1').prop('checked', false);
+            if ($(window).width() > 991) {
+                $("body").removeClass("menuOpen");
+                $('#chk1').prop('checked', false);
+            }
+
 
         });
     </script>

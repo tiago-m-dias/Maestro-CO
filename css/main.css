@@ -200,6 +200,10 @@ p {
   padding: 0;
 }
 
+.menuOpen {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -213,6 +217,7 @@ body {
   width: 99vw;
   color: #465364;
   font-family: "GilroyLight", Helvetica, Arial, sans-serif;
+  overflow: auto;
 }
 
 header {

@@ -226,6 +226,10 @@ p {
     padding: 0;
 }
 
+.menuOpen {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -235,6 +239,7 @@ body {
     width: 99vw;
     color: $mainTextColor;
     font-family: $gilroyL, Helvetica, Arial, sans-serif;
+    overflow: auto;
     @include sm {}
 }
 
