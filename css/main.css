@@ -109,6 +109,15 @@
   overflow: hidden;
 }
 
+.reveal-animation {
+  opacity: 0;
+  -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+          transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  will-change: opacity, transform;
+  -webkit-animation: revealText 1000ms cubic-bezier(0.7, 0, 0.3, 1) forwards 400ms;
+          animation: revealText 1000ms cubic-bezier(0.7, 0, 0.3, 1) forwards 400ms;
+}
+
 .reveal-animation[data-scroll="in"] {
   /*transform: scaleY(1);
             opacity: 1;

@@ -124,6 +124,13 @@ $delay: 400; // 3. what's the delay between each line? (milliseconds)
     overflow: hidden;
 }
 
+.reveal-animation {
+    opacity: 0;
+    transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+    will-change: opacity, transform;
+    animation: revealText $duration+ms cubic-bezier(0.7, 0, 0.3, 1) forwards $delay+ms;
+}
+
 .reveal-animation[data-scroll="in"] {
     /*transform: scaleY(1);
             opacity: 1;
