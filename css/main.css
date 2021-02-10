@@ -606,6 +606,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About #aboutWorkFooter {
+  font-family: "GilroyRegular";
   font-size: 0.625em;
   font-weight: normal;
   font-stretch: normal;
@@ -614,10 +615,12 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   text-transform: uppercase;
-  color: #465364;
+  color: #766ff6;
   width: 100%;
-  padding-top: 12px;
-  margin-bottom: 117px;
+  margin-top: 1.432rem;
+  padding-top: 0.75rem;
+  margin-bottom: calc(7.312rem - 3.125rem);
+  border-top: 1px solid #e7ebf0;
 }
 
 #mainContent #About #aboutWorkFooter span:nth-of-type(2) {
@@ -651,7 +654,7 @@ header #headingNav #navLinks #getInTouch {
 @media (min-width: 992px) {
   #mainContent #About .doYou {
     font-size: 2.5em;
-    padding: 29px 23% 29px 0;
+    padding: 3.125rem 0;
   }
 }
 
@@ -661,6 +664,7 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #About .doYou a, #mainContent #About .doYou:nth-child(6) {
   color: #465364;
+  border-bottom: 0px;
 }
 
 #mainContent #About .doYou p {

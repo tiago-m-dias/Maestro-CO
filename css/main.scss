@@ -525,6 +525,7 @@ header {
         } */
         }
         #aboutWorkFooter {
+            font-family: $gilroyR;
             font-size: $font10px;
             font-weight: normal;
             font-stretch: normal;
@@ -533,10 +534,12 @@ header {
             letter-spacing: normal;
             text-align: left;
             text-transform: uppercase;
-            color: $mainTextColor;
+            color: $mainPurple;
             width: 100%;
-            padding-top: 12px;
-            margin-bottom: 117px;
+            margin-top: 1.432rem;
+            padding-top: 0.75rem;
+            margin-bottom: calc(7.312rem - 3.125rem);
+            border-top: 1px solid $borderColor;
             span:nth-of-type(2) {
                 float: right;
             }
@@ -554,7 +557,7 @@ header {
             border-bottom: 1px solid $borderColor;
             @include lg {
                 font-size: $font40px;
-                padding: 29px 23% 29px 0;
+                padding: 3.125rem 0;
             }
             /*
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -579,6 +582,7 @@ header {
             a,
             &:nth-child(6) {
                 color: $mainTextColor;
+                border-bottom: 0px;
             }
             p {
                 margin: 0;
