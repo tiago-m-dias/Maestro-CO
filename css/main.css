@@ -697,6 +697,11 @@ header #headingNav #navLinks #getInTouch {
   height: auto;
 }
 
+#mainContent #About #aboutMaestro #aboutImage .aboutVideo {
+  width: 51.063em;
+  height: 43.75em;
+}
+
 #mainContent #About #aboutMaestro #aboutDescription {
   font-size: 1em;
   font-weight: 300;
