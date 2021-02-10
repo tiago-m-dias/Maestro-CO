@@ -492,7 +492,7 @@ header {
             }
             #exploreWork {
                 transform: scale(1);
-                background-color: $mainPurple;
+                background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
                 display: flex;
                 height: 143px;
                 width: 140px;

@@ -571,7 +571,8 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #About #workLinkContainer #exploreWork {
   -webkit-transform: scale(1);
           transform: scale(1);
-  background-color: #766ff6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#766ff6), to(#d3c2ce));
+  background-image: linear-gradient(to bottom, #766ff6, #d3c2ce);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
