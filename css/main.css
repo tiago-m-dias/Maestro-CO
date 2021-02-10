@@ -499,6 +499,11 @@ header #headingNav #navLinks #getInTouch {
   width: 70%;
 }
 
+#mainContent #maestroContainer #showMust .reveal-animation:nth-child(2) .reveal-mask .reveal-line {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 #mainContent #maestroContainer #showMust .showMustHeadline {
   font-size: 2.188em;
   font-weight: 300;

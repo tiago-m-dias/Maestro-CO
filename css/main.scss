@@ -443,6 +443,13 @@ header {
                 animation-delay: inherit;
                 width: 70%;
             }
+            .reveal-animation:nth-child(2) {
+                .reveal-mask {
+                    .reveal-line {
+                        animation-delay: 1s;
+                    }
+                }
+            }
             .showMustHeadline {
                 font-size: 2.188em;
                 font-weight: 300;
