@@ -470,7 +470,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #maestroContainer {
-    height: 75vh;
+    height: 85vh;
   }
 }
 
@@ -549,7 +549,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #About {
-    margin-top: 9.163em;
+    margin-top: 9.163rem;
     padding: 0em 5.938em;
   }
 }

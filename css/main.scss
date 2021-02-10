@@ -423,7 +423,7 @@ header {
         height: 17em;
         //background-color: red; maestrinhos mobile aqui
         @include lg {
-            height: 75vh;
+            height: 85vh;
         }
         #showMust {
             position: absolute;
@@ -485,7 +485,7 @@ header {
     #About {
         padding: 0em $sideMarginMobile;
         @include lg {
-            margin-top: 9.163em;
+            margin-top: 9.163rem;
             padding: 0em $sideMargin;
         }
         #workLinkContainer {
