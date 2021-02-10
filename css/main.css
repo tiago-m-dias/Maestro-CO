@@ -500,8 +500,8 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #maestroContainer #showMust .reveal-animation:nth-child(2) .reveal-mask .reveal-line {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
 }
 
 #mainContent #maestroContainer #showMust .showMustHeadline {
