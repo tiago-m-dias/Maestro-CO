@@ -699,7 +699,7 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #About #aboutMaestro #aboutImage .aboutVideo {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 @media (min-width: 992px) {
