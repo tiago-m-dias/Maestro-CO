@@ -500,7 +500,7 @@ header {
             #exploreWork {
                 transform: scale(1);
                 background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
-                display: flex;
+                display: none;
                 height: 143px;
                 width: 140px;
                 align-items: center;
@@ -513,6 +513,9 @@ header {
                 left: calc(70% - 70px);
                 font-family: $gilroyL;
                 color: $mainBgColor;
+                @include lg {
+                    display: flex;
+                }
             }
             /*
         &:hover #exploreWork {
