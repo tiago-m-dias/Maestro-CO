@@ -537,7 +537,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #maestroContainer #learnLink {
-    font-family: "GilroySemiBold";
+    font-family: "GilroyRegular";
     font-size: 1em;
     right: 5.938em;
   }
