@@ -628,16 +628,19 @@ header {
                     width: 50%;
                 }
                 p {
+                    width: 100%;
                     @include lg {
                         width: 30rem;
                         padding-bottom: 1.375em;
                     }
                 }
                 .weAreNot {
-                    width: 32rem;
-                    font-size: 1.25rem;
-                    line-height: 1.53;
                     padding-bottom: $font16px;
+                    @include lg {
+                        width: 32rem;
+                        font-size: 1.25rem;
+                        line-height: 1.53;
+                    }
                 }
             }
         }

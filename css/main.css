@@ -731,6 +731,10 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
+#mainContent #About #aboutMaestro #aboutDescription p {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutDescription p {
     width: 30rem;
@@ -739,10 +743,15 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About #aboutMaestro #aboutDescription .weAreNot {
-  width: 32rem;
-  font-size: 1.25rem;
-  line-height: 1.53;
   padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  #mainContent #About #aboutMaestro #aboutDescription .weAreNot {
+    width: 32rem;
+    font-size: 1.25rem;
+    line-height: 1.53;
+  }
 }
 
 #mainContent #How {
