@@ -593,7 +593,7 @@ header {
                 flex-wrap: nowrap;
             }
             #aboutImage {
-                padding-right: 9.313em;
+                padding-right: 9.313rem;
                 @include lg {
                     width: 50%;
                 }
@@ -603,8 +603,12 @@ header {
                     height: auto;
                 }
                 .aboutVideo {
-                    width: 51.063em;
-                    height: 43.75em;
+                    width: 100%;
+                    height: auto;
+                    @include lg {
+                        width: 51.063rem;
+                        height: 43.75rem;
+                    }
                 }
             }
             #aboutDescription {
@@ -617,18 +621,22 @@ header {
                 text-align: left;
                 color: $mainTextColor;
                 align-self: flex-end;
-                padding-top: 4em;
+                padding-top: 7em;
                 @include lg {
-                    font-size: $font20px;
-                    line-height: 1.53;
+                    font-size: 1.563rem;
+                    line-height: 1.5;
                     width: 50%;
                 }
                 p {
                     @include lg {
-                        width: 29em;
+                        width: 30rem;
+                        padding-bottom: 1.375em;
                     }
                 }
-                p:nth-child(1) {
+                .weAreNot {
+                    width: 32rem;
+                    font-size: 1.25rem;
+                    line-height: 1.53;
                     padding-bottom: $font16px;
                 }
             }

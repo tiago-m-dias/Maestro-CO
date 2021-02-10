@@ -682,7 +682,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About #aboutMaestro #aboutImage {
-  padding-right: 9.313em;
+  padding-right: 9.313rem;
 }
 
 @media (min-width: 992px) {
@@ -698,8 +698,15 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About #aboutMaestro #aboutImage .aboutVideo {
-  width: 51.063em;
-  height: 43.75em;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  #mainContent #About #aboutMaestro #aboutImage .aboutVideo {
+    width: 51.063rem;
+    height: 43.75rem;
+  }
 }
 
 #mainContent #About #aboutMaestro #aboutDescription {
@@ -713,24 +720,28 @@ header #headingNav #navLinks #getInTouch {
   color: #465364;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-top: 4em;
+  padding-top: 7em;
 }
 
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutDescription {
-    font-size: 1.25em;
-    line-height: 1.53;
+    font-size: 1.563rem;
+    line-height: 1.5;
     width: 50%;
   }
 }
 
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutDescription p {
-    width: 29em;
+    width: 30rem;
+    padding-bottom: 1.375em;
   }
 }
 
-#mainContent #About #aboutMaestro #aboutDescription p:nth-child(1) {
+#mainContent #About #aboutMaestro #aboutDescription .weAreNot {
+  width: 32rem;
+  font-size: 1.25rem;
+  line-height: 1.53;
   padding-bottom: 1em;
 }
 
