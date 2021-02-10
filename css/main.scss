@@ -484,6 +484,7 @@ header {
         #workLinkContainer {
             position: relative;
             a {
+                cursor: none;
                 img {
                     width: 100%;
                     height: auto;
@@ -492,7 +493,7 @@ header {
             #exploreWork {
                 transform: scale(1);
                 background-color: $mainPurple;
-                display: none;
+                display: flex;
                 height: 143px;
                 width: 140px;
                 align-items: center;
@@ -503,7 +504,8 @@ header {
                 position: absolute;
                 top: 178px;
                 left: calc(70% - 70px);
-                color: $linkDark;
+                font-family: $gilroyL;
+                color: $mainBgColor;
             }
             /*
         &:hover #exploreWork {
@@ -682,7 +684,7 @@ header {
                     font-size: $font16px;
                     color: $mainTextColor;
                     font-weight: 300;
-                    max-width: 37rem;
+                    max-width: 37em;
                     @include lg {
                         font-size: $font20px;
                         line-height: 1.53;
@@ -712,7 +714,7 @@ header {
                 font-family: $gilroyR;
                 display: block;
                 width: 100%;
-                font-size: 1.563rem;
+                font-size: 1.563em;
                 font-weight: 600;
                 margin-bottom: 1.75em;
                 @include lg {
@@ -998,7 +1000,7 @@ header {
                         padding-top: 1em;
                         color: $doYouColor;
                         font-family: $gilroyR;
-                        font-size: $font16px;
+                        font-size: 16px; //transforms 1em into 1.25em \_-_-_/
                         line-height: 1.53;
                     }
                 }
