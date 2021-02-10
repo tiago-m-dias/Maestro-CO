@@ -593,8 +593,8 @@ header {
                 flex-wrap: nowrap;
             }
             #aboutImage {
-                padding-right: 9.313rem;
                 @include lg {
+                    padding-right: 9.313rem;
                     width: 50%;
                 }
                 img {

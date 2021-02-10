@@ -681,12 +681,9 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #About #aboutMaestro #aboutImage {
-  padding-right: 9.313rem;
-}
-
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutImage {
+    padding-right: 9.313rem;
     width: 50%;
   }
 }
