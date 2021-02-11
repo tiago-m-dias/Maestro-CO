@@ -447,10 +447,17 @@ header {
                 animation-delay: inherit;
                 width: 70%;
             }
+            .reveal-animation:nth-child(1) {
+                .reveal-mask {
+                    .reveal-line {
+                        animation-delay: 400ms;
+                    }
+                }
+            }
             .reveal-animation:nth-child(2) {
                 .reveal-mask {
                     .reveal-line {
-                        animation-delay: 750ms;
+                        animation-delay: 500ms;
                     }
                 }
             }

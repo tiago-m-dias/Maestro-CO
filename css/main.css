@@ -504,9 +504,14 @@ header #headingNav #navLinks #getInTouch {
   width: 70%;
 }
 
+#mainContent #maestroContainer #showMust .reveal-animation:nth-child(1) .reveal-mask .reveal-line {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
 #mainContent #maestroContainer #showMust .reveal-animation:nth-child(2) .reveal-mask .reveal-line {
-  -webkit-animation-delay: 750ms;
-          animation-delay: 750ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 #mainContent #maestroContainer #showMust .showMustHeadline {
