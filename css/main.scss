@@ -737,8 +737,10 @@ header {
         }
     }
     #What {
-        background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
+        background-color: linear-gradient(to bottom, $gradientStart, $gradientStop);
+        background-image: url(../img/actsBackground@2x.jpg);
         @include lg {
+            background-image: url(../img/actsBackground@3x.jpg);
             height: calc(43.375em + (43.375em / 3));
         }
         #allTheActs {
@@ -816,13 +818,13 @@ header {
             padding: 29em $sideMarginMobile 0em;
             margin: 7.25em 0em 0em;
             position: relative;
-            background-image: url(../img/filipe-pic-mobile@2x.jpg);
+            background-image: url(../img/filipe-pic-mobile@3x.png);
             background-repeat: no-repeat;
             background-position: center top;
             background-size: 140vw;
             @include rwd(376) {
                 background-color: $cardBG;
-                background-image: url(../img/filipe-pic-desktop@2x.jpg);
+                background-image: url(../img/filipe-pic-desktop@3x.png);
             }
             @include lg {
                 padding: 3.9em;

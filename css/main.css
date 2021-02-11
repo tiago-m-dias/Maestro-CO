@@ -869,12 +869,13 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #What {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#766ff6), to(#d3c2ce));
-  background-image: linear-gradient(to bottom, #766ff6, #d3c2ce);
+  background-color: linear-gradient(to bottom, #766ff6, #d3c2ce);
+  background-image: url(../img/actsBackground@2x.jpg);
 }
 
 @media (min-width: 992px) {
   #mainContent #What {
+    background-image: url(../img/actsBackground@3x.jpg);
     height: calc(43.375em + (43.375em / 3));
   }
 }
@@ -1006,7 +1007,7 @@ header #headingNav #navLinks #getInTouch {
   padding: 29em 1.438em 0em;
   margin: 7.25em 0em 0em;
   position: relative;
-  background-image: url(../img/filipe-pic-mobile@2x.jpg);
+  background-image: url(../img/filipe-pic-mobile@3x.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 140vw;
@@ -1015,7 +1016,7 @@ header #headingNav #navLinks #getInTouch {
 @media (min-width: 376px) {
   #mainContent #What #aboutFilipe {
     background-color: #f5f7fa;
-    background-image: url(../img/filipe-pic-desktop@2x.jpg);
+    background-image: url(../img/filipe-pic-desktop@3x.png);
   }
 }
 
