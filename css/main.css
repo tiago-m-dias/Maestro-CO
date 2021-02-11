@@ -855,6 +855,12 @@ header #headingNav #navLinks #getInTouch {
   margin-bottom: 2.076rem;
 }
 
+@media (min-width: 992px) {
+  #mainContent #How #fullConcert div h2 {
+    font-size: 1.5625em;
+  }
+}
+
 #mainContent #How #fullConcert div p {
   font-size: 1em;
   color: #465364;
@@ -876,6 +882,7 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #What {
   background-color: linear-gradient(to bottom, #766ff6, #d3c2ce);
   background-image: url(../img/actsBackground@2x.jpg);
+  background-size: cover;
 }
 
 @media (min-width: 992px) {

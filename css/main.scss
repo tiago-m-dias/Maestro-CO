@@ -726,6 +726,9 @@ header {
                     color: $howPurple;
                     //text-transform: uppercase;
                     margin-bottom: 2.076rem;
+                    @include lg {
+                        font-size: $font25px;
+                    }
                 }
                 p {
                     font-size: $font16px;
@@ -746,6 +749,7 @@ header {
     #What {
         background-color: linear-gradient(to bottom, $gradientStart, $gradientStop);
         background-image: url(../img/actsBackground@2x.jpg);
+        background-size: cover;
         @include lg {
             background-image: url(../img/actsBackground@3x.jpg);
             height: calc(43.375em + (43.375em / 3));
