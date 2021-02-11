@@ -601,8 +601,7 @@ header {
             }
             #aboutImage {
                 @include lg {
-                    padding-right: 9.313rem;
-                    width: 50%;
+                    width: 51.063rem;
                 }
                 img {
                     width: 52.375em;
@@ -632,7 +631,7 @@ header {
                 @include lg {
                     font-size: 1.563rem;
                     line-height: 1.5;
-                    width: 50%;
+                    padding-left: 6.813rem;
                 }
                 p {
                     width: 100%;
@@ -1042,7 +1041,7 @@ header {
         }
         .musicSplit {
             width: 100%;
-            height: 3em;
+            height: 3.062rem;
             border-top: 1px solid $borderColor;
         }
         #letsChat {
@@ -1058,7 +1057,6 @@ header {
         }
         #openChat {
             width: 100%;
-            padding-top: 1.25em;
             @include lg {
                 width: 55%;
                 padding-left: 3em;
@@ -1084,21 +1082,20 @@ header {
             }
         }
         #followSound {
+            margin-top: 3.812rem;
             width: 100%;
             font-size: $font20px;
             font-weight: 300;
             line-height: 1.5;
-            padding: $font50px 0 $font25px;
+            padding: 0 0 $font25px;
             @include lg {
                 width: 30%;
             }
-            .gradient-text {
-                p {
-                    color: $mainTextColor;
-                }
+            p {
+                color: $mainTextColor;
             }
             a {
-                //color: $mainTextColor;
+                color: $howPurple;
             }
         }
     }
