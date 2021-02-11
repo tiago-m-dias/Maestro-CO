@@ -932,11 +932,12 @@ header {
             background-position-y: -14.46em;
             margin-top: 14.46em;
             padding: 12.875em $sideMargin 0;
+            margin-bottom: -13em;
         }
         #whatWeNeed {
             margin-top: 12em;
             @include lg {
-                margin-top: 0;
+                margin-top: 6rem;
                 height: 76.563em;
             }
             .reveal-animation {
@@ -953,6 +954,7 @@ header {
                 color: $mainPurple;
                 @include lg {
                     font-size: $font50px;
+                    margin-bottom: 3.688rem;
                 }
                 span {
                     text-decoration: none;

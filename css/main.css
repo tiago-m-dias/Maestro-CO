@@ -1154,6 +1154,7 @@ header #headingNav #navLinks #getInTouch {
     background-position-y: -14.46em;
     margin-top: 14.46em;
     padding: 12.875em 5.938em 0;
+    margin-bottom: -13em;
   }
 }
 
@@ -1163,7 +1164,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #callToAction #whatWeNeed {
-    margin-top: 0;
+    margin-top: 6rem;
     height: 76.563em;
   }
 }
@@ -1187,6 +1188,7 @@ header #headingNav #navLinks #getInTouch {
 @media (min-width: 992px) {
   #mainContent #callToAction #whatWeNeed h2 {
     font-size: 3.125em;
+    margin-bottom: 3.688rem;
   }
 }
 
