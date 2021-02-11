@@ -1111,6 +1111,7 @@ header {
             font-weight: 300;
             line-height: 1.5;
             padding: 0 0 $font25px;
+            color: $howPurple;
             @include lg {
                 width: 30%;
             }

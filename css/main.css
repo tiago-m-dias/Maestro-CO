@@ -1396,6 +1396,7 @@ header #headingNav #navLinks #getInTouch {
   font-weight: 300;
   line-height: 1.5;
   padding: 0 0 1.5625em;
+  color: #7770f7;
 }
 
 @media (min-width: 992px) {
