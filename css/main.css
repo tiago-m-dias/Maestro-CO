@@ -1173,10 +1173,10 @@ header #headingNav #navLinks #getInTouch {
 @media (min-width: 992px) {
   #mainContent #callToAction {
     background-image: url(../img/Stripes@3x.png);
-    background-position-y: -14.46em;
+    background-position-y: -1.324em;
+    background-size: auto 100%;
     margin-top: 14.46em;
     padding: 12.875em 5.938em 0;
-    margin-bottom: -13em;
   }
 }
 
@@ -1187,7 +1187,7 @@ header #headingNav #navLinks #getInTouch {
 @media (min-width: 992px) {
   #mainContent #callToAction #whatWeNeed {
     margin-top: 6rem;
-    height: 76.563em;
+    height: 50.875rem;
   }
 }
 

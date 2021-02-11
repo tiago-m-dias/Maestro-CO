@@ -950,16 +950,16 @@ header {
         background-repeat: no-repeat;
         @include lg {
             background-image: url(../img/Stripes@3x.png);
-            background-position-y: -14.46em;
+            background-position-y: -1.324em;
+            background-size: auto 100%;
             margin-top: 14.46em;
             padding: 12.875em $sideMargin 0;
-            margin-bottom: -13em;
         }
         #whatWeNeed {
             margin-top: 12em;
             @include lg {
                 margin-top: 6rem;
-                height: 76.563em;
+                height: 50.875rem; //56.875rem
             }
             .reveal-animation {
                 animation-delay: inherit;
