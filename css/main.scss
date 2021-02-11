@@ -583,6 +583,7 @@ header {
             &:nth-child(6) {
                 color: $mainTextColor;
                 border-bottom: 0px;
+                margin-bottom: 10.188rem;
             }
             p {
                 margin: 0;
@@ -593,8 +594,7 @@ header {
         #aboutMaestro {
             display: flex;
             flex-wrap: wrap;
-            margin-top: $font50px;
-            padding-bottom: $font50px;
+            padding-bottom: 11.5rem;
             border-bottom: 1px solid $borderColor;
             @include lg {
                 flex-wrap: nowrap;
@@ -642,32 +642,32 @@ header {
                     }
                 }
                 .weAreNot {
-                    padding-bottom: $font16px;
                     @include lg {
                         width: 32rem;
                         font-size: 1.25rem;
                         line-height: 1.53;
+                        padding: 0;
                     }
                 }
             }
         }
     }
     #How {
-        margin-bottom: $font50px;
-        padding: 0em $sideMarginMobile $font50px;
+        padding: 0em $sideMarginMobile;
         @include lg {
-            padding: 0em $sideMargin $font50px;
+            padding: 0em $sideMargin;
         }
         #howDescription {
-            padding-bottom: $font50px;
             h2 {
-                font-size: $font20px;
+                font-family: $gilroyR;
+                font-size: 1.25rem;
                 font-weight: 600;
                 font-stretch: normal;
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
+                margin-bottom: 2rem;
                 color: $howPurple;
             }
             p {
@@ -683,11 +683,15 @@ header {
                 @include lg {
                     font-size: $font30px;
                 }
+                &:nth-of-type(2) {
+                    margin-bottom: 7.188rem;
+                }
             }
         }
         #fullConcert {
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 9.375em;
             @include lg {
                 flex-wrap: nowrap;
             }
@@ -700,7 +704,7 @@ header {
                 text-align: left;
                 padding: 0 0 4em;
                 @include lg {
-                    padding: 0 7.5em 0 0;
+                    padding: 0 7em 0 0;
                     width: 50%;
                 }
                 h2 {
@@ -708,6 +712,7 @@ header {
                     font-weight: normal;
                     color: $howPurple;
                     //text-transform: uppercase;
+                    margin-bottom: 2.076rem;
                 }
                 p {
                     font-size: $font16px;

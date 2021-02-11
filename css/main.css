@@ -665,6 +665,7 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #About .doYou a, #mainContent #About .doYou:nth-child(6) {
   color: #465364;
   border-bottom: 0px;
+  margin-bottom: 10.188rem;
 }
 
 #mainContent #About .doYou p {
@@ -679,8 +680,7 @@ header #headingNav #navLinks #getInTouch {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 3.125em;
-  padding-bottom: 3.125em;
+  padding-bottom: 11.5rem;
   border-bottom: 1px solid #e7ebf0;
 }
 
@@ -749,41 +749,35 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #About #aboutMaestro #aboutDescription .weAreNot {
-  padding-bottom: 1em;
-}
-
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutDescription .weAreNot {
     width: 32rem;
     font-size: 1.25rem;
     line-height: 1.53;
+    padding: 0;
   }
 }
 
 #mainContent #How {
-  margin-bottom: 3.125em;
-  padding: 0em 1.438em 3.125em;
+  padding: 0em 1.438em;
 }
 
 @media (min-width: 992px) {
   #mainContent #How {
-    padding: 0em 5.938em 3.125em;
+    padding: 0em 5.938em;
   }
 }
 
-#mainContent #How #howDescription {
-  padding-bottom: 3.125em;
-}
-
 #mainContent #How #howDescription h2 {
-  font-size: 1.25em;
+  font-family: "GilroyRegular";
+  font-size: 1.25rem;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
+  margin-bottom: 2rem;
   color: #7770f7;
 }
 
@@ -805,12 +799,17 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
+#mainContent #How #howDescription p:nth-of-type(2) {
+  margin-bottom: 7.188rem;
+}
+
 #mainContent #How #fullConcert {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 9.375em;
 }
 
 @media (min-width: 992px) {
@@ -832,7 +831,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #How #fullConcert div {
-    padding: 0 7.5em 0 0;
+    padding: 0 7em 0 0;
     width: 50%;
   }
 }
@@ -841,6 +840,7 @@ header #headingNav #navLinks #getInTouch {
   font-size: 1.25em;
   font-weight: normal;
   color: #7770f7;
+  margin-bottom: 2.076rem;
 }
 
 #mainContent #How #fullConcert div p {
