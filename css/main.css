@@ -420,9 +420,11 @@ header #headingNav #navLinks a {
 }
 
 header #headingNav #navLinks #joinUs::after {
-  content: ' ↗';
+  content: '↗';
   color: #766ff6;
-  padding-left: 0.3em;
+  padding-left: 0.5rem;
+  position: relative;
+  top: 1px;
 }
 
 header #headingNav #navLinks #getInTouch {
@@ -465,11 +467,14 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #maestroContainer {
   position: relative;
   overflow-x: hidden;
-  height: 17em;
+  height: 20em;
+  background-image: url("../img/mobileMaestro.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
   #mainContent #maestroContainer {
+    background: none;
     height: 85vh;
   }
 }
@@ -530,9 +535,12 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #maestroContainer #learnLink::after {
-  content: ' ↓';
+  content: '↓';
   color: #766ff6;
   font-size: 1.25em;
+  position: relative;
+  top: 3px;
+  padding-left: 0.938rem;
 }
 
 @media (min-width: 992px) {
@@ -1070,6 +1078,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #What #aboutFilipe #aboutFilipePhoto div span {
+    font-size: 1.5rem;
     color: #ffffff;
   }
 }
@@ -1250,9 +1259,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #musicForEars #testimonials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: space-between;

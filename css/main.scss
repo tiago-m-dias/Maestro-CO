@@ -384,9 +384,11 @@ header {
                 }
             }
             #joinUs::after {
-                content: ' ↗';
+                content: '↗';
                 color: $mainPurple;
-                padding-left: 0.3em;
+                padding-left: 0.5rem;
+                position: relative;
+                top: 1px;
             }
             #getInTouch {
                 color: $mainBgColor;
@@ -420,9 +422,11 @@ header {
     #maestroContainer {
         position: relative;
         overflow-x: hidden;
-        height: 17em;
-        //background-color: red; maestrinhos mobile aqui
+        height: 20em;
+        background-image: url('../img/mobileMaestro.svg');
+        background-repeat: no-repeat;
         @include lg {
+            background: none;
             height: 85vh;
         }
         #showMust {
@@ -471,9 +475,12 @@ header {
             bottom: 5vh;
             right: $sideMarginMobile;
             &::after {
-                content: ' ↓';
+                content: '↓';
                 color: $mainPurple;
                 font-size: $font20px;
+                position: relative;
+                top: 3px;
+                padding-left: 0.938rem;
             }
             @include lg {
                 font-family: $gilroyR;
@@ -852,6 +859,7 @@ header {
                     span {
                         color: $mainPurple;
                         @include lg {
+                            font-size: 1.5rem;
                             color: $mainBgColor;
                         }
                     }
@@ -999,7 +1007,7 @@ header {
             padding: 0 $sideMargin;
         }
         #testimonials {
-            display: flex;
+            display: none;
             flex-wrap: wrap;
             align-items: space-between;
             margin-bottom: 3em;
