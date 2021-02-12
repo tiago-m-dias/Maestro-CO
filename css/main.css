@@ -599,7 +599,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #About #workLinkContainer a {
-  cursor: none;
+  cursor: pointer;
 }
 
 #mainContent #About #workLinkContainer a img {
@@ -633,9 +633,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #About #workLinkContainer #exploreWork {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
   }
 }
 

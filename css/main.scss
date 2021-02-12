@@ -520,7 +520,7 @@ header {
         #workLinkContainer {
             position: relative;
             a {
-                cursor: none;
+                cursor: pointer; //none
                 img {
                     width: 100%;
                     height: auto;
@@ -543,7 +543,7 @@ header {
                 font-family: $gilroyL;
                 color: $mainBgColor;
                 @include lg {
-                    display: flex;
+                    display: none;
                 }
             }
             /*
