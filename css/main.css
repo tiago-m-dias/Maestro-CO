@@ -1273,7 +1273,7 @@ header #headingNav #navLinks #getInTouch {
   line-height: 1.4;
   color: #465364;
   width: 91%;
-  margin-bottom: 2.8em;
+  margin-bottom: 2.3em;
 }
 
 @media (min-width: 992px) {
@@ -1283,6 +1283,10 @@ header #headingNav #navLinks #getInTouch {
     font-size: 1.25em;
     width: 61%;
   }
+}
+
+#mainContent #callToAction #whatWeNeed p:last-of-type {
+  margin-bottom: 2.8em;
 }
 
 #mainContent #musicForEars {
