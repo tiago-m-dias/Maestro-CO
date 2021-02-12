@@ -188,7 +188,7 @@
                     </div>
                 </div>
                 <div id="aboutFilipeMission">
-                    <h3 class="gradient-text">
+                    <h3 id="filipeQuote" class="gradient-text">
                         “The Maestro&Co. strives to make every customers’ experience with your business and digital products meaningful.”
                     </h3>
                     <p>
@@ -319,6 +319,9 @@
             if ($(window).width() > 991) {
                 $("body").removeClass("menuOpen");
                 $('#chk1').prop('checked', false);
+                $("#filipeQuote").removeClass("gradient-text");
+            } else {
+                $("#filipeQuote").addClass("gradient-text");
             }
 
 

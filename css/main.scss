@@ -608,7 +608,7 @@ header {
             &:nth-child(6) {
                 color: $mainTextColor;
                 border-bottom: 0px;
-                margin-bottom: 8.188rem;
+                margin-bottom: 7.188rem;
                 @include lg {
                     margin-bottom: 10.188rem;
                 }
@@ -765,9 +765,9 @@ header {
         }
     }
     #What {
-        background-color: linear-gradient(to bottom, $gradientStart, $gradientStop);
         background-image: url(../img/actsBackground@2x.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
         @include lg {
             background-image: url(../img/actsBackground@3x.jpg);
             height: calc(43.375em + (43.375em / 3));
@@ -865,7 +865,7 @@ header {
             #aboutFilipePhoto {
                 display: flex;
                 order: 2;
-                padding: $font50px 0;
+                padding: $font30px 0;
                 @include lg {
                     order: 1;
                     padding: 0;
@@ -917,20 +917,6 @@ header {
                     line-height: normal;
                     color: $howPurple;
                     font-weight: 300;
-                    //Gradient font test 1
-                    // background-image: linear-gradient(to top #766ff6, #d3c2ce);
-                    // -webkit-background-clip: text;
-                    // background-clip: text;
-                    // -webkit-text-fill-color: transparent;
-                    //Gradient font test 2
-                    // background-color: red;
-                    // background-image: linear-gradient(to top #766ff6, #d3c2ce);
-                    // background-size: 100%;
-                    // background-repeat: repeat;
-                    // background-clip: text;
-                    // -webkit-text-fill-color: transparent;
-                    // -moz-background-clip: text;
-                    // -moz-text-fill-color: transparent;
                     @include lg {
                         font-family: $gilroyR;
                         font-size: $font20px;
@@ -977,10 +963,10 @@ header {
             padding: 12.875em $sideMargin 0;
         }
         #whatWeNeed {
-            margin-top: 10.7em;
+            margin-top: 10em;
             @include lg {
                 margin-top: 6rem;
-                height: 52.08rem; //56.875rem
+                height: 56.875rem; //56.875rem or 52.08rem
             }
             .reveal-animation {
                 animation-delay: inherit;
@@ -1051,7 +1037,7 @@ header {
             flex-wrap: wrap;
             align-items: space-between;
             margin-bottom: 3em;
-            border-bottom: 1px solid $borderColor;
+            //border-bottom: 1px solid $borderColor;
             width: 100%;
             .testefy {
                 display: flex;

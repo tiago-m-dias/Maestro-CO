@@ -695,7 +695,7 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #About .doYou a, #mainContent #About .doYou:nth-child(6) {
   color: #465364;
   border-bottom: 0px;
-  margin-bottom: 8.188rem;
+  margin-bottom: 7.188rem;
 }
 
 @media (min-width: 992px) {
@@ -910,9 +910,9 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #What {
-  background-color: linear-gradient(to bottom, #766ff6, #d3c2ce);
   background-image: url(../img/actsBackground@2x.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
@@ -1079,7 +1079,7 @@ header #headingNav #navLinks #getInTouch {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  padding: 3.125em 0;
+  padding: 1.875em 0;
 }
 
 @media (min-width: 992px) {
@@ -1214,13 +1214,13 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #callToAction #whatWeNeed {
-  margin-top: 10.7em;
+  margin-top: 10em;
 }
 
 @media (min-width: 992px) {
   #mainContent #callToAction #whatWeNeed {
     margin-top: 6rem;
-    height: 52.08rem;
+    height: 56.875rem;
   }
 }
 
@@ -1319,7 +1319,6 @@ header #headingNav #navLinks #getInTouch {
       -ms-flex-align: space-between;
           align-items: space-between;
   margin-bottom: 3em;
-  border-bottom: 1px solid #e7ebf0;
   width: 100%;
 }
 
