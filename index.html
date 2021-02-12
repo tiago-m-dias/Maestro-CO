@@ -66,13 +66,13 @@
             <div id="aboutWorkFooter">
                 <span>Strategy - Design - Development - Growth</span>
             </div>
-            <div class="doYou reveal-animation">
+            <div class="doYou questions reveal-animation">
                 Do you think traditional agencies are expensive, slow, and overstaffed?
             </div>
-            <div class="doYou reveal-animation">
+            <div class="doYou questions reveal-animation">
                 Do you have the feeling that they are more interested in<br>promoting their agenda than your costumers'?
             </div>
-            <div class="doYou reveal-animation">
+            <div class="doYou questions reveal-animation">
                 Do you see your work more often shared by creatives<br>than your customers?
             </div>
             <div class="doYou reveal-animation">
@@ -326,6 +326,62 @@
 
 
         });
+
+        function hasClass(el, cls) {
+            if (el.className.match('(?:^|\\s)' + cls + '(?!\\S)')) {
+                return true;
+            }
+        }
+
+        function addClass(el, cls) {
+            if (!el.className.match('(?:^|\\s)' + cls + '(?!\\S)')) {
+                el.className += ' ' + cls;
+            }
+        }
+
+        function delClass(el, cls) {
+            el.className = el.className.replace(new RegExp('(?:^|\\s)' + cls + '(?!\\S)'), '');
+        }
+
+        function elementFromTop(elemTrigger, elemTarget, classToAdd, distanceFromTop, unit) {
+            var winY = window.innerHeight || document.documentElement.clientHeight,
+                elTriggerLength = elemTrigger.length,
+                elTargetLength, distTop, distPercent, distPixels, distUnit, elTarget, i, j;
+            for (i = 0; i < elTriggerLength; ++i) {
+                elTarget = document.querySelectorAll('.' + elemTarget);
+                elTargetLength = elTarget.length;
+                distTop = elemTrigger[i].getBoundingClientRect().top;
+                distPercent = Math.round((distTop / winY) * 100);
+                distPixels = Math.round(distTop);
+                distUnit = unit == 'percent' ? distPercent : distPixels;
+                if (distUnit <= distanceFromTop) {
+                    if (!hasClass(elemTrigger[i], elemTarget)) {
+                        for (j = 0; j < elTargetLength; ++j) {
+                            if (!hasClass(elTarget[j], classToAdd)) {
+                                addClass(elTarget[j], classToAdd);
+                            }
+                        }
+                    } else {
+                        if (!hasClass(elemTrigger[i], classToAdd)) {
+                            addClass(elemTrigger[i], classToAdd);
+                        }
+                    }
+                } else {
+                    delClass(elemTrigger[i], classToAdd);
+                    if (!hasClass(elemTrigger[i], elemTarget)) {
+                        for (j = 0; j < elTargetLength; ++j) {
+                            delClass(elTarget[j], classToAdd);
+                        }
+                    }
+                }
+            }
+        }
+        // params:  trigger element, target element class, classes to add to target element, trigger element distance from top, unit ('percent' or 'pixels')
+        // usage:   elementFromTop(elemTrigger, elemTarget, classToAdd, distanceFromTop, unit);
+        window.addEventListener('scroll', function() {
+            elementFromTop(document.querySelectorAll('.questions'), 'questions', 'isOn', 80, 'percent'); // element is on middle of the screen
+
+        }, false);
     </script>
     <!-- Gradient Background extras -->
     <!--

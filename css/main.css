@@ -188,6 +188,10 @@
   -moz-text-fill-color: transparent;
 }
 
+.isOn {
+  color: #465364 !important;
+}
+
 /* Breakpoints START */
 /* Breakpoints END */
 ul {

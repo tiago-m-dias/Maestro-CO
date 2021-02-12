@@ -167,6 +167,10 @@ $delay: 400; // 3. what's the delay between each line? (milliseconds)
     -moz-text-fill-color: transparent;
 }
 
+.isOn {
+    color: $mainTextColor !important;
+}
+
 
 /* Breakpoints START */
 
