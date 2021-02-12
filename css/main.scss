@@ -236,11 +236,14 @@ body {
     align-items: center;
     justify-content: center;
     background-color: $mainBgColor;
-    width: 99vw;
+    width: 100vw;
     color: $mainTextColor;
     font-family: $gilroyL, Helvetica, Arial, sans-serif;
     overflow: auto;
     @include sm {}
+    @include lg {
+        width: 99vw;
+    }
 }
 
 header {
@@ -1184,10 +1187,12 @@ footer {
             font-size: $font16px;
             font-weight: 300;
             line-height: 1.78;
+            padding-right: 0.75em;
             @include lg {
                 display: block;
                 font-family: $gilroyR;
                 font-weight: normal;
+                padding-right: 0;
             }
         }
     }

@@ -214,10 +214,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffffff;
-  width: 99vw;
+  width: 100vw;
   color: #465364;
   font-family: "GilroyLight", Helvetica, Arial, sans-serif;
   overflow: auto;
+}
+
+@media (min-width: 992px) {
+  body {
+    width: 99vw;
+  }
 }
 
 header {
@@ -1511,6 +1517,7 @@ footer #footerSocials a {
   font-size: 1em;
   font-weight: 300;
   line-height: 1.78;
+  padding-right: 0.75em;
 }
 
 @media (min-width: 992px) {
@@ -1518,6 +1525,7 @@ footer #footerSocials a {
     display: block;
     font-family: "GilroyRegular";
     font-weight: normal;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
