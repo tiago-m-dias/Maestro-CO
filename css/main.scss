@@ -878,28 +878,34 @@ header {
                 div {
                     align-self: flex-end;
                     p {
-                        font-family: $gilroyR;
-                        font-size: $font16px;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: normal;
-                        text-align: left;
-                        color: $mainTextColor;
-                        line-height: 1.5;
-                        @include lg {
-                            font-family: $gilroyL;
-                            font-size: $font20px;
-                            color: $mainBgColor;
+                        a {
+                            font-family: $gilroyR;
+                            font-size: $font16px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: $mainTextColor;
+                            line-height: 1.5;
+                            text-decoration: none;
+                            @include lg {
+                                font-family: $gilroyL;
+                                font-size: $font20px;
+                                color: $mainBgColor;
+                            }
                         }
                     }
                     span {
-                        color: $mainPurple;
-                        font-size: 1.25rem;
-                        @include lg {
-                            font-size: 1.5rem;
-                            color: $mainBgColor;
+                        a {
+                            color: $mainPurple;
+                            text-decoration: none;
+                            font-size: 1.25rem;
+                            @include lg {
+                                font-size: 1.5rem;
+                                color: $mainBgColor;
+                            }
                         }
                     }
                 }

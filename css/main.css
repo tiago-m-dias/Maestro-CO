@@ -1099,7 +1099,7 @@ header #headingNav #navLinks #getInTouch {
       align-self: flex-end;
 }
 
-#mainContent #What #aboutFilipe #aboutFilipePhoto div p {
+#mainContent #What #aboutFilipe #aboutFilipePhoto div p a {
   font-family: "GilroyRegular";
   font-size: 1em;
   font-weight: normal;
@@ -1110,23 +1110,25 @@ header #headingNav #navLinks #getInTouch {
   text-align: left;
   color: #465364;
   line-height: 1.5;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipePhoto div p {
+  #mainContent #What #aboutFilipe #aboutFilipePhoto div p a {
     font-family: "GilroyLight";
     font-size: 1.25em;
     color: #ffffff;
   }
 }
 
-#mainContent #What #aboutFilipe #aboutFilipePhoto div span {
+#mainContent #What #aboutFilipe #aboutFilipePhoto div span a {
   color: #766ff6;
+  text-decoration: none;
   font-size: 1.25rem;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipePhoto div span {
+  #mainContent #What #aboutFilipe #aboutFilipePhoto div span a {
     font-size: 1.5rem;
     color: #ffffff;
   }
