@@ -285,8 +285,7 @@ header #headingNav #chk1:checked ~ #navLogo {
   left: 0;
   margin: 0;
   overflow-y: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#766ff6), to(#d3c2ce));
-  background-image: linear-gradient(to bottom, #766ff6, #d3c2ce);
+  background-image: radial-gradient(circle at 0 0, #d1e3ee, #aea7eb);
 }
 
 @media (min-width: 992px) {
@@ -685,7 +684,13 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #About .doYou a, #mainContent #About .doYou:nth-child(6) {
   color: #465364;
   border-bottom: 0px;
-  margin-bottom: 10.188rem;
+  margin-bottom: 8.188rem;
+}
+
+@media (min-width: 992px) {
+  #mainContent #About .doYou a, #mainContent #About .doYou:nth-child(6) {
+    margin-bottom: 10.188rem;
+  }
 }
 
 #mainContent #About .doYou p {
@@ -828,13 +833,14 @@ header #headingNav #navLinks #getInTouch {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 9.375em;
+  margin-bottom: 2.5em;
 }
 
 @media (min-width: 992px) {
   #mainContent #How #fullConcert {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-bottom: 9.375em;
   }
 }
 
@@ -873,6 +879,7 @@ header #headingNav #navLinks #getInTouch {
   color: #465364;
   font-weight: 300;
   max-width: 37em;
+  line-height: 1.5;
 }
 
 @media (min-width: 992px) {
@@ -890,6 +897,7 @@ header #headingNav #navLinks #getInTouch {
   background-color: linear-gradient(to bottom, #766ff6, #d3c2ce);
   background-image: url(../img/actsBackground@2x.jpg);
   background-size: cover;
+  height: 93.563rem;
 }
 
 @media (min-width: 992px) {

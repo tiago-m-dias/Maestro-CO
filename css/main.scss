@@ -289,7 +289,8 @@ header {
             left: 0;
             margin: 0;
             overflow-y: hidden;
-            background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
+            //background-image: linear-gradient(to bottom, $gradientStart, $gradientStop);
+            background-image: radial-gradient(circle at 0 0, #d1e3ee, #aea7eb);
             @include lg {
                 position: inherit;
                 width: 30%;
@@ -600,7 +601,10 @@ header {
             &:nth-child(6) {
                 color: $mainTextColor;
                 border-bottom: 0px;
-                margin-bottom: 10.188rem;
+                margin-bottom: 8.188rem;
+                @include lg {
+                    margin-bottom: 10.188rem;
+                }
             }
             p {
                 margin: 0;
@@ -707,9 +711,10 @@ header {
         #fullConcert {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 9.375em;
+            margin-bottom: 2.5em;
             @include lg {
                 flex-wrap: nowrap;
+                margin-bottom: 9.375em;
             }
             div {
                 font-weight: normal;
@@ -738,6 +743,7 @@ header {
                     color: $mainTextColor;
                     font-weight: 300;
                     max-width: 37em;
+                    line-height: 1.5;
                     @include lg {
                         font-size: $font20px;
                         line-height: 1.53;
@@ -753,6 +759,7 @@ header {
         background-color: linear-gradient(to bottom, $gradientStart, $gradientStop);
         background-image: url(../img/actsBackground@2x.jpg);
         background-size: cover;
+        height: 93.563rem;
         @include lg {
             background-image: url(../img/actsBackground@3x.jpg);
             height: calc(43.375em + (43.375em / 3));
