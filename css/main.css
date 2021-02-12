@@ -285,7 +285,7 @@ header #headingNav #chk1:checked ~ #navLogo {
   left: 0;
   margin: 0;
   overflow-y: hidden;
-  background-image: radial-gradient(circle at 0 0, #d1e3ee, #aea7eb);
+  background-image: radial-gradient(circle at 100% 100%, #d1e3ee, #aea7eb);
 }
 
 @media (min-width: 992px) {
@@ -327,10 +327,15 @@ header #headingNav #chk1:checked ~ #navLinks a {
 }
 
 header #headingNav #chk1:checked ~ #navLinks #getInTouch {
+  font-family: "GilroyRegular";
   padding: 0.75em 0;
-  font-size: 0.875em;
-  width: 6.875em;
+  font-size: 0.875rem;
+  width: 6.875rem;
   text-align: center;
+}
+
+header #headingNav #chk1:checked ~ #navLinks #joinUs::after {
+  color: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -765,12 +770,17 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #About #aboutMaestro #aboutDescription p {
   width: 100%;
   padding-bottom: 1.375em;
+  font-size: 1.25em;
 }
 
 @media (min-width: 992px) {
   #mainContent #About #aboutMaestro #aboutDescription p {
     width: 30rem;
   }
+}
+
+#mainContent #About #aboutMaestro #aboutDescription .weAreNot {
+  font-size: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -897,7 +907,6 @@ header #headingNav #navLinks #getInTouch {
   background-color: linear-gradient(to bottom, #766ff6, #d3c2ce);
   background-image: url(../img/actsBackground@2x.jpg);
   background-size: cover;
-  height: 93.563rem;
 }
 
 @media (min-width: 992px) {
@@ -939,6 +948,7 @@ header #headingNav #navLinks #getInTouch {
   #mainContent #What #allTheActs #fourActs {
     font-family: "GilroySemiBold";
     font-size: 1.875em;
+    margin-bottom: 1.75em;
   }
 }
 
@@ -1032,7 +1042,7 @@ header #headingNav #navLinks #getInTouch {
           justify-content: space-between;
   background-color: #ffffff;
   padding: 29em 1.438em 0em;
-  margin: 7.25em 0em 0em;
+  margin: 4.25em 0em 0em;
   position: relative;
   background-image: url(../img/filipe-pic-mobile@3x.png);
   background-repeat: no-repeat;
@@ -1042,6 +1052,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 376px) {
   #mainContent #What #aboutFilipe {
+    margin: 7.25em 0em 0em;
     background-color: #f5f7fa;
     background-image: url(../img/filipe-pic-desktop@3x.png);
   }
@@ -1089,6 +1100,7 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   color: #465364;
+  line-height: 1.5;
 }
 
 @media (min-width: 992px) {
@@ -1096,12 +1108,12 @@ header #headingNav #navLinks #getInTouch {
     font-family: "GilroyLight";
     font-size: 1.25em;
     color: #ffffff;
-    line-height: 1.5;
   }
 }
 
 #mainContent #What #aboutFilipe #aboutFilipePhoto div span {
   color: #766ff6;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 992px) {
@@ -1196,7 +1208,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #callToAction #whatWeNeed {
-  margin-top: 12em;
+  margin-top: 10.7em;
 }
 
 @media (min-width: 992px) {
@@ -1220,6 +1232,7 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   color: #766ff6;
+  margin-bottom: 0.625rem;
 }
 
 @media (min-width: 992px) {
@@ -1251,14 +1264,16 @@ header #headingNav #navLinks #getInTouch {
 #mainContent #callToAction #whatWeNeed p {
   font-family: "GilroyLight", "GilroyRegular", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.4;
   color: #465364;
   width: 91%;
-  margin-bottom: 3em;
+  margin-bottom: 2.8em;
 }
 
 @media (min-width: 992px) {
   #mainContent #callToAction #whatWeNeed p {
+    line-height: 1.5;
+    margin-bottom: 3em;
     font-size: 1.25em;
     width: 61%;
   }
@@ -1349,8 +1364,14 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #musicForEars .musicSplit {
   width: 100%;
-  height: 3.062rem;
+  height: 2.063rem;
   border-top: 1px solid #e7ebf0;
+}
+
+@media (min-width: 992px) {
+  #mainContent #musicForEars .musicSplit {
+    height: 3.062rem;
+  }
 }
 
 #mainContent #musicForEars #letsChat {
@@ -1370,24 +1391,27 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #musicForEars #openChat {
   width: 100%;
+  padding-top: 1.25rem;
 }
 
 @media (min-width: 992px) {
   #mainContent #musicForEars #openChat {
     width: 55%;
+    padding-top: 0;
     padding-left: 3em;
   }
 }
 
 #mainContent #musicForEars #openChat div {
-  font-size: 1.563em;
-  margin-bottom: 1.25em;
+  font-size: 1.25em;
+  margin-bottom: 1.5625em;
   line-height: 1.5;
   font-weight: 300;
 }
 
 @media (min-width: 992px) {
   #mainContent #musicForEars #openChat div {
+    margin-bottom: 1.25em;
     font-size: 1.875em;
   }
 }
@@ -1405,18 +1429,20 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #musicForEars #followSound {
-  margin-top: 3.812rem;
+  margin-top: 3.688rem;
   width: 100%;
   font-size: 1.25em;
   font-weight: 300;
   line-height: 1.5;
-  padding: 0 0 1.5625em;
+  padding: 0 0 2.562rem;
   color: #7770f7;
 }
 
 @media (min-width: 992px) {
   #mainContent #musicForEars #followSound {
+    margin-top: 3.812rem;
     width: 30%;
+    margin-top: 3.812rem;
   }
 }
 
