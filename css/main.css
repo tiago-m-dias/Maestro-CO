@@ -716,7 +716,7 @@ header #headingNav #navLinks #getInTouch {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 11.5rem;
+  padding-bottom: 3.688rem;
   border-bottom: 1px solid #e7ebf0;
 }
 
@@ -724,6 +724,7 @@ header #headingNav #navLinks #getInTouch {
   #mainContent #About #aboutMaestro {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding-bottom: 11.5rem;
   }
 }
 
