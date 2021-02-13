@@ -76,7 +76,7 @@
                 Do you see your work more often shared by creatives<br>than your customers?
             </div>
             <div class="doYou reveal-animation">
-                <div class="gradient-text">
+                <div class="questionReveal">
                     <a>If you answered yes to all the above, then say hello to Maestro&Co.</a>
                 </div>
             </div>
@@ -362,6 +362,9 @@
                             }
                         }
                     } else {
+                        for (j = 0; j < elTargetLength; ++j) {
+                            delClass(elTarget[j], classToAdd);
+                        }
                         if (!hasClass(elemTrigger[i], classToAdd)) {
                             addClass(elemTrigger[i], classToAdd);
                         }
@@ -380,6 +383,7 @@
         // usage:   elementFromTop(elemTrigger, elemTarget, classToAdd, distanceFromTop, unit);
         window.addEventListener('scroll', function() {
             elementFromTop(document.querySelectorAll('.questions'), 'questions', 'isOn', 80, 'percent'); // element is on middle of the screen
+            elementFromTop(document.querySelectorAll('.questionReveal'), 'questionReveal', 'gradient-text', 80, 'percent'); // element is on middle of the screen
 
         }, false);
     </script>
