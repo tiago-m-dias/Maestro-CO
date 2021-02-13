@@ -364,6 +364,7 @@
                     } else {
                         for (j = 0; j < elTargetLength; ++j) {
                             delClass(elTarget[j], classToAdd);
+                            delClass(elTarget[j], '.isOn');
                         }
                         if (!hasClass(elemTrigger[i], classToAdd)) {
                             addClass(elemTrigger[i], classToAdd);
@@ -374,6 +375,8 @@
                     if (!hasClass(elemTrigger[i], elemTarget)) {
                         for (j = 0; j < elTargetLength; ++j) {
                             delClass(elTarget[j], classToAdd);
+                            delClass(elTarget[j], '.isOn');
+
                         }
                     }
                 }
