@@ -354,7 +354,7 @@
                 distPercent = Math.round((distTop / winY) * 100);
                 distPixels = Math.round(distTop);
                 distUnit = unit == 'percent' ? distPercent : distPixels;
-                if (distUnit <= distanceFromTop) {
+                if ((distUnit <= distanceFromTop) && (distUnit >= (distanceFromTop - 30))) {
                     if (!hasClass(elemTrigger[i], elemTarget)) {
                         for (j = 0; j < elTargetLength; ++j) {
                             if (!hasClass(elTarget[j], classToAdd)) {
