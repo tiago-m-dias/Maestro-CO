@@ -1227,6 +1227,12 @@ header #headingNav #navLinks #getInTouch {
   margin-top: 10em;
 }
 
+@media (min-width: 376px) {
+  #mainContent #callToAction #whatWeNeed {
+    margin-top: 13em;
+  }
+}
+
 @media (min-width: 992px) {
   #mainContent #callToAction #whatWeNeed {
     margin-top: 6rem;
@@ -1247,7 +1253,6 @@ header #headingNav #navLinks #getInTouch {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #766ff6;
   margin-bottom: 0.625rem;
 }
 

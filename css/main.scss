@@ -978,6 +978,9 @@ header {
         }
         #whatWeNeed {
             margin-top: 10em;
+            @include rwd(376) {
+                margin-top: 13em;
+            }
             @include lg {
                 margin-top: 6rem;
                 height: 56.875rem; //56.875rem or 52.08rem
@@ -993,7 +996,6 @@ header {
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: $mainPurple;
                 margin-bottom: 0.625rem;
                 @include lg {
                     font-size: $font50px;
