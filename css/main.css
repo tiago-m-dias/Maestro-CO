@@ -918,8 +918,8 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #What {
-  background-image: url(../img/actsBackgroundMobile@2x.jpg);
-  background-size: cover;
+  background-image: url(../img/actsBackgroundMobile.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -1056,7 +1056,7 @@ header #headingNav #navLinks #getInTouch {
           justify-content: space-between;
   background-color: #ffffff;
   padding: 29em 1.438em 0em;
-  margin: 4.25em 0em 0em;
+  margin: 2.75em 0em 0em;
   position: relative;
   background-image: url(../img/filipe-pic-mobile@3x.png);
   background-repeat: no-repeat;
