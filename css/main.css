@@ -917,20 +917,7 @@ header #headingNav #navLinks #getInTouch {
   font-weight: 500;
 }
 
-#mainContent #What {
-  background-image: url(../img/actsBackgroundMobile.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-@media (min-width: 992px) {
-  #mainContent #What {
-    background-image: url(../img/actsBackground@3x.jpg);
-    height: calc(43.375em + (43.375em / 3));
-  }
-}
-
-#mainContent #What #allTheActs {
+#mainContent #manifesto #actsBlock #allTheActs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,35 +928,46 @@ header #headingNav #navLinks #getInTouch {
           justify-content: space-between;
   padding: 3.063em 1.438em 0;
   color: #ffffff;
+  background-image: url(../img/actsBackgroundMobile.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #allTheActs {
+  #mainContent #manifesto #actsBlock #allTheActs {
     padding: 6.063em 5.938em 0;
+    background-image: url(../img/actsBackground@3x.jpg);
   }
 }
 
-#mainContent #What #allTheActs #fourActs {
+#mainContent #manifesto #actsBlock #allTheActs h4 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+#mainContent #manifesto #actsBlock #allTheActs #fourActs {
   font-family: "GilroyRegular";
   display: block;
   width: 100%;
   font-size: 1.563em;
   font-weight: 600;
-  margin-bottom: 1.75em;
+  margin-bottom: 1.75rem;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #allTheActs #fourActs {
+  #mainContent #manifesto #actsBlock #allTheActs #fourActs {
     font-family: "GilroySemiBold";
     font-size: 1.875em;
     margin-bottom: 1.75em;
   }
 }
 
-#mainContent #What #allTheActs #firstAct,
-#mainContent #What #allTheActs #secondAct,
-#mainContent #What #allTheActs #thirdAct,
-#mainContent #What #allTheActs #fourthAct {
+#mainContent #manifesto #actsBlock #allTheActs #firstAct,
+#mainContent #manifesto #actsBlock #allTheActs #secondAct,
+#mainContent #manifesto #actsBlock #allTheActs #thirdAct,
+#mainContent #manifesto #actsBlock #allTheActs #fourthAct {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -978,73 +976,82 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #allTheActs #firstAct,
-  #mainContent #What #allTheActs #secondAct,
-  #mainContent #What #allTheActs #thirdAct,
-  #mainContent #What #allTheActs #fourthAct {
+  #mainContent #manifesto #actsBlock #allTheActs #firstAct,
+  #mainContent #manifesto #actsBlock #allTheActs #secondAct,
+  #mainContent #manifesto #actsBlock #allTheActs #thirdAct,
+  #mainContent #manifesto #actsBlock #allTheActs #fourthAct {
     margin-bottom: 0;
   }
 }
 
-#mainContent #What #allTheActs #firstAct h4,
-#mainContent #What #allTheActs #secondAct h4,
-#mainContent #What #allTheActs #thirdAct h4,
-#mainContent #What #allTheActs #fourthAct h4 {
+#mainContent #manifesto #actsBlock #allTheActs #firstAct h4,
+#mainContent #manifesto #actsBlock #allTheActs #secondAct h4,
+#mainContent #manifesto #actsBlock #allTheActs #thirdAct h4,
+#mainContent #manifesto #actsBlock #allTheActs #fourthAct h4 {
   font-family: "GilroySemiBold";
   font-size: 0.5em;
   font-weight: 800;
   text-transform: uppercase;
-  line-height: 3;
+  height: 1.188rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #allTheActs #firstAct h4,
-  #mainContent #What #allTheActs #secondAct h4,
-  #mainContent #What #allTheActs #thirdAct h4,
-  #mainContent #What #allTheActs #fourthAct h4 {
+  #mainContent #manifesto #actsBlock #allTheActs #firstAct h4,
+  #mainContent #manifesto #actsBlock #allTheActs #secondAct h4,
+  #mainContent #manifesto #actsBlock #allTheActs #thirdAct h4,
+  #mainContent #manifesto #actsBlock #allTheActs #fourthAct h4 {
     font-size: 0.625em;
   }
 }
 
-#mainContent #What #allTheActs #firstAct span,
-#mainContent #What #allTheActs #secondAct span,
-#mainContent #What #allTheActs #thirdAct span,
-#mainContent #What #allTheActs #fourthAct span {
+#mainContent #manifesto #actsBlock #allTheActs #firstAct span,
+#mainContent #manifesto #actsBlock #allTheActs #secondAct span,
+#mainContent #manifesto #actsBlock #allTheActs #thirdAct span,
+#mainContent #manifesto #actsBlock #allTheActs #fourthAct span {
   display: block;
   font-size: 1em;
   text-decoration: underline;
   line-height: normal;
+  margin-bottom: 1.313rem;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #allTheActs #firstAct span,
-  #mainContent #What #allTheActs #secondAct span,
-  #mainContent #What #allTheActs #thirdAct span,
-  #mainContent #What #allTheActs #fourthAct span {
+  #mainContent #manifesto #actsBlock #allTheActs #firstAct span,
+  #mainContent #manifesto #actsBlock #allTheActs #secondAct span,
+  #mainContent #manifesto #actsBlock #allTheActs #thirdAct span,
+  #mainContent #manifesto #actsBlock #allTheActs #fourthAct span {
     font-size: 1.25em;
     font-family: "GilroyRegular";
-    height: 3em;
+    height: 3rem;
   }
 }
 
-#mainContent #What #allTheActs #firstAct div,
-#mainContent #What #allTheActs #secondAct div,
-#mainContent #What #allTheActs #thirdAct div,
-#mainContent #What #allTheActs #fourthAct div {
+#mainContent #manifesto #actsBlock #allTheActs #firstAct div,
+#mainContent #manifesto #actsBlock #allTheActs #secondAct div,
+#mainContent #manifesto #actsBlock #allTheActs #thirdAct div,
+#mainContent #manifesto #actsBlock #allTheActs #fourthAct div {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-#mainContent #What #allTheActs #firstAct div ul li,
-#mainContent #What #allTheActs #secondAct div ul li,
-#mainContent #What #allTheActs #thirdAct div ul li,
-#mainContent #What #allTheActs #fourthAct div ul li {
+#mainContent #manifesto #actsBlock #allTheActs #firstAct div ul,
+#mainContent #manifesto #actsBlock #allTheActs #secondAct div ul,
+#mainContent #manifesto #actsBlock #allTheActs #thirdAct div ul,
+#mainContent #manifesto #actsBlock #allTheActs #fourthAct div ul {
+  margin: 0;
+}
+
+#mainContent #manifesto #actsBlock #allTheActs #firstAct div ul li,
+#mainContent #manifesto #actsBlock #allTheActs #secondAct div ul li,
+#mainContent #manifesto #actsBlock #allTheActs #thirdAct div ul li,
+#mainContent #manifesto #actsBlock #allTheActs #fourthAct div ul li {
   font-size: 1em;
   line-height: 1.78em;
   font-weight: 300;
 }
 
-#mainContent #aboutFilipe {
+#mainContent #manifesto #filipeBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,7 +1068,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 376px) {
-  #mainContent #aboutFilipe {
+  #mainContent #manifesto #filipeBlock {
     background-color: #f5f7fa;
     background-image: url(../img/filipe-pic-desktop@3x.png);
     background-repeat: no-repeat;
@@ -1071,14 +1078,14 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #aboutFilipe {
+  #mainContent #manifesto #filipeBlock {
     padding: 3.9em;
     margin: 7.25em 5.938em 0em;
     background-size: cover;
   }
 }
 
-#mainContent #aboutFilipe #aboutFilipeLinks {
+#mainContent #manifesto #filipeBlock #aboutFilipeLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1091,7 +1098,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #aboutFilipe #aboutFilipeLinks {
+  #mainContent #manifesto #filipeBlock #aboutFilipeLinks {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1099,15 +1106,14 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks {
+#mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks {
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: relative;
   z-index: 2;
-  margin-bottom: -5em;
 }
 
-#mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks p a {
+#mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks p a {
   font-family: "GilroyRegular";
   font-size: 1em;
   font-weight: normal;
@@ -1122,40 +1128,27 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks p a {
+  #mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks p a {
     font-family: "GilroyLight";
     font-size: 1.25em;
     color: #ffffff;
   }
 }
 
-#mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks span a {
+#mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks span a {
   color: #766ff6;
   text-decoration: none;
   font-size: 1.25rem;
 }
 
 @media (min-width: 992px) {
-  #mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks span a {
+  #mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks span a {
     font-size: 1.5rem;
     color: #ffffff;
   }
 }
 
-#mainContent #aboutFilipe #aboutFilipeLinks #stripesPicture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  z-index: 1;
-}
-
-#mainContent #aboutFilipe #aboutFilipeLinks #stripesPicture img {
-  width: 100%;
-  max-height: 23.774rem;
-}
-
-#mainContent #aboutFilipe #aboutFilipeMission {
+#mainContent #manifesto #filipeBlock #aboutFilipeMission {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -1170,35 +1163,35 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #aboutFilipe #aboutFilipeMission {
+  #mainContent #manifesto #filipeBlock #aboutFilipeMission {
     width: 29.063em;
     margin-top: 0;
   }
 }
 
-#mainContent #aboutFilipe #aboutFilipeMission #aboutFilipePicture {
+#mainContent #manifesto #filipeBlock #aboutFilipeMission #aboutFilipePicture {
   width: 100%;
   height: auto;
   margin-bottom: 3.188rem;
 }
 
 @media (min-width: 991px) {
-  #mainContent #aboutFilipe #aboutFilipeMission #aboutFilipePicture {
+  #mainContent #manifesto #filipeBlock #aboutFilipeMission #aboutFilipePicture {
     display: none;
   }
 }
 
-#mainContent #aboutFilipe #aboutFilipeMission #filipeQuote {
+#mainContent #manifesto #filipeBlock #aboutFilipeMission #filipeQuote {
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
 
-#mainContent #aboutFilipe #aboutFilipeMission h3,
-#mainContent #aboutFilipe #aboutFilipeMission p {
+#mainContent #manifesto #filipeBlock #aboutFilipeMission h3,
+#mainContent #manifesto #filipeBlock #aboutFilipeMission p {
   padding: 0em 1.438rem 0em;
 }
 
-#mainContent #aboutFilipe #aboutFilipeMission h3 {
+#mainContent #manifesto #filipeBlock #aboutFilipeMission h3 {
   font-size: 1.875em;
   line-height: normal;
   color: #7770f7;
@@ -1206,7 +1199,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #aboutFilipe #aboutFilipeMission h3 {
+  #mainContent #manifesto #filipeBlock #aboutFilipeMission h3 {
     font-family: "GilroyRegular";
     font-size: 1.25em;
     color: #ffffff;
@@ -1215,7 +1208,7 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #aboutFilipe #aboutFilipeMission p {
+#mainContent #manifesto #filipeBlock #aboutFilipeMission p {
   font-size: 0.875em;
   line-height: 1.5;
   padding-top: 1em;
@@ -1224,14 +1217,14 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #aboutFilipe #aboutFilipeMission p {
+  #mainContent #manifesto #filipeBlock #aboutFilipeMission p {
     font-family: "GilroyRegular";
     font-size: 1em;
     color: #ffffff;
   }
 }
 
-#mainContent #callToAction {
+#mainContent #manifesto #playOurBestBlock {
   padding: 0em 1.438em 0;
   font-stretch: normal;
   font-style: normal;
@@ -1248,39 +1241,41 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #callToAction {
+  #mainContent #manifesto #playOurBestBlock {
     background-image: url(../img/Stripes@3x.png);
-    background-position-y: -1.324em;
     background-size: auto 100%;
     background-repeat: no-repeat;
+    background-position: center top;
     margin-top: 14.46em;
     padding: 12.875em 5.938em 0;
   }
 }
 
-#mainContent #callToAction #whatWeNeed {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed {
   margin-top: 0em;
 }
 
 @media (min-width: 376px) {
-  #mainContent #callToAction #whatWeNeed {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed {
     margin-top: 13em;
   }
 }
 
 @media (min-width: 992px) {
-  #mainContent #callToAction #whatWeNeed {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed {
     margin-top: 6rem;
     height: 56.875rem;
   }
 }
 
-#mainContent #callToAction #whatWeNeed .reveal-animation {
-  -webkit-animation-delay: inherit;
-          animation-delay: inherit;
+@media (min-width: 992px) {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed .reveal-animation {
+    -webkit-animation-delay: inherit;
+            animation-delay: inherit;
+  }
 }
 
-#mainContent #callToAction #whatWeNeed h2 {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed h2 {
   font-size: 1.875em;
   font-weight: 300;
   font-stretch: normal;
@@ -1292,17 +1287,17 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #callToAction #whatWeNeed h2 {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed h2 {
     font-size: 3.125em;
     margin-bottom: 3.688rem;
   }
 }
 
-#mainContent #callToAction #whatWeNeed h2 span {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed h2 span {
   text-decoration: none;
 }
 
-#mainContent #callToAction #whatWeNeed h4 {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed h4 {
   font-family: "GilroyLight", "GilroyRegular", Helvetica, Arial, sans-serif;
   color: #7770f7;
   font-size: 1em;
@@ -1312,12 +1307,12 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #callToAction #whatWeNeed h4 {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed h4 {
     font-size: 1.25em;
   }
 }
 
-#mainContent #callToAction #whatWeNeed p {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed p {
   font-family: "GilroyLight", "GilroyRegular", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.4;
@@ -1327,7 +1322,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #callToAction #whatWeNeed p {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed p {
     line-height: 1.5;
     margin-bottom: 3em;
     font-size: 1.25em;
@@ -1335,7 +1330,7 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #callToAction #whatWeNeed p:last-of-type {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed p:last-of-type {
   margin-bottom: 2.8em;
 }
 
