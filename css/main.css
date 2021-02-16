@@ -1075,11 +1075,13 @@ header #headingNav #navLinks #getInTouch {
   #mainContent #manifesto #filipeBlock {
     background-image: url(../img/filipe-pic-desktop@3x.png);
     background-size: cover;
-    padding: 3.9em;
-    margin: 7.25em 5.938em 0em;
+    margin-top: -22rem;
+    left: 50%;
+    margin-left: -44%;
     background-size: cover;
     position: absolute;
-    width: 90.875rem;
+    width: 88%;
+    height: 43.375rem;
   }
 }
 
@@ -1107,7 +1109,7 @@ header #headingNav #navLinks #getInTouch {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    padding: 0;
+    padding: 0 0 3.9em 3.9em;
   }
 }
 
@@ -1198,6 +1200,12 @@ header #headingNav #navLinks #getInTouch {
           margin-block-start: 0;
 }
 
+@media (min-width: 992px) {
+  #mainContent #manifesto #filipeBlock #aboutFilipeMission #filipeQuote {
+    margin-top: 2.813rem;
+  }
+}
+
 #mainContent #manifesto #filipeBlock #aboutFilipeMission h3,
 #mainContent #manifesto #filipeBlock #aboutFilipeMission p {
   padding: 0em 1.438rem 0em;
@@ -1230,6 +1238,8 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #manifesto #filipeBlock #aboutFilipeMission p {
+    padding-top: 0;
+    line-height: 1.5rem;
     font-family: "GilroyRegular";
     font-size: 1em;
     color: #ffffff;
