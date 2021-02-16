@@ -882,14 +882,22 @@ header {
                 flex-wrap: wrap;
                 order: 2;
                 padding: $font30px $sideMarginMobile $font10px;
+                height: 23.744rem;
+                background-image: url("../img/Stripes.png");
+                background-position-y: 1.3rem;
+                background-repeat: no-repeat;
+                background-size: contain;
                 @include lg {
                     order: 1;
                     padding: 0;
                 }
                 #filipeLinks {
-                    align-self: flex-end;
+                    align-self: flex-start;
                     position: relative;
                     z-index: 2;
+                    @include lg {
+                        align-self: flex-end;
+                    }
                     p {
                         a {
                             font-family: $gilroyR;

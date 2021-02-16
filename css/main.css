@@ -1095,6 +1095,11 @@ header #headingNav #navLinks #getInTouch {
       -ms-flex-order: 2;
           order: 2;
   padding: 1.875em 1.438em 0.625em;
+  height: 23.744rem;
+  background-image: url("../img/Stripes.png");
+  background-position-y: 1.3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (min-width: 992px) {
@@ -1107,10 +1112,17 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   position: relative;
   z-index: 2;
+}
+
+@media (min-width: 992px) {
+  #mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 #mainContent #manifesto #filipeBlock #aboutFilipeLinks #filipeLinks p a {
