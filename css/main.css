@@ -1277,12 +1277,6 @@ header #headingNav #navLinks #getInTouch {
   margin-top: 0em;
 }
 
-@media (min-width: 376px) {
-  #mainContent #manifesto #playOurBestBlock #whatWeNeed {
-    margin-top: 13em;
-  }
-}
-
 @media (min-width: 992px) {
   #mainContent #manifesto #playOurBestBlock #whatWeNeed {
     margin-top: 6rem;

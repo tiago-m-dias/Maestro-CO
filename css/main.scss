@@ -892,7 +892,7 @@ header {
                 flex-wrap: wrap;
                 order: 2;
                 padding: $font30px $sideMarginMobile $font10px;
-                height: 23.744rem;
+                height: 23.744rem; //23.744rem or 381px
                 background-image: url("../img/Stripes.png");
                 background-position-y: 1.3rem;
                 background-repeat: no-repeat;
@@ -1024,9 +1024,6 @@ header {
             }
             #whatWeNeed {
                 margin-top: 0em;
-                @include rwd(376) {
-                    margin-top: 13em;
-                }
                 @include lg {
                     margin-top: 6rem;
                     height: 56.875rem; //56.875rem or 52.08rem
