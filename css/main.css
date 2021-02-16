@@ -1152,7 +1152,7 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #aboutFilipe #aboutFilipeLinks #stripesPicture img {
   width: 100%;
-  height: auto;
+  max-height: 23.774rem;
 }
 
 #mainContent #aboutFilipe #aboutFilipeMission {
