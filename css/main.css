@@ -1290,6 +1290,26 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
+#mainContent #manifesto #playOurBestBlock #whatWeNeed .whatDesktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed .whatDesktop {
+    display: block;
+  }
+}
+
+#mainContent #manifesto #playOurBestBlock #whatWeNeed .whatMobile {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed .whatMobile {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
   #mainContent #manifesto #playOurBestBlock #whatWeNeed .reveal-animation {
     -webkit-animation-delay: inherit;

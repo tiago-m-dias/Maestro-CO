@@ -1031,6 +1031,18 @@ header {
                     margin-top: 6rem;
                     height: 56.875rem; //56.875rem or 52.08rem
                 }
+                .whatDesktop {
+                    display: none;
+                    @include lg {
+                        display: block;
+                    }
+                }
+                .whatMobile {
+                    display: block;
+                    @include lg {
+                        display: none;
+                    }
+                }
                 .reveal-animation {
                     @include lg {
                         animation-delay: inherit;
