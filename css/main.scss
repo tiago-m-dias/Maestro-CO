@@ -847,115 +847,142 @@ header {
                 }
             }
         }
-        #aboutFilipe {
-            display: flex;
-            flex-wrap: wrap;
-            font-family: $gilroyL;
-            justify-content: space-between;
-            background-color: $mainBgColor;
-            padding: 29em $sideMarginMobile 0em;
-            margin: 2em 0em 0em;
-            position: relative;
-            background-image: url(../img/filipe-pic-mobile@3x.png);
+    }
+    #aboutFilipe {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: $gilroyL;
+        justify-content: space-between;
+        background-color: $mainBgColor;
+        margin: 0em 0em 0em;
+        position: relative;
+        background: none;
+        @include rwd(376) {
+            background-color: $cardBG;
+            background-image: url(../img/filipe-pic-desktop@3x.png);
             background-repeat: no-repeat;
             background-position: center top;
             background-size: 140vw;
-            @include rwd(376) {
-                margin: 7.25em 0em 0em;
-                background-color: $cardBG;
-                background-image: url(../img/filipe-pic-desktop@3x.png);
-            }
+        }
+        @include lg {
+            padding: 3.9em;
+            margin: 7.25em $sideMargin 0em;
+            background-size: cover;
+        }
+        #aboutFilipeLinks {
+            display: flex;
+            flex-wrap: wrap;
+            order: 2;
+            padding: $font30px $sideMarginMobile $font10px;
             @include lg {
-                padding: 3.9em;
-                margin: 7.25em $sideMargin 0em;
-                background-size: cover;
-            }
-            #aboutFilipePhoto {
-                display: flex;
-                order: 2;
-                padding: $font30px 0;
-                @include lg {
-                    order: 1;
-                    padding: 0;
-                }
-                div {
-                    align-self: flex-end;
-                    p {
-                        a {
-                            font-family: $gilroyR;
-                            font-size: $font16px;
-                            font-weight: normal;
-                            font-stretch: normal;
-                            font-style: normal;
-                            line-height: normal;
-                            letter-spacing: normal;
-                            text-align: left;
-                            color: $mainTextColor;
-                            line-height: 1.5;
-                            text-decoration: none;
-                            @include lg {
-                                font-family: $gilroyL;
-                                font-size: $font20px;
-                                color: $mainBgColor;
-                            }
-                        }
-                    }
-                    span {
-                        a {
-                            color: $mainPurple;
-                            text-decoration: none;
-                            font-size: 1.25rem;
-                            @include lg {
-                                font-size: 1.5rem;
-                                color: $mainBgColor;
-                            }
-                        }
-                    }
-                }
-            }
-            #aboutFilipeMission {
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: left;
-                width: 29.063em;
                 order: 1;
-                margin-top: 9em;
-                @include lg {
-                    margin-top: 0;
-                }
-                h3 {
-                    font-size: 1.875em;
-                    line-height: normal;
-                    color: $howPurple;
-                    font-weight: 300;
-                    @include lg {
-                        font-family: $gilroyR;
-                        font-size: $font20px;
-                        color: $mainBgColor;
-                        padding-right: $font50px;
-                        line-height: 1.5;
-                    }
-                }
+                padding: 0;
+            }
+            #filipeLinks {
+                align-self: flex-end;
+                position: relative;
+                z-index: 2;
+                margin-bottom: -5em;
                 p {
-                    font-size: 0.875em;
-                    line-height: 1.5;
-                    padding-top: $font16px;
-                    font-weight: 300;
-                    margin-bottom: $font16px;
-                    @include lg {
+                    a {
                         font-family: $gilroyR;
                         font-size: $font16px;
-                        color: $mainBgColor;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: $mainTextColor;
+                        line-height: 1.5;
+                        text-decoration: none;
+                        @include lg {
+                            font-family: $gilroyL;
+                            font-size: $font20px;
+                            color: $mainBgColor;
+                        }
                     }
+                }
+                span {
+                    a {
+                        color: $mainPurple;
+                        text-decoration: none;
+                        font-size: 1.25rem;
+                        @include lg {
+                            font-size: 1.5rem;
+                            color: $mainBgColor;
+                        }
+                    }
+                }
+            }
+            #stripesPicture {
+                display: flex;
+                position: relative;
+                z-index: 1;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        #aboutFilipeMission {
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            width: 100%;
+            order: 1;
+            margin-top: 0em;
+            @include lg {
+                width: 29.063em;
+                margin-top: 0;
+            }
+            #aboutFilipePicture {
+                width: 100%;
+                height: auto;
+                margin-bottom: 3.188rem;
+                @include rwd(991) {
+                    display: none;
+                }
+            }
+            #filipeQuote {
+                margin-block-start: 0;
+            }
+            h3,
+            p {
+                padding: 0em 1.438rem 0em;
+            }
+            h3 {
+                font-size: 1.875em;
+                line-height: normal;
+                color: $howPurple;
+                font-weight: 300;
+                @include lg {
+                    font-family: $gilroyR;
+                    font-size: $font20px;
+                    color: $mainBgColor;
+                    padding-right: $font50px;
+                    line-height: 1.5;
+                }
+            }
+            p {
+                font-size: 0.875em;
+                line-height: 1.5;
+                padding-top: $font16px;
+                font-weight: 300;
+                margin-bottom: $font16px;
+                @include lg {
+                    font-family: $gilroyR;
+                    font-size: $font16px;
+                    color: $mainBgColor;
                 }
             }
         }
     }
     #callToAction {
-        padding: 12.875em $sideMarginMobile 0;
+        padding: 0em $sideMarginMobile 0;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
@@ -964,20 +991,16 @@ header {
         display: flex;
         align-content: flex-start;
         flex-wrap: wrap;
-        background-image: url(../img/Stripes.png);
-        background-size: contain;
-        background-position: right;
-        background-position-y: 0em;
-        background-repeat: no-repeat;
         @include lg {
             background-image: url(../img/Stripes@3x.png);
             background-position-y: -1.324em;
             background-size: auto 100%;
+            background-repeat: no-repeat;
             margin-top: 14.46em;
             padding: 12.875em $sideMargin 0;
         }
         #whatWeNeed {
-            margin-top: 10em;
+            margin-top: 0em;
             @include rwd(376) {
                 margin-top: 13em;
             }

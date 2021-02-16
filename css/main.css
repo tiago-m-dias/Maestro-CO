@@ -1044,7 +1044,7 @@ header #headingNav #navLinks #getInTouch {
   font-weight: 300;
 }
 
-#mainContent #What #aboutFilipe {
+#mainContent #aboutFilipe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1055,43 +1055,43 @@ header #headingNav #navLinks #getInTouch {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #ffffff;
-  padding: 29em 1.438em 0em;
-  margin: 2em 0em 0em;
+  margin: 0em 0em 0em;
   position: relative;
-  background-image: url(../img/filipe-pic-mobile@3x.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 140vw;
+  background: none;
 }
 
 @media (min-width: 376px) {
-  #mainContent #What #aboutFilipe {
-    margin: 7.25em 0em 0em;
+  #mainContent #aboutFilipe {
     background-color: #f5f7fa;
     background-image: url(../img/filipe-pic-desktop@3x.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 140vw;
   }
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe {
+  #mainContent #aboutFilipe {
     padding: 3.9em;
     margin: 7.25em 5.938em 0em;
     background-size: cover;
   }
 }
 
-#mainContent #What #aboutFilipe #aboutFilipePhoto {
+#mainContent #aboutFilipe #aboutFilipeLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  padding: 1.875em 0;
+  padding: 1.875em 1.438em 0.625em;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipePhoto {
+  #mainContent #aboutFilipe #aboutFilipeLinks {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1099,12 +1099,15 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #What #aboutFilipe #aboutFilipePhoto div {
+#mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -5em;
 }
 
-#mainContent #What #aboutFilipe #aboutFilipePhoto div p a {
+#mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks p a {
   font-family: "GilroyRegular";
   font-size: 1em;
   font-weight: normal;
@@ -1119,47 +1122,83 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipePhoto div p a {
+  #mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks p a {
     font-family: "GilroyLight";
     font-size: 1.25em;
     color: #ffffff;
   }
 }
 
-#mainContent #What #aboutFilipe #aboutFilipePhoto div span a {
+#mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks span a {
   color: #766ff6;
   text-decoration: none;
   font-size: 1.25rem;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipePhoto div span a {
+  #mainContent #aboutFilipe #aboutFilipeLinks #filipeLinks span a {
     font-size: 1.5rem;
     color: #ffffff;
   }
 }
 
-#mainContent #What #aboutFilipe #aboutFilipeMission {
+#mainContent #aboutFilipe #aboutFilipeLinks #stripesPicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+#mainContent #aboutFilipe #aboutFilipeLinks #stripesPicture img {
+  width: 100%;
+  height: auto;
+}
+
+#mainContent #aboutFilipe #aboutFilipeMission {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  width: 29.063em;
+  width: 100%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  margin-top: 9em;
+  margin-top: 0em;
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipeMission {
+  #mainContent #aboutFilipe #aboutFilipeMission {
+    width: 29.063em;
     margin-top: 0;
   }
 }
 
-#mainContent #What #aboutFilipe #aboutFilipeMission h3 {
+#mainContent #aboutFilipe #aboutFilipeMission #aboutFilipePicture {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3.188rem;
+}
+
+@media (min-width: 991px) {
+  #mainContent #aboutFilipe #aboutFilipeMission #aboutFilipePicture {
+    display: none;
+  }
+}
+
+#mainContent #aboutFilipe #aboutFilipeMission #filipeQuote {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+#mainContent #aboutFilipe #aboutFilipeMission h3,
+#mainContent #aboutFilipe #aboutFilipeMission p {
+  padding: 0em 1.438rem 0em;
+}
+
+#mainContent #aboutFilipe #aboutFilipeMission h3 {
   font-size: 1.875em;
   line-height: normal;
   color: #7770f7;
@@ -1167,7 +1206,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipeMission h3 {
+  #mainContent #aboutFilipe #aboutFilipeMission h3 {
     font-family: "GilroyRegular";
     font-size: 1.25em;
     color: #ffffff;
@@ -1176,7 +1215,7 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #What #aboutFilipe #aboutFilipeMission p {
+#mainContent #aboutFilipe #aboutFilipeMission p {
   font-size: 0.875em;
   line-height: 1.5;
   padding-top: 1em;
@@ -1185,7 +1224,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #What #aboutFilipe #aboutFilipeMission p {
+  #mainContent #aboutFilipe #aboutFilipeMission p {
     font-family: "GilroyRegular";
     font-size: 1em;
     color: #ffffff;
@@ -1193,7 +1232,7 @@ header #headingNav #navLinks #getInTouch {
 }
 
 #mainContent #callToAction {
-  padding: 12.875em 1.438em 0;
+  padding: 0em 1.438em 0;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -1206,11 +1245,6 @@ header #headingNav #navLinks #getInTouch {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-image: url(../img/Stripes.png);
-  background-size: contain;
-  background-position: right;
-  background-position-y: 0em;
-  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
@@ -1218,13 +1252,14 @@ header #headingNav #navLinks #getInTouch {
     background-image: url(../img/Stripes@3x.png);
     background-position-y: -1.324em;
     background-size: auto 100%;
+    background-repeat: no-repeat;
     margin-top: 14.46em;
     padding: 12.875em 5.938em 0;
   }
 }
 
 #mainContent #callToAction #whatWeNeed {
-  margin-top: 10em;
+  margin-top: 0em;
 }
 
 @media (min-width: 376px) {
