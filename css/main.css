@@ -935,6 +935,9 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #manifesto #actsBlock #allTheActs {
+    -ms-flex-line-pack: start;
+        align-content: start;
+    height: 61rem;
     padding: 6.063em 5.938em 0;
     background-image: url(../img/actsBackground@3x.jpg);
   }
@@ -958,6 +961,7 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #manifesto #actsBlock #allTheActs #fourActs {
+    height: 2.688rem;
     font-family: "GilroySemiBold";
     font-size: 1.875em;
     margin-bottom: 1.75em;
@@ -1067,21 +1071,15 @@ header #headingNav #navLinks #getInTouch {
   background: none;
 }
 
-@media (min-width: 376px) {
-  #mainContent #manifesto #filipeBlock {
-    background-color: #f5f7fa;
-    background-image: url(../img/filipe-pic-desktop@3x.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 140vw;
-  }
-}
-
 @media (min-width: 992px) {
   #mainContent #manifesto #filipeBlock {
+    background-image: url(../img/filipe-pic-desktop@3x.png);
+    background-size: cover;
     padding: 3.9em;
     margin: 7.25em 5.938em 0em;
     background-size: cover;
+    position: absolute;
+    width: 90.875rem;
   }
 }
 
@@ -1104,6 +1102,8 @@ header #headingNav #navLinks #getInTouch {
 
 @media (min-width: 992px) {
   #mainContent #manifesto #filipeBlock #aboutFilipeLinks {
+    background: none;
+    height: auto;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1287,7 +1287,7 @@ header #headingNav #navLinks #getInTouch {
   }
 }
 
-#mainContent #manifesto #playOurBestBlock #whatWeNeed h2 {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed .weNeedTitle {
   font-size: 1.875em;
   font-weight: 300;
   font-stretch: normal;
@@ -1299,13 +1299,13 @@ header #headingNav #navLinks #getInTouch {
 }
 
 @media (min-width: 992px) {
-  #mainContent #manifesto #playOurBestBlock #whatWeNeed h2 {
+  #mainContent #manifesto #playOurBestBlock #whatWeNeed .weNeedTitle {
     font-size: 3.125em;
     margin-bottom: 3.688rem;
   }
 }
 
-#mainContent #manifesto #playOurBestBlock #whatWeNeed h2 span {
+#mainContent #manifesto #playOurBestBlock #whatWeNeed .weNeedTitle span {
   text-decoration: none;
 }
 

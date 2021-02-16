@@ -787,6 +787,8 @@ header {
                 background-size: 100%;
                 background-repeat: no-repeat;
                 @include lg {
+                    align-content: start;
+                    height: 61rem;
                     padding: 6.063em $sideMargin 0;
                     background-image: url(../img/actsBackground@3x.jpg);
                 }
@@ -802,6 +804,7 @@ header {
                     font-weight: 600;
                     margin-bottom: 1.75rem;
                     @include lg {
+                        height: 2.688rem;
                         font-family: $gilroySB;
                         font-size: 1.875em;
                         margin-bottom: 1.75em;
@@ -865,17 +868,21 @@ header {
             margin: 0em 0em 0em;
             position: relative;
             background: none;
-            @include rwd(376) {
-                background-color: $cardBG;
-                background-image: url(../img/filipe-pic-desktop@3x.png);
-                background-repeat: no-repeat;
-                background-position: center top;
-                background-size: 140vw;
-            }
+            // @include rwd(376) {
+            //     background-color: $cardBG;
+            //     background-image: url(../img/filipe-pic-desktop@3x.png);
+            //     background-repeat: no-repeat;
+            //     background-position: center top;
+            //     background-size: 140vw;
+            // }
             @include lg {
+                background-image: url(../img/filipe-pic-desktop@3x.png);
+                background-size: cover;
                 padding: 3.9em;
                 margin: 7.25em $sideMargin 0em;
                 background-size: cover;
+                position: absolute;
+                width: 90.875rem;
             }
             #aboutFilipeLinks {
                 display: flex;
@@ -888,6 +895,8 @@ header {
                 background-repeat: no-repeat;
                 background-size: contain;
                 @include lg {
+                    background: none;
+                    height: auto;
                     order: 1;
                     padding: 0;
                 }
@@ -1019,7 +1028,7 @@ header {
                         animation-delay: inherit;
                     }
                 }
-                h2 {
+                .weNeedTitle {
                     font-size: 1.875em;
                     font-weight: 300;
                     font-stretch: normal;
