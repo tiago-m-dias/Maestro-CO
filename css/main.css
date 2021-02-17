@@ -1296,6 +1296,7 @@ header #headingNav #navLinks #getInTouch {
 
 #mainContent #manifesto #playOurBestBlock #whatWeNeed .whatMobile {
   display: block;
+  width: 89%;
 }
 
 @media (min-width: 992px) {

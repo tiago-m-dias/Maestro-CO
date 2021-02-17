@@ -1036,6 +1036,7 @@ header {
                 }
                 .whatMobile {
                     display: block;
+                    width: 89%;
                     @include lg {
                         display: none;
                     }
