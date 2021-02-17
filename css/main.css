@@ -977,6 +977,7 @@ header #headingNav #navLinks #getInTouch {
   letter-spacing: normal;
   text-align: left;
   margin-bottom: 3.688em;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -985,6 +986,7 @@ header #headingNav #navLinks #getInTouch {
   #mainContent #manifesto #actsBlock #allTheActs #thirdAct,
   #mainContent #manifesto #actsBlock #allTheActs #fourthAct {
     margin-bottom: 0;
+    width: auto;
   }
 }
 

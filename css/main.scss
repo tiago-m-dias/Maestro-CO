@@ -819,8 +819,10 @@ header {
                     letter-spacing: normal;
                     text-align: left;
                     margin-bottom: 3.688em;
+                    width: 100%;
                     @include lg {
                         margin-bottom: 0;
+                        width: auto;
                     }
                     h4 {
                         font-family: $gilroySB;
